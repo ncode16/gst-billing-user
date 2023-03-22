@@ -11,11 +11,16 @@ import {
 import Features2 from './preModels/Faq';
 import { Features } from './components/features';
 import Otp from './components/Login/otpMessage';
+import Ex3 from './preModels/ex3/ex3';
+import Ex4 from './preModels/ex4/ex4';
+import Ex5 from './preModels/ex5/ex5';
+import Ex6 from './preModels/ex6/ex6';
 
 ReactDOM.render(
   <React.StrictMode>
   <Router>
-    <App/>
+  <App/>
+  
   </Router>
   </React.StrictMode>,
   document.getElementById('root')

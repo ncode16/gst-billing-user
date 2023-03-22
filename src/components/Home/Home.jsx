@@ -11,6 +11,12 @@ import { Login2 } from "../login2";
 
 import JsonData from "../../data/data.json";
 import Footer from '../footer.jsx/footer';
+import Ex3 from '../../preModels/ex3/ex3';
+import Ex4 from '../../preModels/ex4/ex4';
+import Ex5 from '../../preModels/ex5/ex5';
+import Ex6 from '../../preModels/ex6/ex6';
+import Ex7 from '../../preModels/ex7/ex7';
+
 
 
 const Home = () => {
@@ -22,12 +28,16 @@ const Home = () => {
   return (
     <div className='home'>
         <Navigation />
-        {landingPageData && (<><Header data={landingPageData.Header} />
+        <Ex7/>
+        <Ex3/>
+        <Ex4/>
+        <Ex5/>
         <Features data={landingPageData.Features} />
+        <Ex6/>
         <Gallery data={landingPageData.Gallery} />
-        <Component1 data={landingPageData.About} />
+      <Component1/>
         <Faqs data={landingPageData.Testimonials} />
-        <Contact data={landingPageData.Contact} /></> )}
+        <Contact data={landingPageData.Contact} /> 
         <Footer/>
        
     </div>

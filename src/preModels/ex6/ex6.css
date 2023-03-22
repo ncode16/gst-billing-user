@@ -1,0 +1,24 @@
+.firstdiv{
+width: 100%;
+height: 400px;
+background-color: #2754ff;
+padding: 10px 5px 10px 5px ;
+margin: 10 0 15 0;
+border: 4px solid #efe8ec  ;
+  border-radius: 5px;
+}
+.seconddiv{
+    margin: 70 200 50 200;
+}
+.heading2{
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+.prg2{
+    color: #f2fbfe;
+    font-weight: 300;
+    font-size: 20px;
+    
+}

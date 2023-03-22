@@ -1,11 +1,12 @@
 import React from 'react'
 import './Field.css'
 
-const Field = ({title,width,height,astrich,textarea}) => {
+const Field = ({title,width,height,astrich,textarea,func}) => {
     const fieldStyle = {
         width: `${width}%`,
-        height: `${height}vw`
+        height: `${height}vw`,
     }
+
   return (
     <div className='field' style={fieldStyle}>
         <div className='fieldTitleContainer'>
@@ -17,8 +18,8 @@ const Field = ({title,width,height,astrich,textarea}) => {
         <div className='fieldAreaContainer'>
             <div className='fieldArea'>
                 {
-                    textarea ? <textarea className='fieldAreaInput'></textarea> :
-                    <input className='fieldAreaInput' type='text'/>
+                    textarea ? <textarea onChange={func}  className='fieldAreaInput textarea'></textarea> :
+                    <input onChange={func} className='fieldAreaInput' type='text'/>
                 }
             </div>
         </div>

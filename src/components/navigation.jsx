@@ -1,9 +1,28 @@
 import React from "react";
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import { styled } from '@mui/material/styles';
 
 import {Link} from 'react-router-dom'
 import './Login/Login.css';
 
 export const Navigation = (props) => {
+  const BootstrapButton = styled(Button)({
+    boxShadow: 'none',
+    textTransform: 'none',
+    fontSize: 17,
+    backgroundColor: '#2754ff',
+    borderColor: '#0063cc',
+    fontFamily: [
+    
+  
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+    ]
+  })
 
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
@@ -59,9 +78,11 @@ export const Navigation = (props) => {
             <li>
               <Link to="/login" target="_blank">Login</Link>
             </li>
-            <li>
-              <Link to="/sign-up" target="_blank">Sign Up</Link>
-            </li>
+  
+   <Stack spacing={2} direction="row">
+    <Link to="/sign-up" target="_blank" className="sign-in2" > <BootstrapButton variant="contained"  size="small"  >Sign Up</BootstrapButton></Link>
+     
+    </Stack> 
           </ul>
         </div>
       </div>

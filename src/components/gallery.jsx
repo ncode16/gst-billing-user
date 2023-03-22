@@ -19,7 +19,7 @@ import axios from "axios";
              .catch((e) => console.log("eee", e));
           
            },[])
-        // console.log("ppp",image.data);
+       
     
         // useEffect(()=>{
         // fetch("https://api.github.com/users")

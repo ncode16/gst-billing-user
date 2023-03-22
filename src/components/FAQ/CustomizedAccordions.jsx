@@ -82,10 +82,10 @@ export default function CustomizedAccordions() {
         setFaq(res?.data?.data)
        })
         
-       .catch((e) => console.log("eee", e));
+       .catch((e) => console.log("Faq", e));
     
      },[])
-  console.log("ppp",faq.data);
+ 
 
   return (
     <div style={accordion} >

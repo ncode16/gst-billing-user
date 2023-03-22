@@ -2,9 +2,11 @@ import React from "react";
 
 export const Login2 = () => {
   return (
-   <div className="text-center number">
-   <p className="p1">Trusted by<span id="number">4,00,000+</span>SMEs</p>
    <div>
+   <div className="text-center">
+   <p className="p1">Trusted by</p><span id="number">4,00,000+</span><p  className="p1">SMEs</p>
+   </div>
+   <div className="text-center">
        <span className="number2">
        #AtmaNirbharBharat
        </span>
