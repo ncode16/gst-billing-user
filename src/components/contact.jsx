@@ -5,7 +5,7 @@ import ContactUs from './Contact_Us/ContactUs'
 
 export const Contact = (props) => {
   return (
-    <div id="contact">
+    <div id="contact" >
       <ContactUs />
     </div>
   );

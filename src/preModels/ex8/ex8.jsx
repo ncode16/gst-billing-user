@@ -2,9 +2,9 @@ import React from "react";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
-import './ex4.css'
+import './ex8.css'
 
-const Ex4= () => {
+const Ex8= () => {
     const BootstrapButton = styled(Button)({
         boxShadow: 'none',
         textTransform: 'none',
@@ -26,13 +26,13 @@ const Ex4= () => {
   <div>
             <div className="tworow top4">
             <div className="secondrow">
-                    <img className="imgborder" src="https://getswipe.in/static/img/share_invoices_on_whatsapp_1.jpeg" width={'500px'} alt="img2" />
+                    <img className="imgborder" src="https://getswipe.in/static/img/inventory_management.jpeg" width={'500px'} alt="img2" />
                 </div>
                 <div className="firstrow">
-                    <h3 className="heading3">Share invoices on WhatsApp & Email</h3>
-                    <p className="paragraph1">Swipe helps you reach your customers and vendors wherever they are. Share invoices and purchase orders on WhatsApp and Email..</p>
+                    <h3 className="heading3">Get payments faster</h3>
+                    <p className="paragraph1">With Swipe you can send payment links and even QR codes so that customers can pay you quickly. Send payment reminders easily. Make payments to your suppliers conveniently from your trusted UPI apps.</p>
                     <Stack spacing={2} direction="row">
-                        <BootstrapButton variant="contained" size="large"  >Get Started with Swipe</BootstrapButton>
+                        <BootstrapButton variant="contained" size="large"  >Try Swipe for free</BootstrapButton>
                     </Stack>
                 </div>
             </div>
@@ -41,4 +41,4 @@ const Ex4= () => {
     )
 }
 
-export default Ex4;
+export default Ex8;

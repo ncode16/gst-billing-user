@@ -40,7 +40,7 @@ function messagedeatail(e){
       else  {
          alert('send successfully')
       }
-      axios.post('https://gst-billing-backend.onrender.com/api/user/add-contact', {
+      axios.post('http://10.16.16.11:8000/api/user/add-contact', {
             "contactName": name,
              "contactPhone":phone ,
              "contactMessage": message,
@@ -58,7 +58,7 @@ function messagedeatail(e){
               console.log('err', e))
   }
   return (
-    <div className='contactFieldContainer'>
+    <div className='contactFieldContainer container'>
         <div className='contactInnerField'>
           <div className='contactForm'>
             <div className='formFieldContainer'>

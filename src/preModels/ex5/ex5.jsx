@@ -22,7 +22,7 @@ const Ex5= () => {
         ]
       })
     return (
-        <div>
+        <div className="container">
             <div className="tworow top6">
                 <div className="firstrow">
                     <h3 className="heading3">GST filings made easy</h3>

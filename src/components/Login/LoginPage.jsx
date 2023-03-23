@@ -38,7 +38,7 @@ export default function SignIn() {
         } else  {
             navigate('/otp', {state:{MobileNo: number}})
         }
-        axios.post('https://gst-billing-backend.onrender.com/api/user/login', {
+        axios.post('http://10.16.16.11:8000/api/user/login', {
             "mobileNumber": number
         })
             .then((responce) => 
@@ -116,7 +116,7 @@ export default function SignIn() {
                                         <Button
                                             onClick={phonenumber}
                                             id='submit'
-                                            type="button"
+                                            type="submit"
                                             fullWidth
                                             variant="contained"
                                             sx={{ mt: 3, mb: 2 }}

@@ -22,7 +22,8 @@ const Ex7 = () => {
         ]
       })
     return (
-        <div className="top2" >
+       <div className="container">
+ <div className="top2" >
 <div className="tworow two3">
     <div className="firstrow">
         <h3 className='heading3' >SIMPLE BILLING , PAYMENTS APP</h3>
@@ -37,6 +38,7 @@ const Ex7 = () => {
 
 </div>
 </div> 
+       </div>
     )
 }
 export default Ex7;

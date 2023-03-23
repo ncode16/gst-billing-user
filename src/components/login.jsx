@@ -2,8 +2,9 @@ import React from "react";
 
 export const Component1= (props) => {
   return (
-    <div id="about">
-      <div className="container">
+    <div className="container">
+      <div id="about">
+      <div >
         <div className="row">
          
           <div className="col-xs-12 col-md-6">
@@ -20,6 +21,8 @@ export const Component1= (props) => {
           </div>
         </div>
       </div>
+    </div>
+
     </div>
   );
 };

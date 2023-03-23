@@ -16,6 +16,7 @@ import Ex4 from '../../preModels/ex4/ex4';
 import Ex5 from '../../preModels/ex5/ex5';
 import Ex6 from '../../preModels/ex6/ex6';
 import Ex7 from '../../preModels/ex7/ex7';
+import Ex8 from '../../preModels/ex8/ex8';
 
 
 
@@ -29,13 +30,15 @@ const Home = () => {
     <div className='home'>
         <Navigation />
         <Ex7/>
+        <Login2/>
         <Ex3/>
         <Ex4/>
         <Ex5/>
         <Features data={landingPageData.Features} />
         <Ex6/>
+        <Ex8/>
         <Gallery data={landingPageData.Gallery} />
-      <Component1/>
+    
         <Faqs data={landingPageData.Testimonials} />
         <Contact data={landingPageData.Contact} /> 
         <Footer/>

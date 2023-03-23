@@ -4,14 +4,15 @@ import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/
 
 export const Faqs = (props) => {
   return (
+    <div className="container">
     <div id="faq">
-      <div className="container">
+      <div >
         <div className="section-title text-center">
           <h2>Frequently asked questions</h2>
         </div>
         <CustomizedAccordions />
       </div>
-      
+    </div>
     </div>
   );
 };

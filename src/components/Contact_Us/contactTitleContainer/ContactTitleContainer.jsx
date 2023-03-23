@@ -6,7 +6,7 @@ const ContactTitleContainer = () => {
         color: "#3654ff"
     }
   return (
-    <div className='contactTitle'>
+    <div className='contactTitle container'>
         <div className='contactTitleContainer'>
             <span className='contactTitle'>Simple Invoicing, Payments and GST app 🇮🇳</span>
             <div className='contactSubTitleContainer'>

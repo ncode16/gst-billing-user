@@ -3,19 +3,24 @@
     grid-template-columns: 6fr 6fr;
     padding: 0 100 0 0;
 }
-.tworow.top2{
+.tworow.top2 {
     display: flex;
     align-items: center;
-}
-.tworow.top2 .firstrow{
-    padding-left: 33px;
-}
-.firstrow{
-    padding-top: 50px;
-    margin-left: -50px;
+    flex-wrap: wrap;
+    padding-top: 80px;
+   }
+   .tworow.top2 .firstrow {
+    width: 50%;   
+    padding: 0 25px 0 0;
+    margin: 0;   
+   }
+   .tworow.top2 .secondrow {
+     width: 50%;  
+     text-align: right;
+      padding: 0 0 0 25px;
+      margin: 0;  
+   }
 
-   
-}
 .secondrow{
     padding: 70 0 0 50;
     margin: 50px;

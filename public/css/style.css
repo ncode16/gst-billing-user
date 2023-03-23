@@ -1,6 +1,6 @@
 body,
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Inter', sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #302b2b;
@@ -87,6 +87,62 @@ hr {
   
 }
 
+.faq-section {
+  max-width: 768px;
+  margin: 0 auto;
+}
+.section-title.text-center {
+  margin-bottom: 1.5rem;
+}
+.faq-section .MuiPaper-root.MuiPaper-elevation {
+  border-top: solid 1px rgb(229 231 235);
+}
+.faq-section .MuiButtonBase-root {
+  background: transparent;
+  padding: 0;
+}
+.faq-section .css-j2beh8-MuiButtonBase-root-MuiAccordionSummary-root .MuiAccordionSummary-content {
+  margin-left: 0; 
+}
+.faq-section .css-ahj2mt-MuiTypography-root {
+  font-family: 'Inter';
+  font-size: 18px; 
+}
+.faq-section .css-19lvqi1-MuiAccordionDetails-root {
+  border: none;
+  padding: 0 0 22px 0; 
+}
+.faq-section .css-19lvqi1-MuiAccordionDetails-root .MuiTypography-root.MuiTypography-body1 {
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contactUs .contactTitle {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.contactUs .contactSubTitles {
+  font-size: 22px;
+  padding: 10px 0 15px;
+}
+
+.whatsup-icon{
+  font-weight: 700px;
+   color: white;
+   background-color: #25d366;
+   position: static;
+   margin-bottom: 0;
+   border: #1e7a46;
+   border-radius: 20px;
+   padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
 /* Navigation */
 .imgborder{
   border: 4px solid #e8e1e1  ;
@@ -113,10 +169,11 @@ hr {
 }
 #menu.navbar-default {
   background-color: #fff;
-  border-color: rgba(231, 231, 231, 0);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border: none;
 }
-
+nav.navbar.navbar-default.navbar-fixed-top {
+  position: inherit;
+}
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
   font-size: 29px;
@@ -145,9 +202,6 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  content: "";
-  transition: width 0.2s;
 }
 
 #menu.navbar-default .navbar-nav>li>a:hover:after {
@@ -194,12 +248,15 @@ hr {
 
 .section-title h2 {
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 30px;
 }
 
-.section-title h2::after {
+/* .section-title h2::after {
   position: absolute;
   content: "";
   background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
@@ -208,7 +265,7 @@ hr {
   bottom: 0;
   margin-left: -30px;
   left: 50%;
-}
+} */
 
 .section-title p {
   font-size: 18px;
@@ -305,16 +362,36 @@ header .intro-text {
 
 /* Features Section */
 
+.col.feature6 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: self-start;
+}
+.feature6 .feature-test {
+  width: 33.33%; 
+  padding: 3px 10px;
+} 
+
 .feature-3{
- font-weight: 400;
  line-height: 2rem;
- margin-left: 1.5rem;
+ padding-left: 35px;
  font-family: sans-serif;
- font-size: 22px;
- font-weight: 300;
+ font-size: 18px;
+ font-weight: 500;
+ position: relative;
+}
+.feature-3:before {
+ content: '';
+ background: url(../img/right-arrow-icon\ \(1\).png) no-repeat center center;
+ position: absolute;
+ left: 0;
+ top: 1px;
+ width: 18px;
+ height: 18px;
+ background-size: 100%; 
 }
 #features{
-  padding: 70px 0 170px 0;
+  padding: 70px 0;
  
 }
 .text-center{
@@ -449,14 +526,18 @@ header .intro-text {
   padding-top: 50px; 
 
 }
-
+.text-center.trusted-text {
+  align-items: end;
+}
 .p1 {
   font-size: 30px;
   font-size: 22px;
   font-weight: 400;
-  padding: 20 15 20 15;
-
-
+  padding: 0 15px;
+  margin-bottom: 18px;
+}
+.nirbharbharat img {
+  margin-left: 6px; 
 }
 
 #number {
@@ -467,7 +548,7 @@ header .intro-text {
 
 .number2 {
   font-size: 26px;
-  font-family: cursive;
+  font-family: 'Kalam';
   font-weight: bold;
   color: #f6640a;
 }
@@ -582,13 +663,11 @@ header .intro-text {
   margin: 5px 0;
 }
 
-#team .team-img {
-  width: 240px;
-}
-
 #team .thumbnail {
   background: transparent;
   border: 0;
+  height: 450px;
+  overflow: hidden;
 }
 
 #team .thumbnail .caption {
@@ -764,6 +843,19 @@ label {
 
 #footer a:hover {
   border-bottom: 2px solid #608dfd;
+}
+
+.whatsup-icon-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+}
+.whatsup-icon-box a.whatsup-icon {
+  color: #fff;
+  padding: 3px 20px 6px;
+}
+a.whatsup-icon .fa-whatsapp {
+  margin-right: 5px;
 }
 
 @media (max-width: 768px) {

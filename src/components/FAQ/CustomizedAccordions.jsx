@@ -1,4 +1,4 @@
-import  React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { styled } from '@mui/material/styles';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import MuiAccordion from '@mui/material/Accordion';
@@ -24,7 +24,7 @@ const Accordion = styled((props) => (
 }));
 
 const AccordionSummary = styled((props) => (
-  <MuiAccordionSummary
+  <MuiAccordionSummary className="faq-section"
     expandIcon={<KeyboardArrowUpIcon sx={{ fontSize: '1.5rem' }} />}
     {...props}
   />
@@ -41,102 +41,56 @@ const AccordionSummary = styled((props) => (
     marginLeft: theme.spacing(1),
   },
 }));
-
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
   border: '1px solid rgba(0, 0, 0, .125)',
 }));
-
 export default function CustomizedAccordions() {
   const [expanded, setExpanded] = React.useState('panel');
-
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
-
   const accordion = {
     position: "relative",
     left: "15%",
     width: "70%"
   }
-
   const typographyParent = {
     fontWeight: "500",
     padding: "10px 0"
   }
-
   const typography = {
     fontSize: "15px",
     color: "grey"
   }
-
-  const[faq, setFaq]=useState([])
-        
-  
-  const url='https://gst-billing-backend.onrender.com/api/list/faq';
-  
-
-  useEffect(()=>{
-      axios.get(`${url}`)
-       .then((res) =>{
+  const [faq, setFaq] = useState([])
+  const url = 'http://10.16.16.11:8000/api/list/faq';
+  useEffect(() => {
+    axios.get(`${url}`)
+      .then((res) => {
         setFaq(res?.data?.data)
-       })
-        
-       .catch((e) => console.log("Faq", e));
-    
-     },[])
- 
+      })
+      .catch((e) => console.log("Faq", e));
+  }, [])
+
 
   return (
-    <div style={accordion} >
-     
-
-{  faq&& faq.length > 0 && faq.map((d, i) => {
-  return(
-      // <div key={`${d.name}-${i}`} className="col-md-3 col-sm-6 team">
-      //   <div className="thumbnail">
-      //     {" "}
-      //     <img src={d.template_image} alt="..." className="team-img" />
-      //   </div>
-      // </div>
-      <Accordion key={`${d.faq_id}`} onChange={handleChange('panel2')}>
-        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography style={typographyParent}>{d.title}</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography  style={typography}>
-          {d.description}
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
- ) })
-  } 
-      {/* <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography style={typographyParent}>Collapsible Group Item #2</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography  style={typography}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography style={typographyParent}>Collapsible Group Item #3</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography  style={typography}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion> */}
+    <div className='faq-section'>
+      {faq && faq.length > 0 && faq.map((d, i) => {
+        return (
+          <Accordion key={`${d.faq_id}`} onChange={handleChange('panel2')}>
+            <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+              <Typography style={typographyParent}>{d.title}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography style={typography}>
+                {d.description}
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        )
+      })
+      }
     </div>
   );
 }

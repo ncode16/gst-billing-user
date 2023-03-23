@@ -19,6 +19,7 @@ import Ex6 from './preModels/ex6/ex6';
 ReactDOM.render(
   <React.StrictMode>
   <Router>
+    
   <App/>
   
   </Router>

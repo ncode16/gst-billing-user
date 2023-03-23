@@ -8,7 +8,7 @@ import ContactDetails from './contactDetails/ContactDetails'
 
 const ContactUs = () => {
   return (
-    <div className='contactUs'>
+    <div className='contactUs '>
       <ContactTitleContainer />
       <ContactFieldContainer />
       <ContactDetails />

@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
-export default function App(){
+export default function Ex1(){
     const[user ,setUser]= useState([]);
+   
 
     useEffect(()=>{
         fetch("https://api.github.com/users")

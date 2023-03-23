@@ -90,7 +90,13 @@ export const Navigation = (props) => {
         <a className="back-to-top" href="#top">
           <i className='fa fa-arrow-up fa-lg mt-2 mb-0 pb-0'></i>
         </a>
+        <div className="whatsup-icon-box">
+       <a className="whatsup-icon" data-scroll-class="100vh:active" target="_blank">
+        <i className="fa fa-brands font-bold  fa-whatsapp mr-2 text-lg"></i><span>Help?</span>
+    </a>
        </div>
+       </div>
+      
     </nav>
   );
 };

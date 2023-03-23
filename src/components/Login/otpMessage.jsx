@@ -169,13 +169,13 @@ export default function Otp() {
     function VerifyOtp() {
 
        
-        if (otp == otp.user_otp ) {
+        if (otp == data1.user_otp ) {
             alert('wrong otp')
         }
         else {
             navigate('/welcome')
         }
-            axios.post('https://gst-billing-backend.onrender.com/api/user/verify-mobile-otp', {
+            axios.post('http://10.16.16.11:8000/api/user/verify-mobile-otp', {
                 mobileNumber: location.state.MobileNo,
                 mobileOtpValue: otp
 
@@ -250,7 +250,7 @@ export default function Otp() {
 
                                     <Button
                                         onClick={VerifyOtp}
-                                        type="button"
+                                        type="submit"
                                         fullWidth
                                         variant="contained"
                                         sx={{ mt: 3, mb: 2 }}

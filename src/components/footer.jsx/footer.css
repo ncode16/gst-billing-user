@@ -1,6 +1,9 @@
 .footer1{
 display: flex;
 justify-content: center;
-padding: 20 20 20 20;
-background: #999;
+padding: 35px 20px 40px;
+background: #fff;
+border-top: solid 1px rgb(229 231 235);
+color: rgb(82 82 82);
+font-weight: 400;
 }
