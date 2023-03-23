@@ -7,7 +7,7 @@ export const Gallery = () => {
   const [image, setImage] = useState([])
 
 
-  const url = 'http://10.16.16.11:8000/api/list/template';
+  const url = 'https://gst-billing-backend.onrender.com/api/list/template';
 
 
   useEffect(() => {
