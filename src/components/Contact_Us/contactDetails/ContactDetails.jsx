@@ -10,7 +10,7 @@ const ContactDetails = () => {
         left: "5vw"
     }
   return (
-    <div className='contactDetails container'>
+    <div className='contactDetails'>
         <div className='DetailsContainer'>
             <div className='details'>
                 <span className='email2'>Email: <span className='email'>team@gstbilling.in</span></span>

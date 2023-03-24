@@ -23,7 +23,7 @@ const Ex5= () => {
       })
     return (
         <div className="container">
-            <div className="tworow top6">
+            <div className="tworow home-tworow">
                 <div className="firstrow">
                     <h3 className="heading3">GST filings made easy</h3>
                     <p className="paragraph1">With Swipe you can send payment links and even QR codes so that customers can pay you<br/> quickly. Send payment reminders easily. Make payments to your suppliers conveniently from your trusted UPI apps.</p>

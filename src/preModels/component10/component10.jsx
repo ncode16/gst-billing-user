@@ -23,17 +23,17 @@ const Component10 = () => {
     })
     return (
         <div className="container">
-           <div className="container-2">
+           <div className="container-2 get-started-text">
            <div className='text-center comp-4'>
                 <h2>Get started in less than 60 seconds</h2>
             </div>
            <div className="img-2">
-           <div>
-                <a><img src="https://getswipe.in/static/img/google-play-badge.png" width={'70%'}  alt="playstore img" /></a>
+           <div className="google-play-icon">
+                <a><img src="https://getswipe.in/static/img/google-play-badge.png"  alt="playstore img" /></a>
             </div>
-            <div>
+            <div className="sign-up-btn">
             <span><Stack spacing={2} direction="row">
-                    <BootstrapButton variant="contained" size="large"  >Sign Up For Free</BootstrapButton>
+                    <BootstrapButton variant="contained" size="large">Sign Up For Free</BootstrapButton>
                 </Stack></span>
             </div>
            </div>

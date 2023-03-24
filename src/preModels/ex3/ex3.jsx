@@ -24,7 +24,7 @@ const Ex3 = () => {
     return (
         <div className="container">
             <div>
-                <div className="tworow top2">
+                <div className="tworow home-tworow">
                     <div className="firstrow">
                         <h3 className="heading3">Create invoices in less than 10 seconds</h3>
                         <p className="paragraph1">Swipe helps you track your sales, manage inventory, customers & vendors and be in control of your business. Create GST compliant invoices & share with customers easily.</p>

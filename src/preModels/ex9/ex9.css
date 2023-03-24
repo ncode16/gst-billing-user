@@ -45,12 +45,34 @@
         color: #333;
         font-weight: 700;
         padding-left: 0 4px 0 15px;
-    
-
-    
+   
 }
 .firstrow .mt-2 .font-normal{
     font-weight: 400;
     font-size: 14px;
     color: rgb(23, 23, 23);
 }
+.review-text-box {
+	padding-bottom: 25px;
+}
+
+@media screen and (max-width: 1023px) { }
+
+@media screen and (max-width: 767px) { 
+
+    .tworow.top4 .secondrow {
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    .tworow.top4 .secondrow .imgborder {
+        width: 100%;
+    } 
+    .tworow.top4 .firstrow {
+        width: 100%;
+        padding: 20px 0 0 0;
+        margin: 0;
+    }
+
+} 

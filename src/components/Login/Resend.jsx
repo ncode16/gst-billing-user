@@ -4,7 +4,7 @@ import axios from "axios";
 
 function ResendOtp() {
     function verifyOtp2() {
-        axios.post('http://10.16.16.11:8000/api/user/resend-mobile-otp')
+        axios.post('https://gst-billing-backend.onrender.com/api/user/resend-mobile-otp')
             .then((res) => {
                 console.log('resended otp', res.data)
 

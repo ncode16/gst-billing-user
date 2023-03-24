@@ -11,7 +11,7 @@
 }
 
 .heading2 {
-    font-family: 'Inter';
+    font-family: 'DM Sans', sans-serif;
     color: #ffffff;
     font-size: 36px;
     font-weight: 700;
@@ -19,14 +19,41 @@
 }
 
 .prg2 {
-    font-family: 'Inter';
-    color: rgb(191 219 254);
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 24px;
     margin: 0;
-    max-width: 800px;
+    max-width: 700px;
+}
+.firstdiv .MuiStack-root.css-e53awj-MuiStack-root button.MuiButtonBase-root {
+   font-family: 'DM Sans', sans-serif;
+   font-size: 16px;
+   font-weight: 700;
+   padding: 11px 17px;
+     
 }
 
 .prg2 br {
     display: none;
+}
+
+@media screen and (max-width: 767px) { 
+
+    .seconddiv {
+        margin: 0px;
+        padding: 10px 20px 30px;
+    }
+    .heading2 {
+       font-size: 22px;  
+    } 
+    .seconddiv .prg2 {
+        font-size: 16px;
+        line-height: 22px; 
+    }
+    .firstdiv {
+      margin-bottom: 30px;  
+    }
+
 }

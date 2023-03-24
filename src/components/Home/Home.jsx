@@ -19,6 +19,9 @@ import Ex7 from '../../preModels/ex7/ex7';
 import Ex8 from '../../preModels/ex8/ex8';
 import Footerup from '../footer.jsx/footer1';
 import Component10 from '../../preModels/component10/component10';
+import Component11 from '../../preModels/component11/component11';
+
+import Component12 from '../../preModels/componenet12';
 
 
 
@@ -34,6 +37,7 @@ const Home = () => {
       <Ex7 />
       <Login2 />
       <Gallery data={landingPageData.Gallery} />
+      <Component11/>
       <Ex6 />
       <Ex3 />
       <Ex4 />
@@ -42,6 +46,7 @@ const Home = () => {
       <Features data={landingPageData.Features} />
      <Component10/>
       <Faqs data={landingPageData.Testimonials} />
+      <Component12/>
       <Footerup/>
       <Footer />
 

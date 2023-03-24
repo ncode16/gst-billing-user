@@ -4,7 +4,7 @@ import './footer.css'
 
 const Footer=()=>{
     return(
-        <div>
+        <div className="container">
             <p className="footer1">© 2023 Ncode Technologies, Inc  All rights reserved.</p>
         </div>
     )

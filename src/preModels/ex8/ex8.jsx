@@ -24,7 +24,7 @@ const Ex8= () => {
     return (
       <div className="container">
   <div>
-            <div className="tworow top4">
+            <div className="tworow home-tworow home-tworow2">
             <div className="secondrow">
                     <img className="imgborder" src="https://getswipe.in/static/img/inventory_management.jpeg" width={'500px'} alt="img2" />
                 </div>

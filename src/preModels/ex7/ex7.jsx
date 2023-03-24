@@ -30,7 +30,7 @@ const Ex7 = () => {
         <h3 className='heading3' >Simple<span>GST Billing</span></h3>
         <p className="paragraph1">Create Invoices, Purchases & Quotations in less than 10 seconds. Share on WhatsApp with payment links and get paid faster!</p>
        
-       <div>
+       <div className="sign-google-play">
         <Stack spacing={2} direction="row">
             <BootstrapButton variant="contained" size="large"  >Sign Up</BootstrapButton>
         </Stack>

@@ -33,18 +33,6 @@
   line-height: 32px; 
   padding: 0    ;
 }
-.tworow.two3 .firstrow .MuiStack-root.css-e53awj-MuiStack-root button.MuiButtonBase-root {
-    font-family: 'Inter';
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: capitalize;
-    border-radius: 6px;
-    border-color: #2754ff;
-    color: #fff;
-    padding: 6px 23px;  
-    background: #2754ff !important;
-    box-shadow: none; 
-}
 .tworow.two3 .secondrow {
   width: 45%;  
    padding: 0;
@@ -79,4 +67,68 @@
     color: #ffffff;
     text-align: center;
     margin-bottom: 0;
+}
+.sign-google-play {
+  display: flex;
+  align-items: center; 
+  padding-top: 5px;   
+}
+.tworow.two3 .firstrow .MuiStack-root.css-e53awj-MuiStack-root button.MuiButtonBase-root {
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 6px;
+    border-color: #2754ff;
+    color: #fff;
+    padding: 8px 23px;  
+    background: #2754ff !important;
+    box-shadow: none; 
+    margin: 0 10px 0 0;
+}
+
+
+@media screen and (max-width: 1179px) {  
+    .para-tag {
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+
+@media screen and (max-width: 1023px) {  
+
+    .tworow.two3 .firstrow {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      .tworow.two3 .secondrow {
+        width: 100%;
+        padding: 0;
+        margin: 30px 0 0 0;
+        text-align: center;
+      } 
+      .tworow.two3 .secondrow img {
+        max-width: 500px;
+        margin: 0 auto;
+    }   
+
+}
+
+@media screen and (max-width: 767px) {  
+
+    .tworow.two3 .firstrow .heading3 {
+      font-size: 32px;
+      line-height: 32px;   
+      margin-bottom: 0;
+    } 
+    .para-tag {
+       width: 100%;
+       max-width: 210px;  
+    }  
+    .tworow.two3 .secondrow img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
 }

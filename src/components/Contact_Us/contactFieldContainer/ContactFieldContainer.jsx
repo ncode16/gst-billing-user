@@ -38,7 +38,7 @@ function messagedeatail(e){
   const contactDeatails=()=>{
   
   if ((name === "")) {
-          setError('Please enter name')
+          setError('Please fill the field')
       }else if ((phone ==="" )) {
         setError('Please enter number')
       }else if ((message === "")) {
@@ -50,7 +50,7 @@ function messagedeatail(e){
          alert('send successfully');
          window.location.reload(true)
       }
-      axios.post('http://10.16.16.11:8000/api/user/add-contact', {
+      axios.post('https://gst-billing-backend.onrender.com/api/user/add-contact', {
             "contactName": name,
              "contactPhone":phone ,
              "contactMessage": message,
@@ -89,7 +89,7 @@ function messagedeatail(e){
                 <p className='text-denger2'>{error}</p>
                 <div>
                 <Field id='message' func={messagedeatail}title="Message" width="100" height="20" astrich="1" textarea="1" />
-                <p className='text-denger2'>{error}</p>
+               
                 </div>
                </div>
               <div className='submitButtonContainer errorup'>

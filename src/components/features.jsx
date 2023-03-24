@@ -9,7 +9,7 @@ export const Features = () => {
   const [feature, setFeature] = useState([])
    
 
-  const url = 'http://10.16.16.11:8000/api/list/feature';
+  const url = 'https://gst-billing-backend.onrender.com/api/list/feature';
 
 
   useEffect(() => {
@@ -26,7 +26,8 @@ export const Features = () => {
 
 
   return (
-    <div>
+    <div className="container">
+    <div className="features-section">
       <div id="features"  className="container">
       <div >
         <div className="section-title  text-center">
@@ -70,7 +71,7 @@ export const Features = () => {
         </div>
       </div>
     </div>
-
+    </div>      
     </div>
   )
 }

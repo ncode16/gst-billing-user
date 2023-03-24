@@ -24,9 +24,9 @@ const Ex4= () => {
     return (
       <div className="container">
   <div>
-            <div className="tworow top4">
+            <div className="tworow home-tworow home-tworow2">
             <div className="secondrow">
-                    <img className="imgborder" src="https://getswipe.in/static/img/share_invoices_on_whatsapp_1.jpeg" width={'500px'} alt="img2" />
+            <img className="imgborder" src="https://getswipe.in/static/img/inventory_management.jpeg" width={'500px'} alt="img2" />
                 </div>
                 <div className="firstrow">
                     <h3 className="heading3">Share invoices on WhatsApp & Email</h3>

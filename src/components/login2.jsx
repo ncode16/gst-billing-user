@@ -2,7 +2,8 @@ import React from "react";
 
 export const Login2 = () => {
   return (
-   <div>
+   <div className="container">
+   <div className="trusted-section">
    <div className="text-center trusted-text">
    <p className="p1">Trusted by</p><span id="number">4,00,000+</span><p  className="p1">SMEs</p>
    </div>
@@ -13,5 +14,6 @@ export const Login2 = () => {
        <img src="https://getswipe.in/static/img/ind.png" width={'30px'}/>
    </div>
    </div>
+   </div>  
   );
 };

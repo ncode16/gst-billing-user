@@ -31,7 +31,7 @@ export const Gallery = () => {
 
   return (
     <div id="team" className="text-center">
-      <div className="container">
+      <div className="gallery-container">
         <div className="col-md-8 col-md-offset-2 section-title">
           <h2>Awesome Invoice Formats 🚀 🎉</h2>
         </div>

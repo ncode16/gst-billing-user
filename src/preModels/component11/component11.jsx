@@ -5,13 +5,13 @@ const Component11 = () => {
     return (
         <div className="container">
             <div className="undercontainer">
-                <div>
+                <div className="partnered_logo1">
                     <span>Backed by</span>
                     <img src="https://getswipe.in/static/logos/ycombinator.png"/>
                 </div>
             </div>
-            <h4>Partnered with</h4>
-            <div>
+            <h4 className="partnered_h2">Partnered with</h4>
+            <div className="partnered_logo2">
                 <ul>
                     <li><img src="https://getswipe.in/static/img/partners/arthayan.png"  alt="img" /></li>
                     <li><img src="https://getswipe.in/static/img/partners/bhau_institute.png" alt="img" /></li>
