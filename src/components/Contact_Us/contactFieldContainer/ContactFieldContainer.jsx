@@ -4,9 +4,12 @@ import { useState } from 'react'
 import axios from 'axios'
 import Field from '../field/Field'
 
+
  const ContactFieldContainer = () => {
 
   const [error, setError] = useState('');
+  const [error1, setError2] = useState('');
+  const [error2, setError3] = useState('');
   const[name , setName] =useState('');
   const[phone , setPhone] =useState('');
   const[city , setCity] =useState('');
@@ -33,14 +36,21 @@ function messagedeatail(e){
   setMessage(e.target.value);
 }
   const contactDeatails=()=>{
-   
-  if (( name.length == 0 )) {
-          setError('Please fill the field')
-      }
+  
+  if ((name === "")) {
+          setError('Please enter name')
+      }else if ((phone ==="" )) {
+        setError('Please enter number')
+      }else if ((message === "")) {
+        setError('Please fill the field')
+      } else if ((email === "")) {
+        setError('Please fill the field')
+      } 
       else  {
-         alert('send successfully')
+         alert('send successfully');
+         window.location.reload(true)
       }
-      axios.post('https://gst-billing-backend.onrender.com/api/user/add-contact', {
+      axios.post('http://10.16.16.11:8000/api/user/add-contact', {
             "contactName": name,
              "contactPhone":phone ,
              "contactMessage": message,
@@ -63,17 +73,29 @@ function messagedeatail(e){
           <div className='contactForm'>
             <div className='formFieldContainer'>
               <div className='grid-two-cols'>
-                <Field id='name' func={nameforpost} title="Name"  width="95" height="5" astrich="1" />
-                <Field id='phone' func={phonenumber} title="Phone" width="95" height="5" astrich="1" />
-                <Field id='city' func={cityforpost}title="City" width="95" height="5" />
-                <Field id='country' func={countrypost}title="Country" width="95" height="5" />
+                <div>
+                <Field id='name'  func={nameforpost} title="Name"  width="95" height="5" astrich="1" />
+                <p className='text-denger2'>{error}</p>
+                </div>
+               <div>
+               <Field id='phone' func={phonenumber} title="Phone" width="95" height="5" astrich="1" />
+               <p className='text-denger2'>{error}</p>
+                </div>
+                 <Field id='city' func={cityforpost}title="City" width="95" height="5" />
+                <Field id='country'  func={countrypost}title="Country" width="95" height="5" />
               </div>
               <div className='grid-one-cols'>
-                <Field id='email' func={emailaddress}title="Email" width="100" height="5" />
+                <Field id='email' func={emailaddress}title="Email" width="100" height="5" astrich="1" />
+                <p className='text-denger2'>{error}</p>
+                <div>
                 <Field id='message' func={messagedeatail}title="Message" width="100" height="20" astrich="1" textarea="1" />
-              </div>
-              <div className='submitButtonContainer'>
-                <div className='submit-button' onClick={contactDeatails}>Submit</div>
+                <p className='text-denger2'>{error}</p>
+                </div>
+               </div>
+              <div className='submitButtonContainer errorup'>
+              <p className='text-denger2 text-center'>{error}</p>
+                <button type='submit' className='submit-button' onClick={contactDeatails}>Submit</button>
+               
               </div>
             </div>
           </div>

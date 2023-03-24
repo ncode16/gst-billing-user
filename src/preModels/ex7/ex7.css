@@ -4,19 +4,51 @@
     
 }
 .tworow.two3 {
- display: flex;
- align-items: center;
- padding-top: 20px;
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    padding-top: 0px;
+    justify-content: space-between;
 }
 .tworow.two3 .firstrow {
- width: 50%;   
- padding: 0px;
+ width: 45%;   
+ padding: 0 0 70px 0;
  margin: 0;   
 }
+.tworow.two3 .firstrow .heading3 {
+  font-size: 48px;  
+  font-weight: 700; 
+  text-transform: capitalize;
+  line-height: 48px;
+  padding-left: 0;
+  margin: 10px 0 12px;
+}
+.tworow.two3 .firstrow .heading3 span {
+  color: #2754ff;
+  padding-left: 8px;   
+}
+.tworow.two3 .firstrow .paragraph1 {
+  font-size: 18px;  
+  font-weight: 400;
+  line-height: 32px; 
+  padding: 0    ;
+}
+.tworow.two3 .firstrow .MuiStack-root.css-e53awj-MuiStack-root button.MuiButtonBase-root {
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 6px;
+    border-color: #2754ff;
+    color: #fff;
+    padding: 6px 23px;  
+    background: #2754ff !important;
+    box-shadow: none; 
+}
 .tworow.two3 .secondrow {
-  width: 50%;  
+  width: 45%;  
    padding: 0;
-   margin: 0;  
+   margin: 0 50px 0 0;  
 }
 .firstrow{
     padding: 20px 0 0 100px ;
@@ -37,4 +69,14 @@
     font-weight: 350;
     padding: 5px;
 }
-
+.para-tag{
+    font-size: 14px;
+    padding: 1px;
+    background: #06c167;
+    width: 30%;
+    border: 1px solid #06c167;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0;
+}

@@ -7,7 +7,7 @@ export const Gallery = () => {
   const [image, setImage] = useState([])
 
 
-  const url = 'https://gst-billing-backend.onrender.com/api/list/template';
+  const url = 'http://10.16.16.11:8000/api/list/template';
 
 
   useEffect(() => {
@@ -33,27 +33,9 @@ export const Gallery = () => {
     <div id="team" className="text-center">
       <div className="container">
         <div className="col-md-8 col-md-offset-2 section-title">
-          <h2>Our Templates</h2>
+          <h2>Awesome Invoice Formats 🚀 🎉</h2>
         </div>
         <div id="row">
-          <div className="col-md-4 col-sm-6 team">
-            <div className="thumbnail">
-              {" "}
-              <img src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/template/image-1679310369327.png" alt="..." className="team-img" />
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 team">
-            <div className="thumbnail">
-              {" "}
-              <img src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/template/image-1678885086060.png" alt="..." className="team-img" />
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 team">
-            <div className="thumbnail">
-              {" "}
-              <img src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/template/image-1679317478379.jpeg" alt="..." className="team-img" />
-            </div>
-          </div>
           <div className="col-md-4 col-sm-6 team">
             <div className="thumbnail">
               {" "}
@@ -70,6 +52,24 @@ export const Gallery = () => {
             <div className="thumbnail">
               {" "}
               <img src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/template/image-1679578178995.png" alt="..." className="team-img" />
+            </div>
+          </div>
+          <div className="col-md-4 col-sm-6 team">
+            <div className="thumbnail">
+              {" "}
+              <img src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/template/image-1679412858162.png" alt="..." className="team-img" />
+            </div>
+          </div>
+          <div className="col-md-4 col-sm-6 team">
+            <div className="thumbnail">
+              {" "}
+              <img src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/template/image-1678885086060.png" alt="..." className="team-img" />
+            </div>
+          </div>
+          <div className="col-md-4 col-sm-6 team">
+            <div className="thumbnail">
+              {" "}
+              <img src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/template/image-1679325932334.jpeg" alt="..." className="team-img" />
             </div>
           </div>
           {/* {  image&& image.length > 0 && image.map((d, i) => {

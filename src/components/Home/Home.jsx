@@ -1,6 +1,6 @@
-import React,{useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 
-import {Navigation} from '../../components/navigation'
+import { Navigation } from '../../components/navigation'
 import { Header } from "../header";
 import { Features } from "../features";
 import { Gallery } from "../gallery";
@@ -17,32 +17,34 @@ import Ex5 from '../../preModels/ex5/ex5';
 import Ex6 from '../../preModels/ex6/ex6';
 import Ex7 from '../../preModels/ex7/ex7';
 import Ex8 from '../../preModels/ex8/ex8';
+import Footerup from '../footer.jsx/footer1';
+import Component10 from '../../preModels/component10/component10';
 
 
 
 const Home = () => {
-    const [landingPageData, setLandingPageData] = useState({});
-    useEffect(() => {
-        setLandingPageData(JsonData);
-    }, []);
+  const [landingPageData, setLandingPageData] = useState({});
+  useEffect(() => {
+    setLandingPageData(JsonData);
+  }, []);
 
   return (
     <div className='home'>
-        <Navigation />
-        <Ex7/>
-        <Login2/>
-        <Ex3/>
-        <Ex4/>
-        <Ex5/>
-        <Features data={landingPageData.Features} />
-        <Ex6/>
-        <Ex8/>
-        <Gallery data={landingPageData.Gallery} />
-    
-        <Faqs data={landingPageData.Testimonials} />
-        <Contact data={landingPageData.Contact} /> 
-        <Footer/>
-       
+      <Navigation />
+      <Ex7 />
+      <Login2 />
+      <Gallery data={landingPageData.Gallery} />
+      <Ex6 />
+      <Ex3 />
+      <Ex4 />
+      <Ex5 />
+      <Ex8 />
+      <Features data={landingPageData.Features} />
+     <Component10/>
+      <Faqs data={landingPageData.Testimonials} />
+      <Footerup/>
+      <Footer />
+
     </div>
   )
 }

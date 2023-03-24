@@ -9,9 +9,8 @@ import './Login/Login.css';
 export const Navigation = (props) => {
   const BootstrapButton = styled(Button)({
     boxShadow: 'none',
-    textTransform: 'none',
     fontSize: 17,
-    backgroundColor: '#2754ff',
+
     borderColor: '#0063cc',
     fontFamily: [
     
@@ -26,7 +25,7 @@ export const Navigation = (props) => {
 
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
-      <div className="container">
+      <div className="container header-container">
         <div className="navbar-header">
           <button
             type="button"
@@ -41,7 +40,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            GST Billing Software
+          <img src="https://getswipe.in/static/img/logo.svg" width={"10%"}/>
           </a>{" "}
         </div>
 
@@ -71,18 +70,18 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#contact" className="page-scroll" target="_blank">
-                Contact Us
-              </a>
+            <Link to="/contactus" target="_blank">Contact Us</Link>
             </li>
             <li>
               <Link to="/login" target="_blank">Login</Link>
             </li>
   
    <Stack spacing={2} direction="row">
-    <Link to="/sign-up" target="_blank" className="sign-in2" > <BootstrapButton variant="contained"  size="small"  >Sign Up</BootstrapButton></Link>
-     
+    <Link to="/sign-up" target="_blank" className="sign-in2" > <BootstrapButton className="button-btn" variant="contained"  size="small"  >Sign Up</BootstrapButton></Link>
     </Stack> 
+    <Stack spacing={2} direction="row">
+                        <BootstrapButton variant="outlined" size="large"  >Download For Desktop</BootstrapButton>
+                    </Stack>
           </ul>
         </div>
       </div>
@@ -92,7 +91,7 @@ export const Navigation = (props) => {
         </a>
         <div className="whatsup-icon-box">
        <a className="whatsup-icon" data-scroll-class="100vh:active" target="_blank">
-        <i className="fa fa-brands font-bold  fa-whatsapp mr-2 text-lg"></i><span>Help?</span>
+        <span>Help?</span>
     </a>
        </div>
        </div>

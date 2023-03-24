@@ -14,6 +14,7 @@ import LoginPage from './components/Login/LoginPage'
 import SignUp from "./components/Login/LoginPage";
 import Otp from "./components/Login/otpMessage";
 import WelcomePage from "./components/Login/welcome";
+import { Contact } from "./components/contact";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/sign-up" element={<SignUp />} exact />
         <Route path="/otp" element={<Otp />} exact />
         <Route path="/welcome" element={<WelcomePage/>}/>
+        <Route path="/contactus" element={<Contact/>}/>
 
       </Routes>
     </div>

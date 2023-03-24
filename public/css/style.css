@@ -1,6 +1,6 @@
 body,
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif !important;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #302b2b;
@@ -142,8 +142,28 @@ hr {
    padding-left: 1.25rem;
     padding-right: 1.25rem;
 }
-
+.container {
+  width: 100% !important;
+  max-width: 1280px; 
+  padding-left: 46px;
+  padding-right: 46px;
+}
 /* Navigation */
+.header-container {
+  display: flex;
+  align-items: center; 
+}
+.header-container .navbar-header {
+  width: 20%;
+}
+.header-container .navbar-header img {
+  width: 100%; 
+  max-width: 121px;
+}
+.header-container .collapse.navbar-collapse {
+   width: 80%;
+   padding-top: 7px;
+}
 .imgborder{
   border: 4px solid #e8e1e1  ;
   border-radius: 5px;
@@ -151,7 +171,6 @@ hr {
 }
 .sign-in2{
   display: flex;
-  padding-top: 10px;
   margin-left: 10px;
 }
 .btn2{
@@ -185,14 +204,14 @@ nav.navbar.navbar-default.navbar-fixed-top {
 }
 
 #menu.navbar-default .navbar-nav>li>a {
-  
+  font-family: 'Inter';
   text-transform: capitalize;
   color: #000;
   font-size: 16px;
   font-weight: 500;
-  padding: 8px 2px;
+  padding: 0 14px;
   border-radius: 0;
-  margin: 9px 20px 0;
+  margin: 0;
 }
 
 #menu.navbar-default .navbar-nav>li>a:after {
@@ -720,9 +739,14 @@ header .intro-text {
   padding-top: 20px;
 }
 
+
 #contact .text-danger {
   color: #cc0033;
   text-align: left;
+}
+.text-denger2{
+  color: red;
+  font-weight: 200px;
 }
 
 #contact .btn-custom {
@@ -856,6 +880,37 @@ label {
 }
 a.whatsup-icon .fa-whatsapp {
   margin-right: 5px;
+}
+.navbar .button-btn {
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff !important;
+  background: #2754ff;
+  border-radius: 6px;
+  padding: 9px 18px !important;
+  margin-right: 24px;
+}
+.navbar .button-btn:hover {
+  box-shadow: none;
+  background: #2754ff; 
+}
+.navbar-collapse .css-e53awj-MuiStack-root button.MuiButtonBase-root {
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-radius: 6px;
+  border-color: #2754ff;
+  color: #2754ff;
+  padding: 9px 10px;
+}
+
+@media (min-width: 768px) {
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
 }
 
 @media (max-width: 768px) {

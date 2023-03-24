@@ -18,8 +18,8 @@ const Field = ({title,width,height,astrich,textarea,func}) => {
         <div className='fieldAreaContainer'>
             <div className='fieldArea'>
                 {
-                    textarea ? <textarea onChange={func}  className='fieldAreaInput textarea'></textarea> :
-                    <input onChange={func} className='fieldAreaInput' type='text'/>
+                     textarea ? <textarea onChange={func}  className='fieldAreaInput textarea'></textarea> :
+                    <input onChange={func} className='fieldAreaInput' type='text' required/>
                 }
             </div>
         </div>

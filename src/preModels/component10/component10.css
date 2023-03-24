@@ -1,0 +1,15 @@
+
+.comp-4  h2 {
+font-size: 36px;
+font-weight: 800px ;
+}
+
+.img-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-2{
+    padding: 20px 0 60px 0;
+}

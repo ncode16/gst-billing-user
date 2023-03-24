@@ -15,14 +15,16 @@ import Ex3 from './preModels/ex3/ex3';
 import Ex4 from './preModels/ex4/ex4';
 import Ex5 from './preModels/ex5/ex5';
 import Ex6 from './preModels/ex6/ex6';
+import Ex9 from './preModels/ex9/ex9';
+import Footerup from './components/footer.jsx/footer1';
+import Component10 from './preModels/component10/component10';
+import Component11 from './preModels/component11/component11';
 
 ReactDOM.render(
   <React.StrictMode>
-  <Router>
-    
-  <App/>
-  
-  </Router>
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

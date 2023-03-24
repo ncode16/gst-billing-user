@@ -1,0 +1,56 @@
+.tworow{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 0 30 0;
+}
+.tworow.top4 {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 80px;
+
+   }
+   .tworow.top4 .firstrow {
+    width: 50%;   
+    padding: 0 0 0 25px;
+    margin: 0;   
+   }
+   .tworow.top4 .secondrow {
+     width: 45%;  
+     text-align: left;
+      padding: 0 25px 0 0;
+      margin: 0;  
+   }
+
+.secondrow{
+    padding: 70 0 0 100 ;
+}
+
+.heading3{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px;
+}
+.paragraph1{
+    font-weight: 350;
+    font-size: 1.125rem;
+    padding: 10px;
+    line-height: 1.75rem
+}
+.firstrow .mt-2{
+    margin-top: 0.5rem;
+}
+.firstrow .mt-2.text-sm{
+        font-size: 18px;
+        color: #333;
+        font-weight: 700;
+        padding-left: 0 4px 0 15px;
+    
+
+    
+}
+.firstrow .mt-2 .font-normal{
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(23, 23, 23);
+}

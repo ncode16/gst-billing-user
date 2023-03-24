@@ -1,0 +1,31 @@
+.gridtop-1{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+
+.gridsecond{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+
+.firstrow img{
+    max-width: 50%;
+    height: 2.5rem;
+}
+.firstrow .ptag{
+    font-family: kalam;
+    margin-top: 15px;
+}
+
+.text-h3 {
+   color:  rgb(163 163 163);
+   font-size: 0.875rem;
+   line-height: 1.25rem;
+   font-size: 15px;
+}
+
+.text-ui{
+    color: rgb(163 163 163);
+    font-weight: 200;
+    list-style-type: none;
+}
