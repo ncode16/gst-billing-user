@@ -78,7 +78,7 @@
   align-items: center; 
   padding-top: 5px;   
 }
-.tworow.two3 .firstrow .MuiStack-root.css-e53awj-MuiStack-root button.MuiButtonBase-root {
+.tworow.two3 .firstrow .MuiStack-root.css-e53awj-MuiStack-root button.MuiButtonBase-root.signup-btn {
     font-family: 'Inter';
     font-size: 20px;
     font-weight: 700;
