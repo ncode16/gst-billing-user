@@ -9,7 +9,7 @@ export const Features = () => {
   const [feature, setFeature] = useState([])
    
 
-  const url = 'https://gst-billing-backend.onrender.com/api/list/feature';
+  const url = 'http://10.16.16.11:8000/api/list/feature';
 
 
   useEffect(() => {

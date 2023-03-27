@@ -1,13 +1,13 @@
 
 .container2 {
     padding: 40px ;
-    background: url("./india_1.png")center center no-repeat;
-    background-color: #fff; 
+    background: url('../Login/india_1.png') center center no-repeat ;
+    width: 100%;
+    background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 100%;
   }
   
   .center {
@@ -17,11 +17,6 @@
     padding: 30px;
   
   }
-  .resendb {
-    font-size: 12px;
-    padding-top: 15px;
-    color: blue;
-}
   
   .center2 {
     border: 2px solid rgb(180, 178, 176);
@@ -46,25 +41,9 @@
   .form4 {
     font-family: cursive;
     font-size: 25px;
+  
+  
   }
-  button.btnsubmit {
-    background: #2754ff;
-    text-transform: capitalize;
-    font-weight: 600;
-    border-radius: 6px;
-}
-
-button.btnsubmit-otp {
-  background: #2754ff;
-  text-transform: capitalize;
-  font-weight: 600;
-  border-radius: 6px;
-  width: auto;
-  margin: auto;
-  justify-content: center;
-  display: table-footer-group;
-  align-items: center;
-}
   
   .form-center {
     display: flex;
@@ -148,59 +127,9 @@ button.btnsubmit-otp {
     margin-top: 10px;
   }
 
-  .head-tag{
-    font-weight: bold;
-    padding-bottom: 15px;
-    font-size: 20px;
+  .contact-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
   }
-  .center2 .css-binzgt{
-    margin-top: 0;
-  }
-  .center2 .css-binzgt h1 {
-    font-weight: 600;
-    font-size: 26px;
-    color: #000;
-    margin: 0;
-    padding: 10px 0 30px;
-}
-.footer-second {
-  text-align: center;
-}
-
-.footer-second p {
-  font-size: 12px;
-  font-weight: 400;
-  color: #000;
-  padding-bottom: 14px;
-  margin: 0;
-}
-.footer-second button {
-  background: #25d366!important;
-  line-height: 1.5715;
-  position: relative;
-  display: inline-block;
-  font-weight: 400;
-  white-space: nowrap;
-  text-align: center;
-  box-shadow: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  touch-action: manipulation;
-  height: 30px;
-  padding: 1px 15px;
-  font-size: 13px;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  margin: 4px 0;
-}
-.center2 main.MuiContainer-root.MuiContainer-maxWidthXs.css-nzinn5-MuiContainer-root {
-  padding: 0;
-}
-.footer-second {
-  text-align: center;
-  border-top: solid 1px #ccc;
-  padding: 20px 0 30px;
-}

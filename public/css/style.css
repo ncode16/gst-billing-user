@@ -50,7 +50,7 @@ p.intro {
 }
 
 a {
-  color: #608dfd;
+  /* color: #608dfd; */
   font-weight: 400;
 }
 
@@ -76,7 +76,7 @@ hr {
   width: 70px;
   text-align: center;
   position: relative;
-  background: #1e7a46;
+ color: #000;
   margin-bottom: 20px;
   border: 0;
 }
@@ -87,6 +87,10 @@ hr {
   justify-content: center;
 
   
+}
+
+.resendbtn{
+ color: blue;
 }
 
 .faq-section {
@@ -122,11 +126,11 @@ hr {
 
 .contactUs .contactTitle {
   margin: 0;
-  padding: 0;
+  padding-top:10px ;
   font-family: 'DM Sans', sans-serif;
   font-weight: 800;
-  text-transform: capitalize;
-  font-size: 30px;
+ 
+  font-size: 44px;
 }
 .contactUs .contactSubTitles {
   font-size: 22px;
@@ -209,7 +213,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
   font-family: 'DM Sans', sans-serif;
   text-transform: capitalize;
   color: #000;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   padding: 0 14px;
   border-radius: 0;
@@ -707,8 +711,8 @@ header .intro-text {
 
 /* Contact Section */
 #contact {
-  padding: 100px 0 0px;
-  margin-top: 80px;
+  padding: 3px 0 0 0;
+  margin-top: 27px;
   /* background: #f6f6f6;
   color: rgba(255, 255, 255, 0.75); */
 }

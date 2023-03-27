@@ -4,7 +4,7 @@ import axios from "axios";
 
 function ResendOtp() {
     function verifyOtp2() {
-        axios.post('https://gst-billing-backend.onrender.com/api/user/resend-mobile-otp')
+        axios.post('http://10.16.16.11:8000/api/user/resend-mobile-otp')
             .then((res) => {
                 console.log('resended otp', res.data)
 
@@ -15,7 +15,7 @@ function ResendOtp() {
     }
     return (
         <div>
-            <Link onClick={verifyOtp2} className='text-center'>Resend OTP</Link>
+            <Link onClick={verifyOtp2} className='text-center resendbtn'>Resend OTP</Link>
         </div>
     )
 }

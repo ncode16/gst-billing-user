@@ -23,6 +23,11 @@
   padding-left: 0;
   margin: 10px 0 12px;
 }
+.firstrow img {
+  max-width: 50%;
+  width: auto;
+  height: 4.0rem;
+}
 .tworow.two3 .firstrow .heading3 span {
   color: #2754ff;
   padding-left: 8px;   

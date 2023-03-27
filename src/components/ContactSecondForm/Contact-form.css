@@ -1,0 +1,104 @@
+.form-container .submit-form {
+    max-width: 780px;
+    margin: 0 auto;
+    border: 1px solid #ececec;
+    padding: 20px 30px;
+}
+.submit-form .form-box .fields {
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+}
+.submit-form .form-box .field {
+   padding: 3px 0; 
+}
+.submit-form .form-box .fields .field {
+   width: 48%; 
+}
+.submit-form .form-box .field span {
+    font-family: 'DM Sans', sans-serif;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 5px;
+}
+.submit-form .form-box .field input {
+    background: #fcfcfc;
+    padding: 0.46428571em;
+    border-radius: 6px;
+    border: 1px solid #ececec;
+    width: 100%;
+    box-shadow: none !important;
+}
+.submit-form .form-box .field input::focus {
+   border: none; 
+}
+.submit-form .form-box .field textarea {
+    background: #fcfcfc;
+    padding: 0.46428571em;
+    border-radius: 6px;
+    border: 1px solid #ececec;
+    width: 100%;
+    height: 100px;
+    box-shadow: none !important;
+}
+.submit-form .form-box .submit-button button {
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    background-color: #3654ff;
+    border-color: #3654ff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 0;
+    border-radius: 6px;
+}
+.error-para{
+    color: red;
+}
+
+.successmsg {
+	margin-top: 44;
+}
+.ui-message-success{
+    font-size: 15px;
+    margin: auto;
+    padding: 15px;
+    background: #06c167;
+    width: 40%;
+    border: 1px solid #06c167;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0;
+    animation: hideAnimation 0s ease-in 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hideAnimation {
+    to {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        
+    }
+}
+
+.submit-form .form-box .field.text-colom {
+    padding-top: 6px;
+}
+
+@media screen and (max-width: 991px) {
+    .form-container .submit-form {
+      padding: 20px;
+      max-width: 100%;
+    }
+    .submit-form .form-box .fields {
+       flex-wrap: wrap; 
+    }
+    .submit-form .form-box .fields .field {
+        width: 100%; 
+     }   
+ }

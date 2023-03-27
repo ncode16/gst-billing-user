@@ -10,6 +10,11 @@ import './Login.css';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
+import { useRef } from 'react';
+import { margin } from '@mui/system';
+
+
+
 
 
 
@@ -20,31 +25,38 @@ export default function SignIn() {
 
     const [error, setError] = useState('');
     const [error1, setError1] = useState('');
-    const[number , setNumber] =useState(0);
+    const [number, setNumber] = useState(0);
+    const userGenOTP = useRef('');
 
-   
 
 
-    function otpForMobile(e){
+    function otpForMobile(e) {
+       
         setNumber(e.target.value);
     }
-    const phonenumber=()=>{
-       
+    const phonenumber = () => {
+
         var Contact = document.getElementById("contact2").value;
         if (Contact == "" && number.length != 10) {
             setError('Please enter your 10 digit mobile number')
         } else if (number.length != 10) {
             setError1('Please enter your 10 digit mobile number')
-        } else  {
-            navigate('/otp', {state:{MobileNo: number}})
+        } else {
+            navigate('/otp', { state: { MobileNo: number } })
         }
-        axios.post('https://gst-billing-backend.onrender.com/api/user/login', {
+        axios.post('http://10.16.16.11:8000/api/user/login', {
             "mobileNumber": number
         })
-            .then((responce) => 
-           {
+        .then((responce) => {
             const LoginData = responce.data;
-            console.log('Login-Data',LoginData)
+            userGenOTP.current = LoginData.data.user_otp;
+            console.log('Login-Data', LoginData);
+
+            if (!number) {
+                setError ("Mobile is required")
+            } else {
+                navigate('/otp', { state: { MobileNo: number, genOTP: userGenOTP.current } })
+            }
         }
             )
             .catch((e) =>
@@ -56,9 +68,11 @@ export default function SignIn() {
     return (
         <div className='container2'  >
 
-            <div id='para'>
-                <span> GST Billing</span>
-                
+            <div className='text-center'>
+                <span><img src='https://app.getswipe.in/resources/images/logo4.svg' width={"200px"} /> </span>
+            </div>
+            <div className='text-center '>
+                <span><img src='https://app.getswipe.in/resources/images/tensionfree.svg' width={'250px'} height={"20px"} /></span>
             </div>
             <div className='center'>
                 <div className='center2'>
@@ -74,15 +88,10 @@ export default function SignIn() {
                                     alignItems: 'center',
                                 }}
                             >
-                                <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-
-                                </Avatar>
-                                <Typography component="h1" variant="h5"
-                                    sx={{ pb: 5 }}
-                                >
-                                    Welcome to GST Billing
-                                </Typography>
-                                <form>
+                                <strong className='head-tag'>Welcome to Gst Billing</strong>
+                                <img src='https://twemoji.maxcdn.com/v/13.1.0/72x72/1f64f.png' width={"30px"} style={{marginBottom: "50px"}}/>
+                    
+                                <form onSubmit={phonenumber}>
                                     <Box component="form">
                                         <div className='mobileNumberContainer'>
                                             <div className='countryCode'>
@@ -90,7 +99,7 @@ export default function SignIn() {
                                             </div>
                                             <div className='mobileNumber'>
                                                 <input
-                                                 onChange={otpForMobile}
+                                                    onChange={otpForMobile}
                                                     id='contact2'
                                                     type="text"
                                                     name="number"
@@ -105,27 +114,33 @@ export default function SignIn() {
 
                                             </div>
                                         </div>
-                                        <p className='text-denger'>{error?error:error1}</p>
-                                        
-                                        
+                                        <p className='text-denger'>{error ? error : error1}</p>
+
+
 
                                         <div className='otpMessage'>
                                             <p>We will be sending an OTP to this number</p>
                                         </div>
 
                                         <Button
-                                            onClick={phonenumber}
-                                            id='submit'
-                                            type="submit"
+                                               className='btnsubmit'
+                                              onClick={phonenumber}
+                                            type="button"
                                             fullWidth
                                             variant="contained"
                                             sx={{ mt: 3, mb: 2 }}
 
                                         >
-                                            Continue with Mobile Number
+                                            Continue with Mobile Number {'>>'}
                                         </Button>
                                     </Box>
+                                   
                                 </form>
+                              <div className='footer-second'>
+                                <p>By continuing you agree to our <b>Terms & Policy</b></p>
+                                <button>For Help/Support</button>
+                                <p>© 2022 NextSpeed Technologies Private Limited. All rights reserved.</p>
+                              </div>
                             </Box>
                         </Container>
                     </ThemeProvider>
@@ -135,3 +150,6 @@ export default function SignIn() {
 
     );
 }
+
+
+

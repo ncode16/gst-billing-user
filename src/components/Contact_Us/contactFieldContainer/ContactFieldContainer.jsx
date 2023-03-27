@@ -50,7 +50,7 @@ function messagedeatail(e){
          alert('send successfully');
          window.location.reload(true)
       }
-      axios.post('https://gst-billing-backend.onrender.com/api/user/add-contact', {
+      axios.post('http://10.16.16.11:8000/api/user/add-contact', {
             "contactName": name,
              "contactPhone":phone ,
              "contactMessage": message,

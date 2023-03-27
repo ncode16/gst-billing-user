@@ -36,7 +36,7 @@ export default function SignUp() {
         if (Contact == "") {
             setError('Please enter your 10 digit mobile number')
         } else if (Contact.length !== 10) {
-            setError1('Please enter your 10 digit mobile number')
+            setError('Please enter your 10 digit mobile number')
         } else {
             navigate('/otp')
         }
