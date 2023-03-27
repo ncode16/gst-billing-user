@@ -53,7 +53,7 @@ export default function SignIn() {
             console.log('Login-Data', LoginData);
 
             if (!number) {
-                setError ("Mobile is required")
+                setError ("Mobile number is required")
             } else {
                 navigate('/otp', { state: { MobileNo: number, genOTP: userGenOTP.current } })
             }
