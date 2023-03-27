@@ -8,7 +8,7 @@ const Component12= () => {
   <div>
             <div className="tworow top4 home-review">
             <div className="secondrow">
-                    <img className="imgborder" src="https://getswipe.in/static/img/customer%20review.png" width={'400px'} alt="img2" />
+                    <img className="imgborder" src="https://getswipe.in/static/img/illustrations/customer_review.webp" width={'400px'} alt="img2" />
                 </div>
                 <div className="firstrow">
                 <div className="review-text-box">

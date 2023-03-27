@@ -40,7 +40,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-          <img src="https://getswipe.in/static/img/logo.svg" width={"10%"}/>
+          <img src="https://getswipe.in/static/img/brand_logo.svg" width={"10%"}/>
           </a>{" "}
         </div>
 
