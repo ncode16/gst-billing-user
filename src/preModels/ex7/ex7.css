@@ -27,6 +27,7 @@
   max-width: 50%;
   width: auto;
   height: 4.0rem;
+  margin-top: 19px;
 }
 .tworow.two3 .firstrow .heading3 span {
   color: #2754ff;
@@ -78,7 +79,7 @@
   align-items: center; 
   padding-top: 5px;   
 }
-.tworow.two3 .firstrow .MuiStack-root.css-e53awj-MuiStack-root button.MuiButtonBase-root.signup-btn {
+.tworow.two3 .firstrow .MuiStack-root.css-e53awj-MuiStack-root button.MuiButtonBase-root {
     font-family: 'Inter';
     font-size: 20px;
     font-weight: 700;
