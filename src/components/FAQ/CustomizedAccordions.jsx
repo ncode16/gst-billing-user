@@ -64,7 +64,7 @@ export default function CustomizedAccordions() {
     color: "grey"
   }
   const [faq, setFaq] = useState([])
-  const url = 'http://10.16.16.11:8000/api/list/faq';
+  const url = 'https://gst-billing-backend.onrender.com/api/list/faq';
   useEffect(() => {
     axios.get(`${url}`)
       .then((res) => {

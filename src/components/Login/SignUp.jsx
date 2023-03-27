@@ -40,7 +40,7 @@ export default function SignUp() {
         } else {
             navigate('/otp')
         }
-        axios.post('http://10.16.16.11:8000/api/user/login', {
+        axios.post('https://gst-billing-backend.onrender.com/api/user/login', {
             "mobileNumber": number
         })
             .then((res) => console.log('Sing_up-data', res.data))

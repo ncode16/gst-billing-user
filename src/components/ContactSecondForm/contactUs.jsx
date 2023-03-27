@@ -53,7 +53,7 @@ const ContactForm = () => {
       if (!values.message) {
         errors.message = "Username is required!";
       }
-      axios.post('http://10.16.16.11:8000/api/user/add-contact', {
+      axios.post('https://gst-billing-backend.onrender.com/api/user/add-contact', {
         "contactName": formValues.username,
         "contactPhone": formValues.phone,
         "contactMessage": formValues.message,
