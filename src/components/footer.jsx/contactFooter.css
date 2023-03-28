@@ -63,6 +63,11 @@
 .col-md-6.contact-footer-right {
     padding-top: 15px;
 }
-
+.contact-footer-left span{
+    font-size: 13px;
+}
+.col-md-6.contact-footer-left {
+    text-align: center;
+}
 }
 
