@@ -12,7 +12,7 @@ const ContactForm = () => {
 
   const onClickButton = () => {
     if ( isSubmit) {
-      setTimeout(() => { window.location.reload() }, 5000);
+      setTimeout(() => { window.location.reload() }, 3000);
     }
    }
 
