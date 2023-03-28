@@ -27,7 +27,6 @@
   max-width: 50%;
   width: auto;
   height: 4.0rem;
-  margin-top: 19px;
 }
 .tworow.two3 .firstrow .heading3 span {
   color: #2754ff;
@@ -65,9 +64,9 @@
 }
 .para-tag{
     font-size: 14px;
-    padding: 1px;
+    padding: 2px;
     background: #06c167;
-    width: 30%;
+    width: 35%;
     border: 1px solid #06c167;
     border-radius: 20px;
     color: #ffffff;
@@ -92,7 +91,6 @@
     box-shadow: none; 
     margin: 0 10px 0 0;
 }
-
 
 @media screen and (max-width: 1179px) {  
     .para-tag {

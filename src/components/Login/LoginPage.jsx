@@ -28,7 +28,9 @@ export default function SignIn() {
     const [number, setNumber] = useState(0);
     const userGenOTP = useRef('');
 
-
+    const [btnSubmitError, setBtnSubmitError] = useState({
+        border: "1px solid lightgrey"
+    })
 
     function otpForMobile(e) {
        
@@ -37,12 +39,21 @@ export default function SignIn() {
     const phonenumber = () => {
 
         var Contact = document.getElementById("contact2").value;
-        if (Contact == "" && number.length != 10) {
-            setError('Please enter your 10 digit mobile number')
-        } else if (number.length != 10) {
-            setError1('Please enter your 10 digit mobile number')
+        if (Contact == "" || number.length != 10) {
+            setError(
+                <>
+                    <span>Please enter your 10 digit mobile number</span>
+                    <span>Field validation error for mobile</span>
+                </>
+            )
+            setBtnSubmitError({
+                border: "1px solid red"
+            })
         } else {
             navigate('/otp', { state: { MobileNo: number } })
+            setBtnSubmitError({
+                border: "1px solid lightgrey"
+            })
         }
         axios.post('https://gst-billing-backend.onrender.com/api/user/login', {
             "mobileNumber": number
@@ -53,7 +64,7 @@ export default function SignIn() {
             console.log('Login-Data', LoginData);
 
             if (!number) {
-                setError ("Mobile number is required")
+                setError ("Mobile is required")
             } else {
                 navigate('/otp', { state: { MobileNo: number, genOTP: userGenOTP.current } })
             }
@@ -88,13 +99,15 @@ export default function SignIn() {
                                     alignItems: 'center',
                                 }}
                             >
-                                <strong className='head-tag'>Welcome to Gst Billing</strong>
+                                <strong className='head-tag'>
+                                    <span className='textFont head'>Welcome to Gst Billing</span>
+                                    </strong>
                                 <img src='https://twemoji.maxcdn.com/v/13.1.0/72x72/1f64f.png' width={"30px"} style={{marginBottom: "50px"}}/>
                     
                                 <form onSubmit={phonenumber}>
                                     <Box component="form">
                                         <div className='mobileNumberContainer'>
-                                            <div className='countryCode'>
+                                            <div className='countryCode' style={btnSubmitError}>
                                                 <div>+91</div>
                                             </div>
                                             <div className='mobileNumber'>
@@ -105,6 +118,7 @@ export default function SignIn() {
                                                     name="number"
                                                     maxLength='10'
                                                     autoComplete="number"
+                                                    style={btnSubmitError}
                                                     placeholder="10 digit mobile number"
                                                     fullWidth
                                                     autoFocus
@@ -114,24 +128,24 @@ export default function SignIn() {
 
                                             </div>
                                         </div>
-                                        <p className='text-denger'>{error ? error : error1}</p>
+                                        <p className='text-denger textFont'>{error ? error : error1}</p>
 
 
 
                                         <div className='otpMessage'>
-                                            <p>We will be sending an OTP to this number</p>
+                                            <p className='textFont otp'>We will be sending an OTP to this number</p>
                                         </div>
 
                                         <Button
-                                               className='btnsubmit'
-                                              onClick={phonenumber}
+                                            className='btnsubmit'
+                                            onClick={phonenumber}
                                             type="button"
                                             fullWidth
                                             variant="contained"
                                             sx={{ mt: 3, mb: 2 }}
 
                                         >
-                                            Continue with Mobile Number {'>>'}
+                                            <span className='textFont button'>Continue with Mobile Number {'>>'}</span>
                                         </Button>
                                     </Box>
                                    

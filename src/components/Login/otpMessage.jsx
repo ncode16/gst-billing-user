@@ -317,15 +317,14 @@ export default function Otp() {
                                     alignItems: 'center',
                                 }}
                             >
-                                <strong className='head-tag'>Welcome to Gst Billing</strong>
+                                <strong className='head-tag'>
+                                    <span className='textFont head two'>Welcome to Gst Billing</span>
+                                </strong>
                                 <img src='https://twemoji.maxcdn.com/v/13.1.0/72x72/1f64f.png' width={"30px"} style={{marginBottom: "50px"}}/>
                     
                                 
                                     <Box component="form">
                                         <div className='mobileNumberContainer'>
-                                            <div className='countryCode'>
-                                                <div>+91</div>
-                                            </div>
                                             <div className='mobileNumber'>
                                             <input
                                                  onChange={otpForM}
@@ -345,7 +344,7 @@ export default function Otp() {
 
 
                                         <div className='otpMessage'>
-                                        <p>OTP send to the given number. <Link onClick={() => navigate(-1)} >Edit</Link> </p>
+                                        <p className='textFont otp two'>OTP send to the given number. <Link onClick={() => navigate(-1)} >Edit</Link> </p>
                                      </div>
 
                                         <Button
@@ -357,7 +356,7 @@ export default function Otp() {
                                      sx={{ mt: 3, mb: 2 }}
                                     
                                     >
-                                            Confirm OTP
+                                            <span className='textFont button two'>Confirm OTP</span>
                                         </Button>
                                        <div className='resendb'>
                                        <ResendOtp />

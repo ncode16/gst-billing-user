@@ -102,3 +102,17 @@
         width: 100%; 
      }   
  }
+
+ @media screen and (max-width:1025px){
+    #submitmsg{
+        width: 400px;
+    }
+ }
+
+ @media screen and (max-width:400px){
+    #submitmsg{
+        width: 280px;
+    }
+ }
+
+ 

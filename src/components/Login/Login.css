@@ -111,6 +111,7 @@ button.btnsubmit-otp {
   .mobileNumberContainer .countryCode{
     width: 20%;
   }
+
   .btn{
     text-transform: none;
   }
@@ -130,6 +131,17 @@ button.btnsubmit-otp {
 
   .mobileNumberContainer .mobileNumber{
     width: 100%;
+  }
+
+  .mobileNumber input{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  @media screen and (max-width:900px){
+    .mobileNumberContainer .countryCode, .mobileNumberContainer .mobileNumber{
+      height: 35px;
+    }
   }
 
   .mobileNumberContainer .mobileNumber input[type="text"]{
@@ -203,4 +215,159 @@ button.btnsubmit-otp {
   text-align: center;
   border-top: solid 1px #ccc;
   padding: 20px 0 30px;
+}
+
+.text-denger.textFont{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#Otp1{
+  width: 60vh;
+  height: 35px;
+  border: 1px solid grey;
+  border-radius: 6px;
+}
+
+@media screen and (min-width:500px) and (max-width:800px){
+  .textFont.otp.two{
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 525px){
+  .textFont.head{
+    font-size: 20px;
+  }
+  .textFont{
+    font-size: 15px;
+  }
+  .text-denger.textFont{
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .textFont{
+    font-size: 13px;
+  }
+  .textFont.otp.two{
+    font-size: 13px !important;
+    font-weight: normal;
+  }
+  button.btnsubmit{
+    width: 280px;
+    height: 30px;
+  }
+  button.btnsubmit-otp{
+    width: 135px;
+    height: 35px;
+    margin: 0 80px;
+  }
+  .textFont.otp.two{
+    margin-top: 25px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .textFont.head{
+    font-size: 15px;
+  }
+  .textFont{
+    font-size: 12px;
+  }
+  .textFont.otp.two{
+    font-weight: normal;
+  }
+  button.btnsubmit{
+    width: 280px;
+    height: 30px;
+  }
+  .textFont.otp.two{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .textFont{
+    font-size: 8px;
+  }
+  .textFont.otp.two{
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 400px){
+  .textFont.head{
+    font-size: 13px;
+  }
+  .textFont.head.two{
+    font-size: 18px;
+  }
+  .textFont.button{
+    font-size: 11px;
+    font-weight: 600;
+  }
+  button.btnsubmit{
+    width: 250px;
+    height: 30px;
+  }
+  .textFont.otp{
+    font-size: 12px;
+  }
+  .text-denger.textFont{
+    margin-top: 20px;
+  }
+  button.btnsubmit-otp{
+    width: 115px;
+    height: 35px;
+    margin: 0 50px;
+  }
+  .textFont.otp.two{
+    font-size: 12px !important;
+  }
+  #Otp1{
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 350px){
+  .textFont.head{
+    font-size: 15px;
+  }
+  .textFont.otp{
+    font-size: 10px;
+  }
+  .textFont.otp.two{
+    padding-top: 10px;
+  }
+  .text-denger.textFont{
+    margin-top: 20px;
+  }
+  button.btnsubmit{
+    width: 225px;
+    height: 30px;
+  }
+  .textFont.button{
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .textFont.button.two{
+    font-size: 12px;
+    font-weight: bold;
+  }
+  button.btnsubmit-otp{
+    width: 115px;
+    height: 35px;
+    margin: 0 50px;
+  }
+  .textFont.otp.two{
+    font-size: 12px !important;
+  }
+  #Otp1{
+    width: auto;
+  }
 }

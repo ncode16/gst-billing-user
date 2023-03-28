@@ -43,12 +43,7 @@ const ContactForm = () => {
       if (!values.phone) {
         errors.phone = "Mobile is required";
       } else if (values.phone.length > 10) {
-        errors.password = "write only 10 digit";
-      }
-      if (!values.email) {
-        errors.email = "Email is required!";
-      } else if (!regex.test(values.email)) {
-        errors.email = "This is not a valid email format!";
+        errors.phone = "Please enter only 10 digit number";
       }
       if (!values.message) {
         errors.message = "Message is required!";
@@ -112,7 +107,7 @@ const ContactForm = () => {
                              value={formValues.phone}
                              onChange={handleChange}
                             />
-                            
+                            <p className="error-para">{formErrors.phone}</p>
                         </div>
                         </div>
                         <div className="fields">
@@ -134,7 +129,7 @@ const ContactForm = () => {
                         </div>
                         <div className="field down-colom">
                             <div className="email-colom">
-                                <span>*Email</span>
+                                <span>Email</span>
                                 <input
                                  type="email"
                                  name="email"
@@ -142,7 +137,6 @@ const ContactForm = () => {
                                  onChange={handleChange}
                                 
                                 />
-                                  <p className="error-para">{formErrors.email}</p>
                             </div>
                             <div className=" field text-colom">
                                 <span>*Message</span>

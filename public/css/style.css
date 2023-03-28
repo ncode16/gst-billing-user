@@ -164,7 +164,7 @@ hr {
 }
 .header-container .navbar-header img {
   width: 100%; 
-  max-width: 85px;
+  max-width: 121px;
 }
 .header-container .collapse.navbar-collapse {
    width: 80%;
@@ -1006,7 +1006,6 @@ a.whatsup-icon .fa-whatsapp {
 .footer-logo .firstrow {
 	padding: 0;
 	margin: 0;
-  width: 216px;
 }
 .footer-logo .ptag {
 	font-family: 'DM Sans', sans-serif !important;

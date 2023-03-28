@@ -36,16 +36,6 @@ export const Gallery = () => {
           <h2>Awesome Invoice Formats 🚀 🎉</h2>
         </div>
         <div id="row">
-          {/* {  image&& image.length > 0 && image.map((d, i) => {
-            return(
-                <div key={`${d.name}-${i}`} className="col-md-4 col-sm-6 team">
-                  <div className="thumbnail">
-                    {" "}
-                    <img src={d.template_image} alt="..." className="team-img" />
-                  </div>
-                </div>
-           ) })
-            } */}
           <div className="col-md-4 col-sm-6 team">
             <div className="thumbnail">
               {" "}
@@ -82,6 +72,16 @@ export const Gallery = () => {
               <img src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/template/image-1679325932334.jpeg" alt="..." className="team-img" />
             </div>
           </div>
+          {/* {  image&& image.length > 0 && image.map((d, i) => {
+            return(
+                <div key={`${d.name}-${i}`} className="col-md-4 col-sm-6 team">
+                  <div className="thumbnail">
+                    {" "}
+                    <img src={d.template_image} alt="..." className="team-img" />
+                  </div>
+                </div>
+           ) })
+            } */}
         </div>
       </div>
     </div>

@@ -26,13 +26,13 @@ const Ex7 = () => {
  <div className="top2" >
 <div className="tworow two3">
     <div className="firstrow">
-        <p className="para-tag">100% Safe & Secure!</p>
+        <p className="para-tag"><i className="fa fa-check-circle mr-3"></i>100% Safe & Secure!</p>
         <h3 className='heading3' >Simple<span>GST Billing</span></h3>
         <p className="paragraph1">Create Invoices, Purchases & Quotations in less than 10 seconds. Share on WhatsApp with payment links and get paid faster!</p>
        
        <div className="sign-google-play">
         <Stack spacing={2} direction="row">
-            <BootstrapButton variant="contained" size="large">Sign Up</BootstrapButton>
+            <BootstrapButton variant="contained" size="large"  >Sign Up</BootstrapButton>
         </Stack>
        <img src="https://getswipe.in/static/img/google-play-badge.png"/>
        </div>

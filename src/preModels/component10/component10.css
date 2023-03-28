@@ -14,3 +14,15 @@ font-weight: 800px ;
     padding: 20px 0 60px 0;
 }
 
+.GoogleAndSignUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+@media screen and (max-width: 405px){
+    .signUpText{
+        font-size: 12px;
+    }
+}

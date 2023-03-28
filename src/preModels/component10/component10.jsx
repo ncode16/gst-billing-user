@@ -13,6 +13,7 @@ const Component10 = () => {
         borderColor: '#0063cc',
         borderRadius: 10,
         marginTop: 20,
+        height: "53px",
         fontFamily: [
             '"Segoe UI"',
             'Roboto',
@@ -28,13 +29,17 @@ const Component10 = () => {
                 <h2>Get started in less than 60 seconds</h2>
             </div>
            <div className="img-2">
-           <div className="google-play-icon">
+           <div className="google-play-icon GoogleAndSignUp">
                 <a><img src="https://getswipe.in/static/img/google-play-badge.png"  alt="playstore img" /></a>
             </div>
-            <div className="sign-up-btn">
-            <span><Stack spacing={2} direction="row">
-                    <BootstrapButton variant="contained" size="large">Sign Up For Free</BootstrapButton>
-                </Stack></span>
+            <div className="sign-up-btn GoogleAndSignUp">
+                <span>
+                    <Stack spacing={2} direction="row">
+                        <BootstrapButton variant="contained" size="large">
+                            <span className="signUpText">Sign Up For Free</span>
+                        </BootstrapButton>
+                    </Stack>
+                </span>
             </div>
            </div>
            </div>
