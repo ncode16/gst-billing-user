@@ -166,6 +166,11 @@ export default function Otp() {
     const [otp, setOtp] = useState(0);
     const [data1, setData] = useState('');
     const location = useLocation();
+    const [error, setError] = useState('');
+
+    const [otpField, setOTPField] = useState({
+        border: "1px solid lightgrey"
+    })
    
     const navigate = useNavigate();
 
@@ -173,7 +178,7 @@ export default function Otp() {
     function VerifyOtp() {
 
       
-            axios.post('https://gst-billing-backend.onrender.com/api/user/verify-mobile-otp', {
+            axios.post('http://10.16.16.11:8000/api/user/verify-mobile-otp', {
                 mobileNumber: location.state.MobileNo,
                 mobileOtpValue: location.state.genOTP
 
@@ -185,8 +190,12 @@ export default function Otp() {
                         navigate('/welcome')
                     }
                     else {
-                     alert('wrong otp')
-                       
+                        setError(
+                            <span>OTP mis-match. Please enter correct OTP</span>
+                        );
+                        setOTPField({
+                            border: "1px solid red"
+                        })
                     }
                 }
                 )
@@ -330,7 +339,8 @@ export default function Otp() {
                                                  onChange={otpForM}
                                                  type="text"
                                                  id='Otp1'
-                                                 maxLength='4'
+                                                 maxLength='6'
+                                                 style={otpField}
                                                  autoComplete="number"
                                                  placeholder="4 Digit OTP"
                                                  fullWidth
@@ -340,6 +350,7 @@ export default function Otp() {
                                             />
                                             </div>
                                         </div>
+                                        <p className='text-denger textFont'>{error ? error : ''}</p>
                                     
 
 
@@ -348,14 +359,13 @@ export default function Otp() {
                                      </div>
 
                                         <Button
-                                         className='btnsubmit-otp'
-                                       onClick={VerifyOtp}
-                                        type="button"
-                                     fullWidth
-                                    variant="contained"
-                                     sx={{ mt: 3, mb: 2 }}
-                                    
-                                    >
+                                            className='btnsubmit-otp'
+                                            onClick={VerifyOtp}
+                                            type="button"
+                                            fullWidth
+                                            variant="contained"
+                                            sx={{ mt: 3, mb: 2 }}
+                                        >
                                             <span className='textFont button two'>Confirm OTP</span>
                                         </Button>
                                        <div className='resendb'>

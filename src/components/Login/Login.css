@@ -225,21 +225,20 @@ button.btnsubmit-otp {
 }
 
 #Otp1{
-  width: 60vh;
   height: 35px;
   border: 1px solid grey;
   border-radius: 6px;
 }
 
-#download-desktop {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: capitalize;
-  border-radius: 6px;
-  border-color: #2754ff;
-  color: #2754ff;
-  padding: 9px 10px;
+.submitButtonContainer{
+  position: relative;
+  width: 100%;
+  border: 1px solid red;
+}
+
+#Otp1{
+  margin-left: -10%;
+  width: 120%;
 }
 
 @media screen and (min-width:500px) and (max-width:800px){
@@ -275,7 +274,7 @@ button.btnsubmit-otp {
   button.btnsubmit-otp{
     width: 135px;
     height: 35px;
-    margin: 0 80px;
+    margin: 0 50px;
   }
   .textFont.otp.two{
     margin-top: 25px;
@@ -340,9 +339,6 @@ button.btnsubmit-otp {
   .textFont.otp.two{
     font-size: 12px !important;
   }
-  #Otp1{
-    width: auto;
-  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 350px){
@@ -377,8 +373,5 @@ button.btnsubmit-otp {
   }
   .textFont.otp.two{
     font-size: 12px !important;
-  }
-  #Otp1{
-    width: auto;
   }
 }
