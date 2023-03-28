@@ -1310,6 +1310,12 @@ h4.partnered_h2 {
   .row.feature-tags {
     margin: 0;
   }
+  
+  #contact-desktop {
+    width: 100%;
+
+    margin-bottom: 10px;
+}
 }
 
 
