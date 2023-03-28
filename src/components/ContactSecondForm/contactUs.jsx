@@ -17,7 +17,7 @@ const ContactForm = () => {
    }
 
 
-    const initialValues = { username: "", phone: "+91", country:"india" , city:"city", email:"", message: "" };
+    const initialValues = { username: "", phone: "", country:"" , city:"", email:"", message: "" };
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
@@ -38,7 +38,7 @@ const ContactForm = () => {
       const errors = {};
       const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
       if (!values.username) {
-        errors.username = "Username is required!";
+        errors.username = "Name is required!";
       }
       if (!values.phone) {
         errors.phone = "Mobile is required";
@@ -51,7 +51,7 @@ const ContactForm = () => {
         errors.email = "This is not a valid email format!";
       }
       if (!values.message) {
-        errors.message = "Username is required!";
+        errors.message = "Message is required!";
       }
       axios.post('https://gst-billing-backend.onrender.com/api/user/add-contact', {
         "contactName": formValues.username,
