@@ -80,7 +80,7 @@ export const Navigation = (props) => {
     <Link to="/sign-up" target="_blank" className="sign-in2" > <BootstrapButton className="button-btn" variant="contained"  size="small"  >Sign Up</BootstrapButton></Link>
     </Stack> 
     <Stack spacing={2} direction="row">
-                        <BootstrapButton variant="outlined" size="large"  >Download For Desktop</BootstrapButton>
+                        <BootstrapButton variant="outlined" size="large" id="download-desktop" >Download For Desktop</BootstrapButton>
                     </Stack>
           </ul>
         </div>
