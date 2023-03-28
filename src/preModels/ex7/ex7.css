@@ -92,6 +92,20 @@
     margin: 0 10px 0 0;
 }
 
+#sign-up {
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-radius: 6px;
+  border-color: #2754ff;
+  color: #fff;
+  padding: 8px 23px;
+  background: #2754ff !important;
+  box-shadow: none;
+  margin: 0 10px 0 0;
+}
+
 @media screen and (max-width: 1179px) {  
     .para-tag {
       width: 100%;

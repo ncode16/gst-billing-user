@@ -32,7 +32,7 @@ const Ex7 = () => {
        
        <div className="sign-google-play">
         <Stack spacing={2} direction="row">
-            <BootstrapButton variant="contained" size="large"  >Sign Up</BootstrapButton>
+            <BootstrapButton variant="contained" size="large" id="sign-up">Sign Up</BootstrapButton>
         </Stack>
        <img src="https://getswipe.in/static/img/google-play-badge.png"/>
        </div>

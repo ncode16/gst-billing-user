@@ -134,6 +134,26 @@
     height: 400px;
   }
 
+  #contact-desktop{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 6px;
+    border-color: #2754ff;
+    color: #2754ff;
+    padding: 9px 10px;
+  }
+
+  #contact-signup{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 6px;
+    border-color: #2754ff;
+  }
+
   @media screen and (max-width: 600px) {
     .center2 {
       padding: 30px 0;

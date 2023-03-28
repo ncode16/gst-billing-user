@@ -68,10 +68,10 @@ const NavBar2 = (props) => {
                         </li>
 
                         <Stack spacing={2} direction="row">
-                            <Link to="/sign-up" target="_blank" className="sign-in2" > <BootstrapButton className="button-btn" variant="contained" size="small"  >Sign Up</BootstrapButton></Link>
+                            <Link to="/sign-up" target="_blank" className="sign-in2" id="contact-signup"> <BootstrapButton className="button-btn" variant="contained" size="small"  >Sign Up</BootstrapButton></Link>
                         </Stack>
                         <Stack spacing={2} direction="row">
-                            <BootstrapButton variant="outlined" size="large"  >Download For Desktop</BootstrapButton>
+                            <BootstrapButton variant="outlined" size="large" id="contact-desktop">Download For Desktop</BootstrapButton>
                         </Stack>
                     </ul>
                 </div>
