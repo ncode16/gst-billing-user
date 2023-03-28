@@ -33,9 +33,36 @@
 .contact-footer-right a {
     margin: 0 15px;
 }
-
-
 .contact-footer .active a {
     color: #131313;
+}
+@media (max-width: 768px) {
+  .contactUs .contactTitle {
+    font-size: 32px;
+    line-height: 1.4; 
+  }
+  .contactDetails {
+    width: 100%;
+    padding: 40px; 
+  }
+  .contactDetails .DetailsContainer {
+    padding: 0 20px;
+}
+.DetailsContainer div:nth-child(1) {
+    font-size: 28px;
+}
+.DetailsContainer div:nth-child(3), 
+.DetailsContainer div:nth-child(4) {
+    text-align: center;
+    padding: 0 20px;
+}
+.contact-footer-left img {
+    display: block;
+    margin: 0 auto 10px;
+}
+.col-md-6.contact-footer-right {
+    padding-top: 15px;
+}
+
 }
 

@@ -40,11 +40,11 @@ export const Features = () => {
               <div>{d.feature_name}</div>
             ))
           } */}
-          <div class="row">
+          <div class="row feature-tags">
   <div className="col feature6">{
             feature&& feature.length > 0 && feature.map((d,i)=>(
              <div className="feature-test">
-              <span className="feature-3">{d.feature_name}</span>
+              <span className="feature-3"><p>{d.feature_name}</p></span>
              </div>
             ))
           }</div>

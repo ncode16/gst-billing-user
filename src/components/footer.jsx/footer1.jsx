@@ -7,7 +7,7 @@ const Footerup=()=>{
   <div className="gridtop-1 footer-main">
             <div className="footer-logo">
                 <div className="firstrow">
-                    <img src="https://getswipe.in/static/img/logo.svg"width={"100%"}/>
+                    <img src="https://getswipe.in/static/img/brand_logo.svg"width={"100%"}/>
                     <p className="ptag">Ab Business Karo, Tension Free!</p>
                     <div className="footer-social">
                    <a href="https://www.facebook.com/getswipeindia" target="_blank" className="text-gray-500 hover:text-gray-900">

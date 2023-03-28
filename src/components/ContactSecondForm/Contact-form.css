@@ -73,7 +73,7 @@
     color: #ffffff;
     text-align: center;
     margin-bottom: 0;
-    animation: hideAnimation 0s ease-in 2s;
+    animation: hideAnimation 0s ease-in 5s;
     animation-fill-mode: forwards;
 }
 

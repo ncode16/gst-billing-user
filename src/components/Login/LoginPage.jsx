@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './Login.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 import { useRef } from 'react';
@@ -80,7 +80,7 @@ export default function SignIn() {
         <div className='container2'  >
 
             <div className='text-center'>
-                <span><img src='https://app.getswipe.in/resources/images/logo4.svg' width={"200px"} /> </span>
+                <span><Link to="/" target='_blank'><img src='https://app.getswipe.in/resources/images/logo4.svg' width={"200px"} /></Link> </span>
             </div>
             <div className='text-center '>
                 <span><img src='https://app.getswipe.in/resources/images/tensionfree.svg' width={'250px'} height={"20px"} /></span>

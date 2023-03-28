@@ -394,3 +394,10 @@ button.btnsubmit-otp {
     font-size: 12px !important;
   }
 }
+
+@media (max-width: 1279px) {
+  #menu.navbar-default .navbar-nav>li>a {
+    padding: 0 8px; 
+  }
+  
+ }

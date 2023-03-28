@@ -398,8 +398,12 @@ header .intro-text {
   width: 33.33%; 
   padding: 10px;
 } 
-
-.feature-3{
+.feature-3 {
+  display: flex;
+  align-items: center; 
+  position: relative;
+}
+.feature-3 p {
  font-family: 'DM Sans', sans-serif;
  line-height: 24px;
  padding-left: 35px;
@@ -1303,5 +1307,9 @@ h4.partnered_h2 {
   #about img {
     margin: 50px 0;
   }
+  .row.feature-tags {
+    margin: 0;
+  }
 }
+
 
