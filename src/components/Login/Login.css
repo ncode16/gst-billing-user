@@ -241,6 +241,19 @@ button.btnsubmit-otp {
   width: 120%;
 }
 
+#download-desktop {
+  border-color: #2754ff;
+  border-radius: 6px;
+  color: #2754ff;
+  font-family: DM Sans,sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 9px 10px;
+  text-transform: capitalize;
+  width: 100%;
+  margin: 5px 0 10px;
+}
+
 @media screen and (min-width:500px) and (max-width:800px){
   .textFont.otp.two{
     padding-top: 10px;
