@@ -47,5 +47,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.16"
+  }
 }

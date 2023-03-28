@@ -5,6 +5,7 @@ import { styled } from '@mui/material/styles';
 
 import {Link} from 'react-router-dom'
 import './Login/Login.css';
+import $ from 'jquery';
 
 export const Navigation = (props) => {
   const BootstrapButton = styled(Button)({
@@ -23,6 +24,17 @@ export const Navigation = (props) => {
     ]
   })
 
+         $(window).scroll(function(){
+             if ($(window).scrollTop() >= 700) {
+                 $('.scroll-icon').addClass('fixed-header');
+              
+             }
+             else {
+                 $('.scroll-icon').removeClass('fixed-header');
+                 
+             }
+         });  
+    
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container header-container">
@@ -86,8 +98,8 @@ export const Navigation = (props) => {
         </div>
       </div>
       <div>
-        <a className="back-to-top" href="#top">
-          <i className='fa fa-arrow-up fa-lg mt-2 mb-0 pb-0'></i>
+        <a className="back-to-top scroll-icon"  href="#top">
+          <i className='fa fa-arrow-up fa-lg mt-2 mb-0 pb-0' ></i>
         </a>
         <div className="whatsup-icon-box">
        <a className="whatsup-icon" data-scroll-class="100vh:active" target="_blank">

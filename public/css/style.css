@@ -906,7 +906,9 @@ a.whatsup-icon .fa-whatsapp {
   border-radius: 6px;
   padding: 9px 18px !important;
   margin-right: 24px;
+  width: 100%;
 }
+
 .navbar .button-btn:hover {
   box-shadow: none;
   background: #2754ff; 
@@ -1109,7 +1111,13 @@ h4.partnered_h2 {
   #menu.navbar-default .navbar-nav > li > a {
     font-size: 14px;
     padding: 0 10px; 
+    
   }
+  .navbar .button-btn {
+    margin-right: 28px;
+    width: 100% !important;
+    margin: 5px 0 10px;
+}
   .navbar-collapse .css-e53awj-MuiStack-root button.MuiButtonBase-root {
     font-size: 13px; 
     padding: 5px 12px !important;
@@ -1173,6 +1181,7 @@ h4.partnered_h2 {
     width: 100%;
     margin: 5px 0 10px;
   }
+
   .navbar-default .navbar-toggle {
     margin-right: 0; 
   }

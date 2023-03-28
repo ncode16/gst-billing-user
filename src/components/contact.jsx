@@ -8,6 +8,7 @@ import Footer from "./footer.jsx/footer";
 import ContactFooter from "./footer.jsx/contactFooter";
 
 export const Contact = (props) => {
+
   return (
     <div id="contact" >
     <NavBar2/>

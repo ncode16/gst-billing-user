@@ -2,8 +2,9 @@ import React from "react";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
-import { Link,useNavigate} from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './contactnavbar.css';
+import $ from 'jquery';
 
 const NavBar2 = (props) => {
     const BootstrapButton = styled(Button)({
@@ -22,8 +23,18 @@ const NavBar2 = (props) => {
         ]
     })
     const navigate = useNavigate();
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 700) {
+            $('.scroll-icon').addClass('fixed-header');
+
+        }
+        else {
+            $('.scroll-icon').removeClass('fixed-header');
+
+        }
+    });
     return (
-        <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+        <nav id="menu" className="navbar navbar-default navbar-fixed-top fixed-top">
             <div className="container header-container">
                 <div className="navbar-header">
                     <button
@@ -49,13 +60,13 @@ const NavBar2 = (props) => {
                 >
                     <ul className="nav navbar-nav navbar-right">
                         <li>
-                            <Link  to="/">Feature</Link>
+                            <Link to="/">Feature</Link>
                         </li>
                         <li>
-                            <Link  to="/" >Template</Link>
+                            <Link to="/" >Template</Link>
                         </li>
                         <li>
-                            <Link  to="/">Tutorial</Link>
+                            <Link to="/">Tutorial</Link>
                         </li>
                         <li>
                             <Link to="/">FAQs</Link>
@@ -77,8 +88,8 @@ const NavBar2 = (props) => {
                 </div>
             </div>
             <div>
-                <a className="back-to-top" href="#top">
-                    <i className='fa fa-arrow-up fa-lg mt-2 mb-0 pb-0'></i>
+                <a className="back-to-top scroll-icon" href="#top">
+                    <i className='fa fa-arrow-up fa-lg mt-2 mb-0 pb-0' ></i>
                 </a>
                 <div className="whatsup-icon-box">
                     <a className="whatsup-icon" data-scroll-class="100vh:active" target="_blank">

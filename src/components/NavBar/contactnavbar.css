@@ -1,58 +1,70 @@
-
 .container2 {
-    padding: 40px ;
-    background: url('../Login/india_1.png') center center no-repeat ;
-    width: 100%;
-    background-color: #fff;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-  }
-  
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-  
-  }
-  
-  .center2 {
-    border: 2px solid rgb(180, 178, 176);
-    border-radius: 2%;
-    background-color: #fff;
-    padding: 30 30 0 30;
-  } 
-  
-  #img1 {
-    padding-left: 0px;
-    ;
-  }
-  
-  #para {
-   
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    padding-top: 5px;
-  }
-  
-  .form4 {
-    font-family: cursive;
-    font-size: 25px;
-  
-  
-  }
-  
-  .form-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-  
-  }
-  .back-to-top{
+  padding: 40px;
+  background: url('../Login/india_1.png') center center no-repeat;
+  width: 100%;
+  background-color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.fixed-top {
+  margin-top: -27px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+}
+
+a.back-to-top.scroll-icon {
+  display: none;
+}
+
+a.back-to-top.scroll-icon.fixed-header {
+  display: block;
+}
+
+.center2 {
+  border: 2px solid rgb(180, 178, 176);
+  border-radius: 2%;
+  background-color: #fff;
+  padding: 30 30 0 30;
+}
+
+#img1 {
+  padding-left: 0px;
+  ;
+}
+
+#para {
+
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.form4 {
+  font-family: cursive;
+  font-size: 25px;
+
+
+}
+
+.form-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.back-to-top {
   position: fixed;
   width: 3.71428571em;
   height: 3.71428571em;
@@ -69,98 +81,101 @@
   transition: 0.2s ease-out;
   -webkit-transition: 0.2s ease-out;
   -moz-transition: 0.2s ease-out;
-  
-  }
-  .back-to-top i {
-    color: #131313;
-  }
-  
-  .back-to-top.active:hover {
-    transform: translate3d(0, -5px, 0);
-    -webkit-transform: translate3d(0, -5px, 0);
-  }
+
+}
+
+.back-to-top i {
+  color: #131313;
+}
+
+.back-to-top.active:hover {
+  transform: translate3d(0, -5px, 0);
+  -webkit-transform: translate3d(0, -5px, 0);
+}
 
 
-  .mobileNumberContainer{
-    display: flex;
-    height: 3vw;
-    column-gap: 1px;
-  }
+.mobileNumberContainer {
+  display: flex;
+  height: 3vw;
+  column-gap: 1px;
+}
 
-  .mobileNumberContainer .countryCode{
-    width: 20%;
-  }
-  .btn{
-    text-transform: none;
-  }
+.mobileNumberContainer .countryCode {
+  width: 20%;
+}
 
-    .mobileNumberContainer .countryCode div{
-      width: 100%;
-      height: 100%;
-      font-size: 14px;
-      font-weight: 600;
-      border-radius: 2px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f4f1fa;
-      border: 1px solid #c1c9d2;
-    }
+.btn {
+  text-transform: none;
+}
 
-  .mobileNumberContainer .mobileNumber{
-    width: 100%;
-  }
+.mobileNumberContainer .countryCode div {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f1fa;
+  border: 1px solid #c1c9d2;
+}
 
-  .mobileNumberContainer .mobileNumber input[type="text"]{
-    width: 100%;
-    height: 100%;
-    outline: none;
-  }
+.mobileNumberContainer .mobileNumber {
+  width: 100%;
+}
 
-  .otpMessage{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.mobileNumberContainer .mobileNumber input[type="text"] {
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
 
-  .otpMessage p{
-    margin-top: 10px;
-  }
+.otpMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .contact-us{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-  }
+.otpMessage p {
+  margin-top: 10px;
+}
 
-  #contact-desktop{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: capitalize;
-    border-radius: 6px;
-    border-color: #2754ff;
-    color: #2754ff;
-    padding: 9px 10px;
-  }
+.contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
 
-  #contact-signup{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: capitalize;
-    border-radius: 6px;
-    border-color: #2754ff;
-  }
+#contact-desktop {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-radius: 6px;
+  border-color: #2754ff;
+  color: #2754ff;
+  padding: 9px 10px;
+}
 
-  @media screen and (max-width: 600px) {
-    .center2 {
-      padding: 30px 0;
-    }
+#contact-signup {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-radius: 6px;
+  border-color: #2754ff;
+}
+
+@media screen and (max-width: 600px) {
+  .center2 {
+    padding: 30px 0;
   }
-  @media screen and (max-width: 439px) {
-    .center2 {
-      padding: 30px;
-    }
+}
+
+@media screen and (max-width: 439px) {
+  .center2 {
+    padding: 30px;
   }
+}

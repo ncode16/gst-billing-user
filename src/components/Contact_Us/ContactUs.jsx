@@ -8,8 +8,10 @@ import ContactDetails from './contactDetails/ContactDetails'
 import ContactForm from '../ContactSecondForm/contactUs'
 import Footerup from '../footer.jsx/footer1'
 import Footer from '../footer.jsx/footer'
+import $ from 'jquery';
 
 const ContactUs = () => {
+
   return (
     <div className='contactUs '>
       <ContactTitleContainer />

@@ -138,6 +138,13 @@ button.btnsubmit-otp {
     border-bottom-right-radius: 6px;
   }
 
+  a.back-to-top.scroll-icon {
+   display: none;  
+  }
+  a.back-to-top.scroll-icon.fixed-header{
+    display: block;
+  }
+
   @media screen and (max-width:900px){
     .mobileNumberContainer .countryCode, .mobileNumberContainer .mobileNumber{
       height: 35px;
@@ -227,7 +234,7 @@ button.btnsubmit-otp {
 #Otp1{
   height: 35px;
   border: 1px solid grey;
-  border-radius: 6px;
+  border-radius: 6px; 
 }
 
 .submitButtonContainer{
@@ -240,7 +247,6 @@ button.btnsubmit-otp {
   margin-left: -10%;
   width: 120%;
 }
-
 #download-desktop {
   border-color: #2754ff;
   border-radius: 6px;
