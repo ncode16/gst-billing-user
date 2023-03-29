@@ -1,0 +1,37 @@
+.tworow{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding: 0 0 30 0;
+}
+.tworow.top4 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 80px;
+   }
+   .tworow.top4 .firstrow {
+    width: 50%;   
+    padding: 0 0 0 25px;
+    margin: 0;   
+   }
+   .tworow.top4 .secondrow {
+     width: 50%;  
+     text-align: left;
+      padding: 0 25px 0 0;
+      margin: 0;  
+   }
+
+.secondrow{
+    padding: 70 0 0 100 ;
+}
+
+.heading3{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px;
+}
+.paragraph1{
+    font-size: 17px;
+    font-weight: 350;
+    padding: 10px;
+}

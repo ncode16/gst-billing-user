@@ -171,7 +171,7 @@ hr {
    padding-top: 7px;
 }
 .imgborder{
-  border: 4px solid #e8e1e1  ;
+  border: 1px solid #e8e1e1  ;
   border-radius: 5px;
   padding: 50px;
 }
@@ -890,13 +890,17 @@ label {
 
 .whatsup-icon-box {
   position: fixed;
-  bottom: 20px;
+  bottom: 47px;
   right: 20px; 
   z-index: 5;
+  cursor: pointer;
 }
 .whatsup-icon-box a.whatsup-icon {
   color: #fff;
-  padding: 3px 20px 6px;
+  padding: 13px 27px 13px;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 17px;
 }
 a.whatsup-icon .fa-whatsapp {
   margin-right: 5px;
@@ -907,7 +911,7 @@ a.whatsup-icon .fa-whatsapp {
   font-weight: 700;
   color: #fff !important;
   background: #2754ff;
-  border-radius: 6px;
+  border-radius: 39px;
   padding: 9px 18px !important;
   margin-right: 24px;
   width: 100%;

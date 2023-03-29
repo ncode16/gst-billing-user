@@ -3,6 +3,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import './component10.css';
+import { Link } from "react-router-dom";
 
 const Component10 = () => {
     const BootstrapButton = styled(Button)({
@@ -35,9 +36,9 @@ const Component10 = () => {
             <div className="sign-up-btn GoogleAndSignUp">
                 <span>
                     <Stack spacing={2} direction="row">
-                        <BootstrapButton variant="contained" size="large">
+                       <Link to="/sign-up" target="_blank"> <BootstrapButton variant="contained" size="large">
                             <span className="signUpText">Sign Up For Free</span>
-                        </BootstrapButton>
+                        </BootstrapButton></Link>
                     </Stack>
                 </span>
             </div>

@@ -1,0 +1,21 @@
+.tworow{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding: 0 100 0 0;
+}
+
+.secondrow{
+    padding: 70 0 0 50;
+    margin: 50px;
+}
+
+.heading3{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px;
+}
+.paragraph1{
+    font-size: 17px;
+    font-weight: 350;
+    padding: 10px;
+}

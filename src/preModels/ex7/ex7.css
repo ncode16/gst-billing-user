@@ -23,7 +23,7 @@
   padding-left: 0;
   margin: 10px 0 12px;
 }
-.firstrow img {
+.firstrow .img {
   max-width: 50%;
   width: auto;
   height: 4.0rem;

@@ -92,7 +92,7 @@ export const Navigation = (props) => {
     <Link to="/sign-up" target="_blank" className="sign-in2" > <BootstrapButton className="button-btn" variant="contained"  size="small"  >Sign Up</BootstrapButton></Link>
     </Stack> 
     <Stack spacing={2} direction="row">
-                        <BootstrapButton variant="outlined" size="large" id="download-desktop" >Download For Desktop</BootstrapButton>
+                        <BootstrapButton variant="outlined" size="large" id="download-desktop" >Download for Desktop</BootstrapButton>
                     </Stack>
           </ul>
         </div>
@@ -103,6 +103,7 @@ export const Navigation = (props) => {
         </a>
         <div className="whatsup-icon-box">
        <a className="whatsup-icon" data-scroll-class="100vh:active" target="_blank">
+       <i class="fa fa-brands font-bold  fa-whatsapp mr-2 text-lg"></i>
         <span>Help?</span>
     </a>
        </div>

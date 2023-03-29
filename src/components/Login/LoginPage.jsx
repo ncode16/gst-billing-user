@@ -13,11 +13,6 @@ import axios from 'axios';
 import { useRef } from 'react';
 import { margin } from '@mui/system';
 
-
-
-
-
-
 const theme = createTheme();
 
 const ContextLogin = React.createContext();
@@ -36,8 +31,8 @@ export default function SignIn() {
        
         setNumber(e.target.value);
     }
-    const phonenumber = () => {
-
+    const phonenumber = (e) => {
+        e.preventDefault();
         var Contact = document.getElementById("contact2").value;
         if (Contact == "" || number.length != 10) {
             setError(
@@ -104,8 +99,8 @@ export default function SignIn() {
                                     </strong>
                                 <img src='https://twemoji.maxcdn.com/v/13.1.0/72x72/1f64f.png' width={"30px"} style={{marginBottom: "50px"}}/>
                     
-                                <form onSubmit={phonenumber}>
-                                    <Box component="form">
+                                <form onSubmit={e => e.preventDefault() }>
+                                    <Box  >
                                         <div className='mobileNumberContainer'>
                                             <div className='countryCode' style={btnSubmitError}>
                                                 <div>+91</div>
@@ -138,7 +133,7 @@ export default function SignIn() {
 
                                         <Button
                                             className='btnsubmit'
-                                            onClick={phonenumber}
+                                            onClick={(e) => phonenumber(e)}
                                             type="button"
                                             fullWidth
                                             variant="contained"

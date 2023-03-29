@@ -75,8 +75,8 @@ button.btnsubmit-otp {
   }
   .back-to-top{
   position: fixed;
-  width: 3.71428571em;
-  height: 3.71428571em;
+  width: 72px;
+  height: 67px;
   background: #fff;
   border-radius: 50%;
   text-align: center;
@@ -255,7 +255,7 @@ button.btnsubmit-otp {
   font-size: 14px;
   font-weight: 700;
   padding: 9px 10px;
-  text-transform: capitalize;
+  text-transform:none;
   width: 100%;
   margin: 0;
 }

@@ -8,11 +8,12 @@
     grid-template-columns: 3fr 3fr 3fr 3fr;
 }
 
-.firstrow img{
+.firstrow2 img{
     max-width: 50%;
-    height: 2.5rem;
+    width: 100px;
+    height: 4rem;
 }
-.firstrow .ptag{
+.firstrow2 .ptag{
     font-family: kalam;
     margin-top: 15px;
 }

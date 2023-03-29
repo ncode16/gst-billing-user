@@ -3,6 +3,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import './ex7.css';
+import { Link } from "react-router-dom";
 
 const Ex7 = () => {
     const BootstrapButton = styled(Button)({
@@ -32,9 +33,9 @@ const Ex7 = () => {
        
        <div className="sign-google-play">
         <Stack spacing={2} direction="row">
-            <BootstrapButton variant="contained" size="large" id="sign-up">Sign Up</BootstrapButton>
+           <Link to="/sign-up" target="_blank"> <BootstrapButton variant="contained" size="large" id="sign-up">Sign Up</BootstrapButton></Link>
         </Stack>
-       <img src="https://getswipe.in/static/img/google-play-badge.png"/>
+       <img className="img" src="https://getswipe.in/static/img/google-play-badge.png"/>
        </div>
     </div>
     <div className="secondrow">

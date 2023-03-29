@@ -2,9 +2,9 @@ import React from "react";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
-import './ex4.css'
+import './Manage.css';
 
-const Ex4= () => {
+const ManageInventory= () => {
     const BootstrapButton = styled(Button)({
         boxShadow: 'none',
         textTransform: 'none',
@@ -26,13 +26,13 @@ const Ex4= () => {
   <div>
             <div className="tworow home-tworow home-tworow2">
             <div className="secondrow">
-            <img className="imgborder" src="https://getswipe.in/static/img/illustrations/share_invoices_on_whatsapp_1.webp" width={'500px'} alt="img2" />
+            <img className="imgborder" src="https://getswipe.in/static/img/illustrations/inventory_management.webp" width={'500px'} alt="img2" />
                 </div>
                 <div className="firstrow">
-                    <h3 className="heading3">Share invoices on WhatsApp & Email</h3>
-                    <p className="paragraph1">Swipe helps you reach your customers and vendors wherever they are. Share invoices and purchase orders on WhatsApp and Email..</p>
+                    <h3 className="heading3">Manage inventory</h3>
+                    <p className="paragraph1">Swipe Inventory is designed to help you spend less time in front of the screen and more time with your customers. Download reports on current inventory and update inventory quantities in bulk, which is helpful when adding new inventory.</p>
                     <Stack spacing={2} direction="row">
-                        <BootstrapButton variant="contained" size="large"  >Get Started with Swipe</BootstrapButton>
+                        <BootstrapButton variant="contained" size="large"  >Manage INventory for FREE</BootstrapButton>
                     </Stack>
                 </div>
             </div>
@@ -41,4 +41,4 @@ const Ex4= () => {
     )
 }
 
-export default Ex4;
+export default ManageInventory;

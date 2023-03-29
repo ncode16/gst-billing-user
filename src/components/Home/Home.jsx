@@ -22,6 +22,10 @@ import Component10 from '../../preModels/component10/component10';
 import Component11 from '../../preModels/component11/component11';
 
 import Component12 from '../../preModels/componenet12';
+import AnalitycalReport from '../../preModels/analitycal_Report-Section/analitycal_report';
+import StoreOnline from '../../preModels/storeOnline_component/storeOnline';
+import ManageInventory from '../../preModels/ManageInventory_component/ManageInventory';
+import GetPayement from '../../preModels/getPaymentFaster/getpayment';
 
 
 
@@ -41,12 +45,16 @@ const Home = () => {
       <Ex6 />
       <Ex3 />
       <Ex4 />
+    
       <Ex5 />
-      <Ex8 />
+      <ManageInventory/>
+      <GetPayement/>
+    
+      <StoreOnline/>
+      <AnalitycalReport/>
       <Features data={landingPageData.Features} />
      <Component10/>
       <Faqs data={landingPageData.Testimonials} />
-      <Component12/>
       <Footerup/>
       <Footer />
 

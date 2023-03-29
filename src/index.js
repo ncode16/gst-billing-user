@@ -19,11 +19,14 @@ import Ex9 from './preModels/ex9/ex9';
 import Footerup from './components/footer.jsx/footer1';
 import Component10 from './preModels/component10/component10';
 import Component11 from './preModels/component11/component11';
+import StoreOnline from './preModels/storeOnline_component/storeOnline';
+import AnalitycalReport from './preModels/analitycal_Report-Section/analitycal_report';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App />
+      
+      <App/>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
