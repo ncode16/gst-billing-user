@@ -13,7 +13,7 @@ const Ex3 = () => {
     const [state, setState] = useState([])
 
 
-    const url = 'http://10.16.16.11:8000/api/list/about-us'
+    const url = 'https://gst-billing-backend.onrender.com/api/list/about-us'
 
 
 
