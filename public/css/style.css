@@ -1211,6 +1211,15 @@ h4.partnered_h2 {
     width: 20%;
     padding: 0 10px;
   }
+  .MuiStack-root.css-1t62lt9 {
+    width: 100%;
+  }
+  .MuiStack-root.css-1t62lt9 .MuiButtonBase-root {
+    margin: 10px 0;
+  }
+  .MuiStack-root.css-1t62lt9 #download-desktop {
+    margin-bottom: 20px;
+  }
 
 }
 
