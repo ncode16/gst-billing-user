@@ -257,7 +257,7 @@ button.btnsubmit-otp {
   padding: 9px 10px;
   text-transform: capitalize;
   width: 100%;
-  margin: 5px 0 10px;
+  margin: 0;
 }
 
 @media screen and (min-width:500px) and (max-width:800px){

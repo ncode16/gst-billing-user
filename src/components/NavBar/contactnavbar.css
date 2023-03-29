@@ -157,6 +157,7 @@ a.back-to-top.scroll-icon.fixed-header {
   border-color: #2754ff;
   color: #2754ff;
   padding: 9px 10px;
+  margin: 0;
 }
 
 #contact-signup {

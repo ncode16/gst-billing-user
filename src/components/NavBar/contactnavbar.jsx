@@ -22,6 +22,12 @@ const NavBar2 = (props) => {
             'sans-serif',
         ]
     })
+    const rightAlign = {
+        display: "flex",
+        justifyContent: "center",
+        position: "relative",
+        left: "5vw"
+    }
     const navigate = useNavigate();
     $(window).scroll(function () {
         if ($(window).scrollTop() >= 700) {
@@ -50,7 +56,7 @@ const NavBar2 = (props) => {
                         <span className="icon-bar"></span>{" "}
                     </button>
                     <a className="navbar-brand page-scroll" href="#page-top">
-                    <Link to='/'> <img src="https://getswipe.in/static/img/brand_logo.svg" width={"10%"} /></Link>
+                        <Link to='/'> <img src="https://getswipe.in/static/img/brand_logo.svg" width={"10%"} /></Link>
                     </a>{" "}
                 </div>
 
@@ -60,13 +66,13 @@ const NavBar2 = (props) => {
                 >
                     <ul className="nav navbar-nav navbar-right">
                         <li>
-                            <Link to="/">Feature</Link>
+                            <Link to="/">Features</Link>
                         </li>
                         <li>
-                            <Link to="/" >Template</Link>
+                            <Link to="/" >Templates</Link>
                         </li>
                         <li>
-                            <Link to="/">Tutorial</Link>
+                            <Link to="/">Tutorials</Link>
                         </li>
                         <li>
                             <Link to="/">FAQs</Link>
@@ -83,6 +89,7 @@ const NavBar2 = (props) => {
                         </Stack>
                         <Stack spacing={2} direction="row">
                             <BootstrapButton variant="outlined" size="large" id="contact-desktop">Download For Desktop</BootstrapButton>
+                            
                         </Stack>
                     </ul>
                 </div>
