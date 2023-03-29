@@ -11,7 +11,7 @@ html {
 }
 
 img {
- max-width: 100%; 
+  max-width: 100%;
 }
 
 h2 {
@@ -68,7 +68,7 @@ ol {
 ul,
 ol {
   padding: 0;
-  
+
 }
 
 hr {
@@ -76,48 +76,55 @@ hr {
   width: 70px;
   text-align: center;
   position: relative;
- color: #000;
+  color: #000;
   margin-bottom: 20px;
   border: 0;
 }
 
-.text-denger{
+.text-denger {
   color: red;
   display: flex;
   justify-content: center;
 
-  
+
 }
 
-.resendbtn{
- color: blue;
+.resendbtn {
+  color: blue;
 }
 
 .faq-section {
   max-width: 768px;
   margin: 0 auto;
 }
+
 .section-title.text-center {
   margin-bottom: 1.5rem;
 }
+
 .faq-section .MuiPaper-root.MuiPaper-elevation {
   border-top: solid 1px rgb(229 231 235);
 }
+
 .faq-section .MuiButtonBase-root {
   background: transparent;
   padding: 0;
 }
+
 .faq-section .css-j2beh8-MuiButtonBase-root-MuiAccordionSummary-root .MuiAccordionSummary-content {
-  margin-left: 0; 
+  margin-left: 0;
 }
+
 .faq-section .css-ahj2mt-MuiTypography-root {
   font-family: 'DM Sans', sans-serif;
-  font-size: 18px; 
+  font-size: 18px;
 }
+
 .faq-section .css-19lvqi1-MuiAccordionDetails-root {
   border: none;
-  padding: 0 0 22px 0; 
+  padding: 0 0 22px 0;
 }
+
 .faq-section .css-19lvqi1-MuiAccordionDetails-root .MuiTypography-root.MuiTypography-body1 {
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
@@ -126,79 +133,94 @@ hr {
 
 .contactUs .contactTitle {
   margin: 0;
-  padding-top:10px ;
+  padding-top: 10px;
   font-family: 'DM Sans', sans-serif;
   font-weight: 800;
- 
+
   font-size: 44px;
 }
+
 .contactUs .contactSubTitles {
   font-size: 22px;
   padding: 10px 0 15px;
 }
 
-.whatsup-icon{
+.whatsup-icon {
   font-weight: 700px;
-   color: white;
-   background-color: #25d366;
-   position: static;
-   margin-bottom: 0;
-   border: #1e7a46;
-   border-radius: 20px;
-   padding-left: 1.25rem;
-    padding-right: 1.25rem;
+  color: white;
+  background-color: #25d366;
+  position: static;
+  margin-bottom: 0;
+  border: #1e7a46;
+  border-radius: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
+
 .container {
   width: 100% !important;
-  max-width: 1280px; 
+  max-width: 1280px;
   padding-left: 46px;
   padding-right: 46px;
 }
+
 /* Navigation */
 .header-container {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
+
 .header-container .navbar-header {
   width: 20%;
 }
+
 .header-container .navbar-header img {
-  width: 100%; 
+  width: 100%;
   max-width: 121px;
 }
+
 .header-container .collapse.navbar-collapse {
-   width: 80%;
-   padding-top: 7px;
+  width: 80%;
+  padding-top: 7px;
 }
-.imgborder{
-  border: 1px solid #e8e1e1  ;
+
+.imgborder {
+  border: 1px solid #e8e1e1;
   border-radius: 5px;
   padding: 50px;
 }
-.sign-in2{
+
+.sign-in2 {
   display: flex;
   margin-left: 10px;
 }
-.btn2{
+
+.btn2 {
   font-family: "Lato", sans-serif;
 }
-.nav-sign{
+
+.nav-sign {
   margin-top: 10px;
 }
+
 #menu {
   padding: 15px;
   transition: all 0.8s;
 }
-.navbar-brand{
+
+.navbar-brand {
   padding-left: 0;
 }
+
 #menu.navbar-default {
   background-color: #fff;
   border: none;
 }
+
 nav.navbar.navbar-default.navbar-fixed-top {
   position: inherit;
 }
+
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
   font-size: 29px;
@@ -389,43 +411,50 @@ header .intro-text {
 .features-section {
   padding-top: 30px;
 }
+
 .col.feature6 {
   display: flex;
   flex-wrap: wrap;
   align-items: self-start;
 }
+
 .feature6 .feature-test {
-  width: 33.33%; 
+  width: 33.33%;
   padding: 10px;
-} 
+}
+
 .feature-3 {
   display: flex;
-  align-items: center; 
+  align-items: center;
   position: relative;
 }
+
 .feature-3 p {
- font-family: 'DM Sans', sans-serif;
- line-height: 24px;
- padding-left: 35px;
- font-size: 18px;
- font-weight: 500;
- position: relative;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 24px;
+  padding-left: 35px;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
 }
+
 .feature-3:before {
- content: '';
- background: url(../img/right-arrow-icon\ \(1\).png) no-repeat center center;
- position: absolute;
- left: 0;
- top: 4px;
- width: 18px;
- height: 18px;
- background-size: 100%; 
+  content: '';
+  background: url(../img/right-arrow-icon\ \(1\).png) no-repeat center center;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  background-size: 100%;
 }
-#features{
+
+#features {
   padding: 70px 0;
- 
+
 }
-.text-center{
+
+.text-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -554,12 +583,14 @@ header .intro-text {
 .number {
   width: 100%;
   height: 400;
-  padding-top: 50px; 
+  padding-top: 50px;
 
 }
+
 .text-center.trusted-text {
   align-items: end;
 }
+
 .p1 {
   font-size: 30px;
   font-size: 22px;
@@ -567,18 +598,22 @@ header .intro-text {
   padding: 0 15px;
   margin-bottom: 18px;
 }
+
 .nirbharbharat img {
-  margin-left: 6px; 
+  margin-left: 6px;
 }
+
 .trusted-section {
-	padding-top: 60px;
+  padding-top: 60px;
 }
+
 #number {
   font-family: 'DM Sans', sans-serif;
   font-size: 56px;
   font-weight: 700;
- 
+
 }
+
 .number2 {
   font-size: 26px;
   font-family: 'Kalam';
@@ -691,12 +726,14 @@ header .intro-text {
 #team {
   padding: 70px;
 }
+
 .gallery-container {
   max-width: 1536px;
   margin: 0 auto;
   padding-left: 20px;
-  padding-right: 20px; 
+  padding-right: 20px;
 }
+
 #team h4 {
   margin: 5px 0;
 }
@@ -763,7 +800,8 @@ header .intro-text {
   color: #cc0033;
   text-align: left;
 }
-.text-denger2{
+
+.text-denger2 {
   color: red;
   font-weight: 200px;
 }
@@ -891,10 +929,11 @@ label {
 .whatsup-icon-box {
   position: fixed;
   bottom: 47px;
-  right: 20px; 
+  right: 20px;
   z-index: 5;
   cursor: pointer;
 }
+
 .whatsup-icon-box a.whatsup-icon {
   color: #fff;
   padding: 13px 27px 13px;
@@ -902,9 +941,11 @@ label {
   line-height: 24px;
   font-size: 17px;
 }
+
 a.whatsup-icon .fa-whatsapp {
   margin-right: 5px;
 }
+
 .navbar .button-btn {
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
@@ -919,8 +960,9 @@ a.whatsup-icon .fa-whatsapp {
 
 .navbar .button-btn:hover {
   box-shadow: none;
-  background: #2754ff; 
+  background: #2754ff;
 }
+
 .navbar-collapse .css-e53awj-MuiStack-root button.MuiButtonBase-root {
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
@@ -931,31 +973,35 @@ a.whatsup-icon .fa-whatsapp {
   color: #2754ff;
   padding: 9px 10px;
 }
+
 /* home */
 .tworow.home-tworow {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   padding-top: 80px;
- }
- .tworow.home-tworow .firstrow {
-  width: 50%;   
-  padding: 0 25px 0 0;
-  margin: 0;   
- }
- .tworow.home-tworow .secondrow {
-   width: 50%;  
-   text-align: right;
-    padding: 0 0 0 25px;
-    margin: 0;  
- }
-
- .tworow.home-tworow.home-tworow2 .secondrow {
-	padding: 0 25px 0 0;
-	text-align: left;
 }
+
+.tworow.home-tworow .firstrow {
+  width: 50%;
+  padding: 0 25px 0 0;
+  margin: 0;
+}
+
+.tworow.home-tworow .secondrow {
+  width: 50%;
+  text-align: right;
+  padding: 0 0 0 25px;
+  margin: 0;
+}
+
+.tworow.home-tworow.home-tworow2 .secondrow {
+  padding: 0 25px 0 0;
+  text-align: left;
+}
+
 .tworow.home-tworow.home-tworow2 .firstrow {
-	padding: 0 0 0 25px;
+  padding: 0 0 0 25px;
 }
 
 .tworow.home-tworow .firstrow h3.heading3 {
@@ -966,6 +1012,7 @@ a.whatsup-icon .fa-whatsapp {
   font-weight: 700;
   color: #000;
 }
+
 .tworow.home-tworow .firstrow p.paragraph1 {
   padding: 0;
   font-family: 'DM Sans', sans-serif;
@@ -974,6 +1021,7 @@ a.whatsup-icon .fa-whatsapp {
   color: #6b7280;
   padding-top: 10px;
 }
+
 .tworow.home-tworow .firstrow .MuiStack-root button.MuiButtonBase-root {
   font-family: 'DM Sans', sans-serif;
   font-size: 17px;
@@ -984,64 +1032,75 @@ a.whatsup-icon .fa-whatsapp {
 }
 
 .get-started-text .text-center h2 {
-	font-family: 'DM Sans', sans-serif;
-	font-size: 36px;
-	font-weight: 800;
-	text-transform: capitalize;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: capitalize;
 }
+
 .get-started-text .img-2 {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .get-started-text .img-2 .sign-up-btn .MuiButtonBase-root.MuiButton-root {
-	margin: 0;
-	font-family: 'DM Sans', sans-serif;
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 43px;
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 43px;
 }
+
 .get-started-text .img-2 .google-play-icon {
-	max-width: 197px;
+  max-width: 197px;
   margin-right: 10px;
 }
+
 #faq .section-title h2 {
   font-size: 36px;
 }
+
 /* Footer */
 .gridtop-1.footer-main {
-	padding: 50px 0 40px;
+  padding: 50px 0 40px;
 }
+
 .footer-logo .firstrow {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
+
 .footer-logo .ptag {
-	font-family: 'DM Sans', sans-serif !important;
-	font-weight: 400;
-	color: #6b7280;
-	padding-top: 10px;
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 400;
+  color: #6b7280;
+  padding-top: 10px;
 }
+
 .footer-links .text-h3 {
-	font-family: 'DM Sans', sans-serif;
-	font-size: 14px;
-	font-weight: 600;
-	color: #6b7280;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
   margin-top: 0;
 }
+
 .footer-links .text-ui li {
-	font-family: 'DM Sans', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	color: #111827;
-	padding: 6px 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #111827;
+  padding: 6px 0;
 }
+
 .footer-social {
   display: flex;
   align-items: center;
 }
+
 .footer-social a {
   width: 22px;
   margin-right: 10px;
@@ -1050,29 +1109,35 @@ a.whatsup-icon .fa-whatsapp {
 }
 
 .partnered_logo {
-  display: flex; 
+  display: flex;
 }
+
 .partnered_logo1 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .partnered_logo1 img {
-  max-width: 210px; 
+  max-width: 210px;
 }
+
 .partnered_logo2 {
   padding-bottom: 50px;
 }
+
 .partnered_logo2 ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
+
 .partnered_logo2 ul li {
   width: 12%;
   padding: 0 20px;
 }
+
 h4.partnered_h2 {
   text-align: center;
   padding: 10px 0;
@@ -1083,69 +1148,79 @@ h4.partnered_h2 {
 }
 
 .home-review .review-box {
-	display: flex;
-	align-items: center;
-}
-.home-review .review-box svg {
-	width: 25px;
-	color: #facc15;
-}
-.home-review .paragraph1 {
-	font-family: 'DM Sans', sans-serif;
-	font-size: 18px;
-	color: #525252;
-	line-height: 28px;
-	font-style: italic;
-	padding: 0;
-}
-.home-review .text-sm {
-	font-family: 'DM Sans', sans-serif;
-	font-size: 14px;
-	font-weight: 700;
-}
-.home-review .text-sm .font-normal {
-	padding-left: 5px;
-}
-
-@media (min-width: 768px) {
-.navbar-right {
   display: flex;
   align-items: center;
 }
+
+.home-review .review-box svg {
+  width: 25px;
+  color: #facc15;
 }
 
-@media screen and (max-width: 1179px) {  
+.home-review .paragraph1 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  color: #525252;
+  line-height: 28px;
+  font-style: italic;
+  padding: 0;
+}
 
-  #menu.navbar-default .navbar-nav > li > a {
-    font-size: 14px;
-    padding: 0 10px; 
-    
+.home-review .text-sm {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.home-review .text-sm .font-normal {
+  padding-left: 5px;
+}
+
+@media (min-width: 768px) {
+  .navbar-right {
+    display: flex;
+    align-items: center;
   }
+}
+
+@media screen and (max-width: 1179px) {
+
+  #menu.navbar-default .navbar-nav>li>a {
+    font-size: 14px;
+    padding: 0 10px;
+
+  }
+
   .navbar .button-btn {
     margin-right: 28px;
     width: 100% !important;
     margin: 5px 0 10px;
-}
+  }
+
   .navbar-collapse .css-e53awj-MuiStack-root button.MuiButtonBase-root {
-    font-size: 13px; 
+    font-size: 13px;
     padding: 5px 12px !important;
   }
+
   .navbar .button-btn {
     margin-right: 10px;
   }
+
   .partnered_logo2 ul li {
     width: 15%;
   }
 
 }
 
-@media screen and (max-width: 1023px) { 
+@media screen and (max-width: 1023px) {
   .navbar-collapse.collapse {
-    display: none !important; 
+    display: none !important;
   }
+
   .navbar-toggle {
-    display: block; 
+    display: block;
   }
+
   .collapse.in {
     display: block !important;
     position: absolute;
@@ -1158,177 +1233,216 @@ h4.partnered_h2 {
     left: 0;
     margin: 0 auto;
   }
+
   .header-container .navbar-header {
     width: 100%;
     margin: 0;
   }
+
   .header-container {
-    display: inline-block; 
+    display: inline-block;
     padding: 0 25px;
   }
+
   .navbar-right {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     margin: 0;
     width: 100%;
   }
-  #menu.navbar-default .navbar-nav > li {
-    padding: 5px 0; 
+
+  #menu.navbar-default .navbar-nav>li {
+    padding: 5px 0;
     width: 100%;
   }
-  #menu.navbar-default .navbar-nav > li > a {
-    padding: 0; 
+
+  #menu.navbar-default .navbar-nav>li>a {
+    padding: 0;
   }
+
   .navbar-right .MuiStack-root.css-e53awj-MuiStack-root {
     width: 100%;
   }
+
   .navbar-collapse .sign-in2 {
     width: 100%;
-    margin: 0; 
+    margin: 0;
   }
+
   .navbar-collapse .css-e53awj-MuiStack-root button.MuiButtonBase-root {
     width: 100%;
     margin: 5px 0 10px;
   }
 
   .navbar-default .navbar-toggle {
-    margin-right: 0; 
+    margin-right: 0;
   }
+
   .tworow.home-tworow .firstrow {
     width: 100%;
     padding: 0;
     margin: 0;
   }
+
   .tworow.home-tworow .secondrow {
     width: 100%;
     text-align: left;
     padding: 30px 0 0;
     margin: 0;
   }
+
   .feature6 .feature-test {
-     width: 50%;
-     padding: 10px 1px;
+    width: 50%;
+    padding: 10px 1px;
   }
+
   .tworow.home-tworow .secondrow img {
     width: 100%;
   }
+
   .partnered_logo2 ul li {
     width: 20%;
     padding: 0 10px;
   }
+
   .MuiStack-root.css-1t62lt9 {
     width: 100%;
   }
+
   .MuiStack-root.css-1t62lt9 .MuiButtonBase-root {
     margin: 10px 0;
   }
+
   .MuiStack-root.css-1t62lt9 #download-desktop {
     margin-bottom: 20px;
   }
 
 }
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 767px) {
   .container.header-container {
     padding: 0;
-  }  
+  }
+
   .container {
     padding-left: 20px;
     padding-right: 20px;
-  } 
+  }
+
   #number {
     font-size: 32px;
   }
+
   .trusted-section .p1 {
     font-size: 15px;
     padding: 0 5px;
     margin: 0 0 10px;
   }
+
   .trusted-section .number2 {
-    font-size: 20px; 
+    font-size: 20px;
   }
+
   #team {
     padding: 0;
   }
+
   .gallery-container {
-    margin-top: 40px; 
+    margin-top: 40px;
   }
+
   .section-title h2 {
-    font-size: 25px; 
+    font-size: 25px;
   }
+
   .gallery-container .section-title {
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
   }
+
   #team .thumbnail {
-    height: auto; 
+    height: auto;
   }
+
   .tworow.home-tworow {
-    padding-top: 0; 
+    padding-top: 0;
   }
+
   .tworow.home-tworow .firstrow h3.heading3 {
-    font-size: 28px; 
+    font-size: 28px;
   }
+
   .feature6 .feature-test {
     width: 100%;
   }
+
   .get-started-text .text-center h2 {
-    font-size: 24px; 
+    font-size: 24px;
   }
+
   #features {
     padding: 0 0 30px;
   }
+
   .get-started-text .img-2 .sign-up-btn .MuiButtonBase-root.MuiButton-root {
     font-size: 14px;
   }
+
   #faq .section-title h2 {
     font-size: 24px;
   }
+
   .gridtop-1.footer-main {
     padding: 40px 0 20px;
     display: inline-block;
   }
+
   .footer-links .gridsecond {
     display: flex;
     flex-wrap: wrap;
   }
+
   .footer-links .gridsecond .secondrow1 {
     width: 50%;
     padding: 10px 0;
   }
+
   .footer1 {
     padding: 25px 20px 20px !important;
   }
+
   .tworow.home-tworow.home-tworow2 .firstrow {
     padding: 0;
     order: 1;
   }
+
   .tworow.home-tworow.home-tworow2 .secondrow {
     padding: 30px 0 0 0;
     text-align: left;
     order: 2;
   }
+
   .partnered_logo2 ul li {
     width: 20%;
     padding: 0 10px;
   }
+
   .footer-logo {
     padding-bottom: 20px;
   }
 
- }
+}
 
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
   }
+
   .row.feature-tags {
     margin: 0;
   }
-  
+
   #contact-desktop {
     width: 100%;
 
     margin-bottom: 10px;
+  }
 }
-}
-
-

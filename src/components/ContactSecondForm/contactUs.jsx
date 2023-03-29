@@ -41,43 +41,36 @@ const ContactForm = () => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (values.username.length === 0) {
       errors.username = "Name is required!";
-    }
-    if (!values.phone) {
+    }else if (!values.phone) {
       errors.phone = "Mobile is required";
     } else if (values.phone.length > 10) {
       errors.phone = "Please enter only 10 digit number";
-    }
-    if (!values.message) {
+    }else if (values.email.length === 0) {
+      errors.email = "Email is required!";
+    }else if (!values.message) {
       errors.message = "Message is required!";
+    }else {
+      axios.post('http://10.16.16.11:8000/api/user/add-contact', {
+        "contactName": formValues.username,
+        "contactPhone": formValues.phone,
+        "contactMessage": formValues.message,
+        "contactEmail": formValues.email,
+        "contactCountry": formValues.country,
+        "contactCity": formValues.city
+      })
+        .then((responce) => {
+          const LoginData = responce.data;
+          setFormValues(initialValues);
+          setIssuccess(true)
+          setTimeout(() => {
+            setIssuccess(false) 
+          },3000)
+          
+        }).catch((e) =>
+          console.log('err', e))
     }
-  
-      // remove after API chnage
-     setFormValues(initialValues);
-    setIssuccess(true)
-    setTimeout(() => {
-      setIssuccess(false)
-
-    },3000)
-    axios.post('https://gst-billing-backend.onrender.com/api/user/add-contact', {
-      "contactName": formValues.username,
-      "contactPhone": formValues.phone,
-      "contactMessage": formValues.message,
-      "contactEmail": formValues.email,
-      "contactCountry": formValues.country,
-      "contactCity": formValues.city
-    })
-      .then((responce) => {
-        const LoginData = responce.data;
-        setFormValues(initialValues);
-       
-        setIssuccess(true)
-        setTimeout(() => {
-          setIssuccess(false) 
-        },3000) 
-      }
-      )
-      .catch((e) =>
-        console.log('err', e))
+   
+   
     return errors;
 
   };
@@ -134,7 +127,7 @@ const ContactForm = () => {
             </div>
             <div className="field down-colom">
               <div className="email-colom">
-                <span>Email</span>
+                <span>*Email</span>
                 <input
                   type="email"
                   name="email"
@@ -142,6 +135,8 @@ const ContactForm = () => {
                   onChange={handleChange}
 
                 />
+                <p className="error-para">{formErrors.email}</p>
+
               </div>
               <div className=" field text-colom">
                 <span>*Message</span>
@@ -161,13 +156,14 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="successmsg">
-        {Object.keys(formErrors).length === 0 && isSubmit ? (
+        {/* {Object.keys(formErrors).length === 0 && isSubmit ? (
           <div id="submitmsg" className="ui-message-success"> Thanks for the enquiry, we'll be in touch shortly </div>
         ) : (
           ""
-        )}
+        )} */}
+      {issuccess ? (<div id="submitmsg" className="ui-message-success"> Thanks for the enquiry, we'll be in touch shortly </div>) : (<></>)}
+
       </div>
-      {/* {issuccess ? (<div id="submitmsg" className="ui-message-success"> Thanks for the enquiry, we'll be in touch shortly </div>) : (<></>)} */}
     </div>
   )
 }
