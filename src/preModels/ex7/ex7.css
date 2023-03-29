@@ -25,7 +25,7 @@
 }
 .firstrow img {
   max-width: 50%;
-  width: 100px;
+  width: auto;
   height: 4.0rem;
 }
 .tworow.two3 .firstrow .heading3 span {
