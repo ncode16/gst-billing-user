@@ -1,39 +1,37 @@
-unction MobileChange(e){ setUserDetails({
+import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-UserName: userDetails.UserName,
+export const Login2 = () => {
 
-Mobile: e.target.value
 
-})
+  const [state, setState] = useState([])
+  const url = 'http://10.16.16.11:8000/api/list/cms/21'
+  useEffect(() => {
+    axios.get(`${url}`)
+      .then((res) => {
+        setState(res?.data?.data)
+      })
 
-if(userDetails.Mobile!=""){
+      .catch((e) => console.log("eee", e));
+  }, [])
+  return (
+    <div className="container">
+      {state && (
+        <div className="trusted-section">
+          <div className="text-center trusted-text">
+            <p className="p1">{state.cms_description.slice(0, 11)}</p><span id="number">{state.cms_description.slice(11, 21)}</span><p className="p1">{state.cms_description.slice(21, 25)}</p>
+          </div>
+          <div className="text-center nirbharbharat">
+            <span className="number2">
+              {state.cms_description.slice(25)}
+            </span>
 
-setErrors({ UserError: errors.UserError, MobileError: "
-
-})
-
-function SubmitClick(e){ e.preventDefault(); if(userDetails.UserName== "") { UserError: 'User Name Required', MobileError: errors.MobileError })
-
-setErrors({
-
-} else if(userDetails. Mobile==""){ UserError: errors.UserError, MobileError: 'Moble Required'
-
-setErrors({
-
-}
-
-}
-
-function Verify Mobile(e){
-
-var pattern = /\+91\d{10}/; if(e.target.value.match(pattern)){ MobileError: "
-
-setErrors({
-
-}) } else {
-
-setErrors({
-
-MobileError:'Invalid Mobile'
-
-})
+          </div>
+        </div>
+        //Trusted by 5,00,000+ SMEs #AtmaNirbharBharat 🇮🇳
+      )
+      }
+    </div>
+  );
+};

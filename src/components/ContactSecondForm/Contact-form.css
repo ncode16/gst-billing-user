@@ -57,6 +57,7 @@
 }
 .error-para{
     color: red;
+    font-weight: 300;
 }
 
 .successmsg {

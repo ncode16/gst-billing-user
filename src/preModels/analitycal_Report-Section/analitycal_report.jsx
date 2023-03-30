@@ -3,8 +3,21 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import './analitycal_report.css'
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const AnalitycalReport = () => {
+
+    const [state, setState] = useState([])
+    const url = 'https://gst-billing-backend.onrender.com/api/list/cms/9'
+    useEffect(() => {
+        axios.get(`${url}`)
+            .then((res) => {
+                setState(res?.data?.data)
+            })
+
+            .catch((e) => console.log("eee", e));
+    }, [])
     const BootstrapButton = styled(Button)({
         boxShadow: 'none',
         textTransform: 'none',
@@ -24,19 +37,21 @@ const AnalitycalReport = () => {
     return (
         <div className="container">
             <div>
-                <div className="tworow home-tworow">
+            {state && (
+                <div   className="tworow home-tworow">
                     <div className="firstrow">
-                        <h3 className="heading3">Powerful business analytics and Reports</h3>
-                        <p className="paragraph1">Swipe automatically generates all the business analytics you will ever need to answer any question about the product/categorywise sales or to understand your users and payments</p>
+                        <h3 className="heading3">{state.cms_title}</h3>
+                        <p className="paragraph1">{state.cms_description}</p>
                         <Stack spacing={2} direction="row">
                             <BootstrapButton variant="contained" size="large"  >Get Sales Report</BootstrapButton>
                         </Stack>
 
                     </div>
                     <div className="secondrow">
-                        <img className="imgborder" src="https://getswipe.in/static/img/illustrations/business_analytics.webp" width={'500px'} alt="img2" />
+                        <img className="imgborder" src={state.cms_image}width={'500px'} alt="img2" />
                     </div>
                 </div>
+        )}
             </div>
         </div>
     )

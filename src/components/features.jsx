@@ -43,7 +43,7 @@ export const Features = () => {
           <div class="row feature-tags">
   <div className="col feature6">{
             feature&& feature.length > 0 && feature.map((d,i)=>(
-             <div className="feature-test">
+             <div  key={`${d.name}-${i}`} className="feature-test">
               <span className="feature-3"><p>{d.feature_name}</p></span>
              </div>
             ))

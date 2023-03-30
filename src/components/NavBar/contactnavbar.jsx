@@ -89,7 +89,7 @@ const NavBar2 = (props) => {
                         </Stack>
                         <Stack spacing={2} direction="row">
                             <BootstrapButton variant="outlined" size="large" id="contact-desktop">Download For Desktop</BootstrapButton>
-                            
+
                         </Stack>
                     </ul>
                 </div>
@@ -100,6 +100,7 @@ const NavBar2 = (props) => {
                 </a>
                 <div className="whatsup-icon-box">
                     <a className="whatsup-icon" data-scroll-class="100vh:active" target="_blank">
+                        <i class="fa fa-brands font-bold  fa-whatsapp mr-2 text-lg"></i>
                         <span>Help?</span>
                     </a>
                 </div>

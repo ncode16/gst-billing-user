@@ -13,7 +13,7 @@ const Ex3 = () => {
     const [state, setState] = useState([])
 
 
-    const url = 'https://gst-billing-backend.onrender.com/api/list/about-us'
+    const url = 'https://gst-billing-backend.onrender.com/api/list/cms/3'
 
 
 
@@ -48,23 +48,21 @@ const Ex3 = () => {
         <div className="container">
             <div>
 
-                {state && state.length > 0 && state.map((d, i) => {
-                    return (
-                        <div className="tworow home-tworow">
+                {state && (
+                
+                        <div   className="tworow home-tworow">
                             <div className="firstrow">
-                                <h3 className="heading3">{d.aboutus_title}</h3>
-                                <p className="paragraph1">{d.aboutus_description.replace(/<[^>]+>/g, '')}</p>
+                                <h3 className="heading3">{state.cms_title}</h3>
+                                <p className="paragraph1">{state.cms_description}</p>
                                 <Stack spacing={2} direction="row">
                                     <BootstrapButton variant="contained" size="large"  >Create Invoices Free</BootstrapButton>
                                 </Stack>
                             </div>
                             <div className="secondrow">
-                                <img className="imgborder" src="https://getswipe.in/static/img/swipe_software.jpeg" width={'500px'} alt="img2" />
+                                <img className="imgborder" src={state.cms_image} width={'500px'} alt="img2" />
                             </div>
                         </div>
-                    )
-                })
-                }
+                )}
             </div>
         </div>
     )
