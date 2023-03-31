@@ -1217,6 +1217,7 @@ h4.partnered_h2 {
   }
   .MuiStack-root.css-1t62lt9 {
     width: 100%;
+    justify-content: center;
   }
   .MuiStack-root.css-1t62lt9 .MuiButtonBase-root {
     margin: 10px 0;
@@ -1316,6 +1317,7 @@ h4.partnered_h2 {
   }
   .get-started-text .img-2 .sign-up-btn .MuiButtonBase-root.MuiButton-root {
     font-size: 14px;
+    padding: 8px 15px;
   }
   #faq .section-title h2 {
     font-size: 24px;
@@ -1367,6 +1369,28 @@ h4.partnered_h2 {
 
     margin-bottom: 10px;
 }
+}
+
+@media screen and (max-width: 385px) {
+  .get-started-text .img-2 .sign-up-btn .MuiButtonBase-root.MuiButton-root {
+    padding: 8px 16px;
+}
+.get-started-text .img-2 .google-play-icon {
+  max-width: 50%;
+}
+.get-started-text .GoogleAndSignUp {
+  height: auto;
+  width: 50%;
+}
+.get-started-text .img-2 .sign-up-btn .MuiButtonBase-root.MuiButton-root {
+  padding: 8px 15px;
+  height: 40px;
+}
+}
+@media screen and (max-width: 350px) { 
+  .get-started-text .img-2 .sign-up-btn .MuiButtonBase-root.MuiButton-root {
+    height: 38px;
+  } 
 }
 
 
