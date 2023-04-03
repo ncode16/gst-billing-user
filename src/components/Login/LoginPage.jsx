@@ -44,13 +44,7 @@ export default function SignIn() {
             setBtnSubmitError({
                 border: "1px solid red"
             })
-        } else if (values.phone.length < 10) {
-            setError1 = "Please enter 10 digit number";
-          }
-        
-        
-        
-        else {
+        } else {
             navigate('/otp', { state: { MobileNo: number } })
             setBtnSubmitError({
                 border: "1px solid lightgrey"
