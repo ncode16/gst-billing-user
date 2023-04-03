@@ -11,6 +11,7 @@ import Footer from '../footer.jsx/footer'
 import $ from 'jquery';
 
 const ContactUs = () => {
+  
 
   return (
     <div className='contactUs '>

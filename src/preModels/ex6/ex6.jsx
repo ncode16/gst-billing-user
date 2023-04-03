@@ -45,7 +45,7 @@ const Ex6 = () => {
   });
   return (
     <div className='firstdiv'>
-      {state && (
+      {state ?
       
           <div   className="seconddiv">
             <div className="text-center">
@@ -63,7 +63,9 @@ const Ex6 = () => {
               </Stack>
             </div>
           </div>
-      )}
+        
+      :<></>
+      }
     </div>
   )
 }

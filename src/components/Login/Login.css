@@ -228,7 +228,7 @@ button.btnsubmit-otp {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 #Otp1{
@@ -274,7 +274,7 @@ button.btnsubmit-otp {
     font-size: 15px;
   }
   .text-denger.textFont{
-    margin-top: 12px;
+    margin-top: 28px;
   }
 }
 
@@ -348,7 +348,8 @@ button.btnsubmit-otp {
     font-size: 12px;
   }
   .text-denger.textFont{
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 12;
   }
   button.btnsubmit-otp{
     width: 115px;
@@ -358,6 +359,7 @@ button.btnsubmit-otp {
   .textFont.otp.two{
     font-size: 12px !important;
   }
+ 
 }
 
 @media screen and (min-width: 300px) and (max-width: 350px){
@@ -371,7 +373,7 @@ button.btnsubmit-otp {
     padding-top: 10px;
   }
   .text-denger.textFont{
-    margin-top: 20px;
+    margin-top: 28px;
   }
   button.btnsubmit{
     width: 225px;
@@ -401,3 +403,28 @@ button.btnsubmit-otp {
   }
   
  }
+
+
+/* 
+ var Contact = document.getElementById("contact2").value;
+ var pattern = new RegExp(/^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i);
+ if (Contact == "" || number.length != 10) {
+     setError(
+         <>
+             <span>Please enter your 10 digit mobile number</span>
+             <span>Field validation error for mobile</span>
+         </>
+     )
+     setBtnSubmitError({
+         border: "1px solid red"
+     })
+ }  else if  (!pattern.test(number)) {
+          //isValid = false;
+          setError ("Please enter number Only")
+      }
+ else {
+     navigate('/otp', { state: { MobileNo: number } })
+     setBtnSubmitError({
+         border: "1px solid lightgrey"
+     })
+ } */

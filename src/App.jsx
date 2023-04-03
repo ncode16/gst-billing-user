@@ -27,12 +27,11 @@ const App = () => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} exact/>
-        <Route path="/login" element={<LoginPage />} exact />
+        <Route path="/login" element={<LoginPage /> }  exact />
         <Route path="/sign-up" element={<SignUp />} exact />
         <Route path="/otp" element={<Otp />} exact />
         <Route path="/welcome" element={<WelcomePage/>}/>
         <Route path="/contactus" element={<Contact/>}/>
-
       </Routes>
     </div>
   );

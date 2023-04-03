@@ -12,14 +12,17 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useRef } from 'react';
 import { margin } from '@mui/system';
+import './Login.css';
 
 const theme = createTheme();
 
 const ContextLogin = React.createContext();
-export default function SignIn() {
+export default function SignIn2() {
 
+    const initialValues = { phone: "" };
+    const [formValues, setFormValues] = useState(initialValues);
+    const [formErrors, setFormErrors] = useState({});
     const [error, setError] = useState('');
-    const [error1, setError1] = useState('');
     const [number, setNumber] = useState(0);
     const userGenOTP = useRef('');
 
@@ -28,14 +31,22 @@ export default function SignIn() {
     })
 
     function otpForMobile(e) {
-       
-        setNumber(e.target.value);
+        const { name, value } = e.target;
+        setFormValues({ ...formValues, [name]: value });
     }
-    const phonenumber = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        var Contact = document.getElementById("contact2").value;
-        if (Contact == "" || number.length != 10) {
-            setError(
+        setFormErrors(phonenumber(formValues));
+      
+    };
+
+    const phonenumber = (values) => {
+
+        const errors = {};
+        const reges = /^[0-9\b]+$/;
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+        if (!values.phone) {
+            errors.phone=(
                 <>
                     <span>Please enter your 10 digit mobile number</span>
                     <span>Field validation error for mobile</span>
@@ -44,38 +55,51 @@ export default function SignIn() {
             setBtnSubmitError({
                 border: "1px solid red"
             })
-        } else if (values.phone.length < 10) {
-            setError1 = "Please enter 10 digit number";
-          }
-        
-        
-        
-        else {
-            navigate('/otp', { state: { MobileNo: number } })
+        }  if (values.phone.length < 10) {
+            errors.phone = "Please enter 10 digit number";
             setBtnSubmitError({
-                border: "1px solid lightgrey"
+                border: "1px solid red"
             })
         }
-        axios.post('https://gst-billing-backend.onrender.com/api/user/login', {
-            "mobileNumber": number
-        })
-        .then((responce) => {
-            const LoginData = responce.data;
-            userGenOTP.current = LoginData.data.user_otp;
-            console.log('Login-Data', LoginData);
-
-            // if (!number) {
-            //     setError ("Mobile is required")
-            // } else {
-                navigate('/otp', { state: { MobileNo: number, genOTP: userGenOTP.current } })
-            
+        if (values.phone !== "undefined") {
+            var pattern = new RegExp(/^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i);
+            if (!pattern.test(values.phone)) {
+                //isValid = false;
+                errors["phone"] = "Please enter number Only";
+                setBtnSubmitError({
+                    border: "1px solid red"
+                })
+            } else if (values.phone.length != 10) {
+                //isValid = false;
+                errors["phone"] = "Please enter valid  Mobile Number.";
+            }
         }
-            )
-            .catch((e) =>
-                console.log('err', e))
+        //  else{
+        //     navigate('/otp', { state: { MobileNo: number } })
+        //     setBtnSubmitError({
+        //         border: "1px solid lightgrey"
+        //     })
+        // }
+        if (values.phone && values.phone.length == 10) {
+            axios.post('https://gst-billing-backend.onrender.com/api/user/login', {
+                "mobileNumber": formValues.phone
+            })
+                .then((responce) => {
+                    const LoginData = responce.data;
+                    userGenOTP.current = LoginData.data.user_otp;
+                    console.log('Login-Data', LoginData);
+                    navigate('/otp', { state: { MobileNo: number, genOTP: userGenOTP.current } })
+                }
+                )
+                .catch((e) =>
+                    console.log('err', e))
+        }else{
+            navigate('/otp', { state: { MobileNo: number } })
+              setBtnSubmitError({
+                    border: "1px solid lightgrey"
+                })
+        }
     }
-
-
     const navigate = useNavigate();
     return (
         <div className='container2'  >
@@ -102,10 +126,10 @@ export default function SignIn() {
                             >
                                 <strong className='head-tag'>
                                     <span className='textFont head'>Welcome to Gst Billing</span>
-                                    </strong>
-                                <img src='https://twemoji.maxcdn.com/v/13.1.0/72x72/1f64f.png' width={"30px"} style={{marginBottom: "50px"}}/>
-                    
-                                <form onSubmit={e => e.preventDefault() }>
+                                </strong>
+                                <img src='https://twemoji.maxcdn.com/v/13.1.0/72x72/1f64f.png' width={"30px"} style={{ marginBottom: "50px" }} />
+
+                                <form   onSubmit={(e) => handleSubmit(e)}>
                                     <Box  >
                                         <div className='mobileNumberContainer'>
                                             <div className='countryCode' style={btnSubmitError}>
@@ -129,7 +153,7 @@ export default function SignIn() {
 
                                             </div>
                                         </div>
-                                        <p className='text-denger textFont'>{error ? error : error1}</p>
+                                        <p className="error-para">{formErrors.phone}</p>
 
 
 
@@ -139,7 +163,7 @@ export default function SignIn() {
 
                                         <Button
                                             className='btnsubmit'
-                                            onClick={(e) => phonenumber(e)}
+                                          
                                             type="button"
                                             fullWidth
                                             variant="contained"
@@ -149,13 +173,13 @@ export default function SignIn() {
                                             <span className='textFont button'>Continue with Mobile Number {'>>'}</span>
                                         </Button>
                                     </Box>
-                                   
+
                                 </form>
-                              <div className='footer-second'>
-                                <p>By continuing you agree to our <b>Terms & Policy</b></p>
-                                <button>For Help/Support</button>
-                                <p>© 2022 NextSpeed Technologies Private Limited. All rights reserved.</p>
-                              </div>
+                                <div className='footer-second'>
+                                    <p>By continuing you agree to our <b>Terms & Policy</b></p>
+                                    <button>For Help/Support</button>
+                                    <p>© 2022 NextSpeed Technologies Private Limited. All rights reserved.</p>
+                                </div>
                             </Box>
                         </Container>
                     </ThemeProvider>

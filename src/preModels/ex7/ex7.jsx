@@ -13,12 +13,11 @@ const Ex7 = () => {
 
   const url = 'https://gst-billing-backend.onrender.com/api/list/cms/1'
 
-
-
   useEffect(() => {
     axios.get(`${url}`)
       .then((res) => {
         setState(res?.data?.data)
+      
       })
       .catch((e) => console.log("eee", e));
 
@@ -57,7 +56,7 @@ const Ex7 = () => {
                 </div>
               </div>
               <div className="secondrow">
-                <img src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/cms/image-1680162710845.webp" width={'100%'} />
+                <img src={state.cms_image} width={'100%'} />
               </div>
 
             </div>

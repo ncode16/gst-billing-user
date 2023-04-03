@@ -5,7 +5,6 @@ import { styled } from '@mui/material/styles';
 import './ex4.css'
 import { useState,useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 
 const Ex4 = () => {
 
@@ -49,13 +48,13 @@ const Ex4 = () => {
       
         <div   className="tworow home-tworow home-tworow2">
           <div className="secondrow">
-            <img className="imgborder" src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/cms/image-1680162802793.webp" width={'500px'} alt="img2" />
+            <img className="imgborder" src={state.cms_image } width={'500px'} alt="img2" />
           </div>
           <div className="firstrow">
             <h3 className="heading3">{state.cms_title}</h3>
             <p className="paragraph1">{state.cms_description}</p>
             <Stack spacing={2} direction="row">
-            <Link to="/sign-up" target="_blank"><BootstrapButton variant="contained" size="large"  >Get Started with Swipe</BootstrapButton></Link>
+              <BootstrapButton variant="contained" size="large"  >Get Started with Swipe</BootstrapButton>
             </Stack>
           </div>
         </div>
