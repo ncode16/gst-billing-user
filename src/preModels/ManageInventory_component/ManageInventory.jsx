@@ -5,6 +5,7 @@ import { styled } from '@mui/material/styles';
 import './Manage.css';
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const ManageInventory = () => {
   const [state, setState] = useState([])
@@ -46,7 +47,7 @@ const ManageInventory = () => {
                 <h3 className="heading3">{state.cms_title}</h3>
                 <p className="paragraph1">{state.cms_description}</p>
                 <Stack spacing={2} direction="row">
-                  <BootstrapButton variant="contained" size="large"  >Manage Inventory for FREE</BootstrapButton>
+                <Link to="/sign-up" target="_blank"><BootstrapButton variant="contained" size="large"  >Manage Inventory for FREE</BootstrapButton></Link>
                 </Stack>
               </div>
             </div>

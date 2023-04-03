@@ -65,7 +65,7 @@ const Footerup = () => {
             <div className="secondrow1">
               <h3 className="text-h3">COMPANY</h3>
               <ui className="text-ui">
-                <a href="#">    <li>Contact</li></a>
+                <a href="/contactus">    <li>Contact</li></a>
                 <a href="#">  <li>Blog</li></a>
                 <a href="#"><li>Jobs</li></a>
                 <a href="#"> <li>Press</li></a>

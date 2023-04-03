@@ -5,6 +5,7 @@ import { styled } from '@mui/material/styles';
 import './getpayment.css'
 import { useState,useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const GetPayement = () => {
     const [state, setState] = useState([])
@@ -42,7 +43,7 @@ const GetPayement = () => {
                             <h3 className="heading3">{state.cms_title}</h3>
                             <p className="paragraph1">{state.cms_description}</p>
                             <Stack spacing={2} direction="row">
-                                <BootstrapButton variant="contained" size="large"  >Try Swipe for Free</BootstrapButton>
+                            <Link to="/sign-up" target="_blank"><BootstrapButton variant="contained" size="large"  >Try Swipe for Free</BootstrapButton></Link>
                             </Stack>
                         </div>
                         <div className="secondrow">

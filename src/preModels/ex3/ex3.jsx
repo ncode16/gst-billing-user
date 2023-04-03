@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 import './ex3.css'
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 
 const Ex3 = () => {
 
@@ -56,7 +56,7 @@ const Ex3 = () => {
                                 <p className="paragraph1">{state.cms_description}</p>
                                 <p>Read more</p>
                                 <Stack spacing={2} direction="row">
-                                    <BootstrapButton variant="contained" size="large"  >Create Invoices Free</BootstrapButton>
+                                <Link to="/sign-up" target="_blank"><BootstrapButton variant="contained" size="large"  >Create Invoices Free</BootstrapButton></Link>
                                 </Stack>
                             </div>
                             <div className="secondrow">
