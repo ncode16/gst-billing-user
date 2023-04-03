@@ -40,7 +40,7 @@ const ManageInventory = () => {
         
             <div   className="tworow home-tworow home-tworow2">
               <div className="secondrow">
-                <img className="imgborder" src={state.cms_image} width={'500px'} alt="img2" />
+                <img className="imgborder" src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/cms/image-1680162844244.webp" width={'500px'} alt="img2" />
               </div>
               <div className="firstrow">
                 <h3 className="heading3">{state.cms_title}</h3>

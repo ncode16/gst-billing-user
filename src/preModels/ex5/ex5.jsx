@@ -46,7 +46,7 @@ const Ex5 = () => {
                             </Stack>
                         </div>
                         <div className="secondrow">
-                            <img className="imgborder" src={state.cms_image} width={'500px'} alt="img2" />
+                            <img className="imgborder" src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/cms/image-1680162824251.webp" width={'500px'} alt="img2" />
                         </div>
                     </div>
             )}

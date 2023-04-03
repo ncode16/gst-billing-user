@@ -56,7 +56,7 @@ const Ex7 = () => {
                 </div>
               </div>
               <div className="secondrow">
-                <img src={state.cms_image} width={'100%'} />
+                <img src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/cms/image-1680162710845.webp" width={'100%'} />
               </div>
 
             </div>
