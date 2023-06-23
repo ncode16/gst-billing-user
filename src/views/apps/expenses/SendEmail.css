@@ -1,0 +1,326 @@
+.send-email-sec {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.addExpenseWidth-sendEmial {
+  width: 50% !important;
+}
+.amount-page-send-email {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.create-expense-head-send-email {
+  /* display: flex; */
+  padding: 3%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 4%;
+  margin-top: 87px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.hide-show-cc {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.show-to span {
+  font-weight: 400;
+  font-size: 13px;
+  color: #626366;
+}
+
+.show-cc-bcc {
+  display: flex;
+  gap: 8%;
+}
+.show-cc span {
+  font-weight: 400;
+  font-size: 12px;
+  color: #626366;
+}
+.show-to label {
+  font-weight: 400;
+  font-size: 12px;
+  color: #626366;
+  margin-top: 15px;
+}
+.input-bank {
+  padding: 12px !important;
+  height: 35px;
+  font-size: 13px !important;
+}
+
+.email-body-sec {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.emai-lbody {
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 1% 0% 0% 5%;
+}
+.email-select {
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 0% 5% 0% 0%;
+}
+.font-awesome {
+  display: flex;
+  cursor: pointer;
+}
+
+.create-expense-head-send {
+  display: flex;
+  padding: 3%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 0% 4% 4% 4%;
+  margin-bottom: 13%;
+}
+.create-form-expense-send {
+  display: flex;
+  width: 100%;
+}
+.send-email-file {
+  display: flex;
+  width: 100%;
+  padding: 3%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 0% 4% 4% 4%;
+}
+.Send-email-all-sec {
+  display: flex;
+  width: 100%;
+}
+.email-templete {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.email-templete button {
+  background-color: #7367f0 !important;
+  color: white;
+  width: 23%;
+  font-weight: 700 !important;
+  border-radius: 7px;
+  border: none;
+  height: 30px;
+}
+
+.form-email-sec {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.email-web {
+  display: flex;
+  width: 100%;
+  font-size: 10px;
+  justify-content: space-between;
+}
+.email-web span {
+  font-size: 11px;
+  font-weight: 400;
+}
+.font-awesome svg {
+  cursor: pointer;
+}
+/* Rich Text Editor Here */
+.rich-text-editor-all-sec {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 1.5% 0% 0% 0%;
+}
+.rich-text-editor {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+/* .create-exp-head-Arrow.head-button-one {
+  background-color: red;
+} */
+
+/*  New Last */
+
+.jodit-workplace + .jodit-status-bar:not(:empty) {
+  visibility: hidden !important;
+}
+.ql-container {
+  height: 75% !important;
+}
+.send-mail-paragraph p {
+  font-size: 0.8rem;
+}
+.send-email-show-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.head-button-main-payout h3 {
+  padding: 7% 1% 0% 14%;
+  font-size: 18px;
+  width: 120%;
+  font-weight: bold;
+  color: black;
+}
+.send-email-show-input input {
+  font-size: 13px;
+  height: 32px;
+  /* padding: 4.5px 15px; */
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e8e8ed;
+}
+
+.react-quill-email-header {
+  font-weight: bold;
+  color: #6e6e73;
+}
+svg.svg-inline--fa.fa-circle-plus {
+  color: #86868b;
+}
+
+.send-mail-paragraph {
+  color: #86868b;
+}
+
+.ql-toolbar.ql-snow {
+  border-radius: 6px 6px 0px 0px;
+  padding: 4px !important;
+}
+
+.ql-container.ql-snow {
+  border-radius: 0px 0px 6px 6px;
+}
+
+.to-email-div {
+  position: relative;
+}
+
+.to-email-errors-message {
+  color: red;
+}
+
+/* New */
+.create-payout-head-Arrow {
+  background: #ffffff !important;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 99999;
+}
+
+.create-payout-head-Arrow button {
+  height: 32px;
+  background: #7367f0 !important;
+  border: none;
+  color: #fff;
+  font-weight: 700 !important;
+  margin-right: 30px;
+  border-radius: 6px;
+  height: 32px;
+  padding: 0px 13px;
+}
+.cursor-pointer-send-email {
+  cursor: pointer !important;
+  order: 1;
+  font-size: 18px;
+  color: #3a3a3c !important;
+  font-weight: 700 !important;
+}
+
+.create-payout-head-Arrow.button_container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff !important;
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff !important;
+}
+
+.payout-footer-btn button {
+  background-color: #7367f0 !important;
+  border: none;
+  color: #fff;
+  /* width: 100%; */
+  font-weight: 700 !important;
+  border-radius: 7px;
+  padding: 6px 10px;
+  margin-left: 15px;
+}
+
+.payout-footer-btn {
+  display: flex;
+  align-items: center;
+}
+
+.react-multi-email {
+  padding: 0px !important;
+  border-radius: 6px !important;
+}
+
+element.style {
+  opacity: 1;
+}
+.react-multi-email > input {
+  border-radius: 6px !important;
+  padding: 5px !important;
+}
+
+@media screen and (max-width: 767px) {
+  /* new */
+  .create-payout-head-Arrow {
+    display: flex;
+    width: 100%;
+  }
+
+  .create-payout-head-Arrow button {
+    height: fit-content;
+    width: auto;
+    height: 26px;
+    font-size: 12px;
+    margin: 4% 4% 0% 0%;
+  }
+
+  .create-payout-head-Arrow svg {
+    width: 14px;
+  }
+
+  .emai-lbody h5 {
+    font-size: 12px;
+  }
+  .email-select h5 {
+    font-size: 12px;
+  }
+  .font-awesome svg {
+    cursor: pointer;
+    font-size: 7px;
+    margin-top: 3%;
+  }
+  .email-templete button {
+    height: auto;
+    width: fit-content;
+    border: none;
+    font-size: 11px;
+  }
+  .addExpenseWidth-sendEmial {
+    width: 100%;
+  }
+}

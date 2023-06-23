@@ -1,0 +1,180 @@
+.Heading-Expenses {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* .head h2 {
+    width: 123%;
+    padding: 0% 0% 0% 7%;
+}
+.head span{
+    width: 26%;
+   color:#fd3995!important;;
+} */
+.purchase-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.purchase-header {
+  margin-left: 14px;
+  font-weight: 700;
+  color: #1d1d1f;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.play-icon {
+  background: #fd3995;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.play-icon svg {
+  color: #fff;
+  width: 12px;
+  position: relative;
+  right: -1px;
+}
+
+.Heading-Expenses.head {
+  display: flex;
+}
+
+.Heading-Expenses-one {
+  display: flex;
+}
+
+.pop-up-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Showing-result h4 {
+  color: #86868b !important;
+  font-size: 11px;
+  padding: 0% 0% 0% 2%;
+}
+
+.expense-search-box {
+  display: flex;
+  width: 100%;
+}
+
+.expense-search-box {
+  display: flex;
+}
+
+.search-box input {
+  height: 32px;
+}
+
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 13px !important;
+}
+
+/* 
+.expense-search-in:hover{
+    border-color: #2754ff; 
+}
+.input-group-text:hover{
+    border-color: #2754ff;
+} */
+
+.Search-box {
+  width: 50%;
+}
+
+.date-time-picker {
+  width: 50%;
+}
+
+.date-time-picker input {
+  height: 30px;
+}
+
+.table-head {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+.expense-image {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.expense-image img {
+  width: 6%;
+}
+
+.img-heading {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2%;
+  justify-content: center;
+}
+
+.Heading-Expenses-two {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .Heading-Expenses-one button {
+    width: 100%;
+  }
+
+  .Search-box {
+    width: -webkit-fill-available;
+  }
+  .Heading-Expenses-one {
+    display: flex;
+    width: min-content;
+  }
+  .date-time-picker {
+    width: -webkit-fill-available;
+  }
+}
+@media screen and (max-width: 414px) {
+  .Heading-Expenses {
+    flex-wrap: wrap;
+  }
+  .purchase-header {
+    margin-left: 0;
+  }
+  .purchase-button {
+    width: 100%;
+  }
+  .Heading-Expenses-one {
+    width: 100%;
+  }
+  .Heading-Expenses-one button {
+    justify-content: center;
+  }
+}

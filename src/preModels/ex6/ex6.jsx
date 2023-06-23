@@ -7,12 +7,10 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-
-
 const Ex6 = () => {
 
   const [state, setState] = useState([])
-  const url = 'https://gst-billing-backend.onrender.com/api/list/cms/2'
+  const url = 'http://10.16.16.11:8000/api/list/cms/22'
   useEffect(() => {
     axios.get(`${url}`)
       .then((res) => {
@@ -46,29 +44,25 @@ const Ex6 = () => {
   return (
     <div className='firstdiv'>
       {state ?
-      
-          <div   className="seconddiv">
-            <div className="text-center">
-              <h3 className="heading2" >
-               {state.cms_title}
-              </h3>
-            </div>
-            <div className="text-center" >
-              <p className="prg2">{state.cms_description}</p>
-
-            </div>
-            <div className="text-center"  >
-              <Stack spacing={2} direction="row">
-                <Link to="/sign-up" target="_blank"> <BootstrapButton variant="contained" size="large"  >Sign up for Free</BootstrapButton> </Link>
-              </Stack>
-            </div>
+        <div className="seconddiv">
+          <div className="text-center">
+            <h3 className="heading2" >
+              {state.cms_title}
+            </h3>
           </div>
-        
-      :<></>
+          <div className="text-center" >
+            <p className="prg2">{state.cms_description}</p>
+          </div>
+          <div className="text-center"  >
+            <Stack spacing={2} direction="row">
+              <Link to="/sign-up" target="_blank"> <BootstrapButton variant="contained" size="large"  >Sign up for Free</BootstrapButton> </Link>
+            </Stack>
+          </div>
+        </div>
+        : <></>
       }
     </div>
   )
 }
-
 
 export default Ex6;

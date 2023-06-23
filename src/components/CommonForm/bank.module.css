@@ -1,0 +1,128 @@
+.default_switch_bank {
+  padding-left: 0px;
+}
+
+.bank_label_input {
+  margin-top: 20px;
+  color: black;
+  font-weight: 500;
+}
+
+.bank_errors {
+  position: absolute;
+  color: red;
+}
+
+.field_position {
+  position: relative;
+}
+
+.optional_badge {
+  background: #e8e8ed;
+  color: #3a3a3c;
+  font-size: 11px;
+  margin-left: 5px;
+  padding: 2px 5px;
+}
+
+.bank_star {
+  margin-right: 3px;
+  color: red ;
+}
+
+.bank_details {
+  padding: 0px !important;
+  height: 32px;
+  border-radius: 0px 6px 6px 0px;
+  width: 100%;
+}
+
+.button_position_bank {
+  position: absolute !important;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.bank_input_fields {
+  height: 32px;
+}
+
+.ifsc_code_input {
+  height: 32px;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.notes_textarea {
+  height: auto;
+}
+
+.basic_details_card {
+  border-radius: 10px;
+  margin-bottom: 24px;
+  border: 1px solid #f0f0f0;
+  background-color: #fff;
+}
+
+.basic_details_card_body {
+  padding: 8px 22px 12px;
+}
+
+.ifsc_main_div {
+  display: flex;
+}
+
+.fetch_bank {
+  padding: 0 1px;
+  width: 30%;
+}
+
+.upi_optional_info {
+  margin-right: 16px;
+  margin-left: 4px;
+}
+
+.save_update_button {
+  border: none;
+  font-weight: 700 !important;
+  font-size: 13px;
+  height: 32px;
+  padding: 4.5px 15px;
+  border-radius: 6px;
+}
+
+.save_update_loader {
+  font-size: 24px;
+  color: white;
+}
+
+.right_arrow_icon {
+  margin-left: 8px;
+}
+
+.default_bank {
+  font-size: 11px;
+  padding-top: 4px;
+  color: #86868b !important;
+}
+
+.add_item_heading_main_span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add_item_heading_span {
+  margin-top: 3px;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+
+.default_switch_bank input {
+  margin-left: 0px !important;
+}

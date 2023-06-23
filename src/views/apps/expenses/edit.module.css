@@ -1,0 +1,312 @@
+.cursor_pointer {
+  cursor: pointer !important;
+  order: 1;
+  font-size: 18px;
+  color: #3a3a3c !important;
+  font-weight: 700 !important;
+}
+.head_button {
+  position: relative;
+}
+.head_button svg {
+  position: absolute;
+  top: 30px;
+  left: 8px;
+}
+
+.attached_file_op {
+  padding: 7px 15px !important;
+}
+
+.create_exp_head_edit {
+  display: flex;
+  text-align: center;
+  padding: 0%;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 99999;
+}
+.create_exp_head_edit button {
+  top: 1rem !important;
+}
+.create_exp_head_edit .btn_edit {
+  margin: 3%;
+  background-color: #7367f0 !important;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  height: 32px;
+  width: max-content !important;
+  font-weight: 700 !important;
+  padding: 5px 15px;
+}
+.add_expense_edit_width {
+  width: 50% !important;
+}
+.all_section {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+}
+.head_button_main_edit .head_button h5.modal-title {
+  order: 2;
+}
+.head_button_main_edit h3 {
+  padding: 11% 1% 0% 14%;
+  font-size: 18px;
+  width: 115%;
+  font-weight: 600;
+}
+.head_button_main_edit {
+  display: flex;
+}
+.amount_page {
+  display: flex;
+  width: 100%;
+}
+.create_expense_head_edit {
+  display: flex;
+  padding: 3%;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 4%;
+  margin-top: 90px;
+  margin-bottom: 75px;
+}
+.create_form_expense_edit {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.enter_amount {
+  display: flex;
+  flex-direction: column;
+}
+.enter_amount label {
+  font-size: 14px;
+  font-weight: 500 !important;
+  margin-bottom: 0.5%;
+  color: #1d1d1f;
+}
+.enter_amount input {
+  font-size: 13px;
+  height: 40px;
+  padding: 4.5px 15px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e8e8ed;
+  cursor: pointer;
+  outline: none;
+}
+.label_amount::before {
+  display: inline-block;
+  margin-inline-end: 1px;
+  color: #e11900;
+  font-size: 13px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: "*";
+}
+.expense_date label {
+  font-size: 14px;
+  font-weight: 500 !important;
+  margin-bottom: 0.5%;
+  color: #1d1d1f;
+}
+.expense_date {
+  display: flex;
+  flex-direction: column;
+}
+.expesne-date input {
+  font-size: 13px;
+  height: 32px;
+  padding: 4.5px 15px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e8e8ed;
+  cursor: pointer;
+}
+.expesne-date input:hover {
+  border-color: #2754ff;
+}
+.date_picker_expense {
+  height: 35px;
+}
+.date_picker_expense :hover {
+  border: 1px solid #4f78ff;
+}
+.category_label label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1d1d1f;
+}
+.category_label select {
+  width: 100%;
+  font-size: 13px;
+  height: 35px;
+  padding: 6px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e8e8ed;
+  cursor: pointer;
+  outline: none;
+}
+.category_label select:hover {
+  border-color: #2754ff;
+}
+.form_label {
+  display: flex;
+  margin-bottom: 0.2857rem;
+  font-size: 0.857rem;
+  color: #5e5873;
+  margin-top: 0%;
+}
+.paly_icon_small {
+  background: #fd3995;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 1%;
+}
+.paly_icon_small svg {
+  color: #fff;
+  width: 9px;
+  position: relative;
+  right: -1px;
+}
+.description_edit .des {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1d1d1f;
+}
+.descr_textarea {
+  display: flex;
+  padding: 1% 0% 0% 0%;
+  width: 100%;
+}
+.descr_textarea textarea {
+  width: 100%;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e8e8ed;
+}
+.descr:hover {
+  text-decoration: none;
+  border-color: #2754ff;
+}
+.expense_attached_file {
+  display: flex;
+  width: 100%;
+  padding: 2% 0% 2% 0%;
+  flex-direction: column;
+}
+.attached_file_op :hover {
+  border-color: #2754ff !important;
+}
+.attached_file_op span:hover {
+  border-color: #2754ff !important;
+}
+.create_exp_footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  margin-bottom: 0%;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+.exp_footer_btn {
+  margin: 14px 0px 0px 20px;
+}
+.exp_footer_btn button {
+  background-color: #7367f0 !important;
+  border: none;
+  height: 31px;
+  color: #fff;
+  font-weight: 700 !important;
+  border-radius: 7px;
+  padding: 5px 20px !important;
+}
+.edit_btn_footer {
+  width: max-content;
+}
+:where(.css-dev-only-do-not-override-ed5zg0).ant-input-number
+  .ant-input-number-input {
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 17px;
+  font-weight: 600;
+  height: 35px !important;
+  color: #1d1d1f;
+  outline: none !important;
+}
+:where(.css-dev-only-do-not-override-ed5zg0).ant-input-number-affix-wrapper
+  input.ant-input-number-input {
+  padding: 5px;
+  margin-bottom: 0.5%;
+}
+:where(.css-dev-only-do-not-override-ed5zg0).ant-input-number-affix-wrapper
+  input.ant-input-number-input:hover {
+  border-color: #2754ff;
+}
+:where(.css-dev-only-do-not-override-ed5zg0).ant-input-number-affix-wrapper {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  color: #1d1d1f !important;
+}
+:where(
+    .css-dev-only-do-not-override-ed5zg0
+  ).ant-input-number-affix-wrapper:hover {
+  border-color: #2754ff !important;
+  outline: none !important;
+}
+
+.fill_required {
+  color: red;
+}
+
+@media screen and (max-width: 767px) {
+  .descr_textarea textarea {
+    font-size: 12px;
+  }
+  .create_exp_head_edit .btn_edit {
+    background-color: #7367f0 !important;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    height: 32px;
+    width: 35%;
+    font-weight: 700 !important;
+    font-size: 13px;
+  }
+  .create_exp_head_edit {
+    display: flex;
+    width: 100%;
+  }
+  .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+  .head_button_main_edit {
+    display: flex;
+    width: auto;
+  }
+  .head_button_main_edit h3 {
+    padding: 11% 1% 0% 7%;
+    font-size: 15px;
+    width: max-content;
+  }
+}

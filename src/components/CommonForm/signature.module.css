@@ -1,0 +1,62 @@
+.add_item_heading_main_span{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3px;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+
+.signature_extra_information{
+  margin-top: 15px;
+}
+
+.basic_details_card {
+  border-radius: 10px;
+  margin-bottom: 24px;
+  border: 1px solid #f0f0f0;
+}
+
+.basic_details_card_body {
+  padding: 8px 22px 12px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.basic_details_label {
+  margin-top: 20px;
+  color: black;
+  font-weight: 500;
+}
+
+.vendor_name {
+  color: #1d1d1f;
+  height: 32px;
+  padding: 3.6px 10.8px !important;
+}
+
+.add_signature_error_msg {
+  position: absolute;
+  color: red;
+}
+
+.button_position_signature {
+  position: absolute !important;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.save_update_button {
+  border: none;
+  font-weight: 700 !important;
+  font-size: 13px;
+  height: 32px;
+  padding: 4.5px 15px;
+  border-radius: 6px;
+}

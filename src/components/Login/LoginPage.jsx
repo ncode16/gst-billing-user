@@ -17,7 +17,6 @@ const theme = createTheme();
 
 const ContextLogin = React.createContext();
 export default function SignIn() {
-
     const [error, setError] = useState('');
     const [error1, setError1] = useState('');
     const [number, setNumber] = useState(0);
@@ -28,9 +27,9 @@ export default function SignIn() {
     })
 
     function otpForMobile(e) {
-       
         setNumber(e.target.value);
     }
+
     const phonenumber = (e) => {
         e.preventDefault();
         var Contact = document.getElementById("contact2").value;
@@ -50,30 +49,23 @@ export default function SignIn() {
                 border: "1px solid lightgrey"
             })
         }
-        axios.post('https://gst-billing-backend.onrender.com/api/user/login', {
+        axios.post('http://10.16.16.11:8000/api/user/login', {
             "mobileNumber": number
         })
-        .then((responce) => {
-            const LoginData = responce.data;
-            userGenOTP.current = LoginData.data.user_otp;
-            console.log('Login-Data', LoginData);
-
-            // if (!number) {
-            //     setError ("Mobile is required")
-            // } else {
+            .then((responce) => {
+                const LoginData = responce.data;
+                userGenOTP.current = LoginData.data.user_otp;
+                console.log('Login-Data', LoginData);
                 navigate('/otp', { state: { MobileNo: number, genOTP: userGenOTP.current } })
-            
-        }
-            )
-            .catch((e) =>
-                console.log('err', e))
+
+            })
+            .catch((e) =>console.log('err', e))
     }
 
-
     const navigate = useNavigate();
+
     return (
         <div className='container2'  >
-
             <div className='text-center'>
                 <span><Link to="/" target='_blank'><img src='https://app.getswipe.in/resources/images/logo4.svg' width={"200px"} /></Link> </span>
             </div>
@@ -83,7 +75,6 @@ export default function SignIn() {
             <div className='center'>
                 <div className='center2'>
                     <ThemeProvider theme={theme}>
-
                         <Container component="main" maxWidth="xs">
                             <CssBaseline />
                             <Box
@@ -96,10 +87,9 @@ export default function SignIn() {
                             >
                                 <strong className='head-tag'>
                                     <span className='textFont head'>Welcome to Gst Billing</span>
-                                    </strong>
-                                <img src='https://twemoji.maxcdn.com/v/13.1.0/72x72/1f64f.png' width={"30px"} style={{marginBottom: "50px"}}/>
-                    
-                                <form onSubmit={e => e.preventDefault() }>
+                                </strong>
+                                <img src='https://twemoji.maxcdn.com/v/13.1.0/72x72/1f64f.png' width={"30px"} style={{ marginBottom: "50px" }} />
+                                <form onSubmit={e => e.preventDefault()}>
                                     <Box  >
                                         <div className='mobileNumberContainer'>
                                             <div className='countryCode' style={btnSubmitError}>
@@ -120,17 +110,12 @@ export default function SignIn() {
                                                     inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
                                                     sx={{ pb: 2 }}
                                                 />
-
                                             </div>
                                         </div>
                                         <p className='text-denger textFont'>{error ? error : error1}</p>
-
-
-
                                         <div className='otpMessage'>
                                             <p className='textFont otp'>We will be sending an OTP to this number</p>
                                         </div>
-
                                         <Button
                                             className='btnsubmit'
                                             onClick={(e) => phonenumber(e)}
@@ -143,20 +128,18 @@ export default function SignIn() {
                                             <span className='textFont button'>Continue with Mobile Number {'>>'}</span>
                                         </Button>
                                     </Box>
-                                   
                                 </form>
-                              <div className='footer-second'>
-                                <p>By continuing you agree to our <b>Terms & Policy</b></p>
-                                <button>For Help/Support</button>
-                                <p>© 2022 NextSpeed Technologies Private Limited. All rights reserved.</p>
-                              </div>
+                                <div className='footer-second'>
+                                    <p>By continuing you agree to our <b>Terms & Policy</b></p>
+                                    <button>For Help/Support</button>
+                                    <p>© 2022 NextSpeed Technologies Private Limited. All rights reserved.</p>
+                                </div>
                             </Box>
                         </Container>
                     </ThemeProvider>
                 </div>
             </div>
         </div>
-
     );
 }
 

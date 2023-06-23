@@ -1,8 +1,145 @@
+body {
+  background-color: #fff !important;
+}
+
+.container.header-container {
+  flex-wrap: revert;
+}
+
+.header-container .collapse.navbar-collapse ul.nav.navbar-nav.navbar-right {
+  flex-direction: inherit;
+}
+
+.ant-collapse-header {
+  height: auto !important;
+}
+
+.ant-collapse-content,
+ant-collapse-content-active {
+  background: unset !important;
+}
+
+.ant-message.ant-message-top.css-dev-only-do-not-override-ed5zg0 {
+  z-index: 1080;
+}
+
+:where(.css-dev-only-do-not-override-ed5zg0).ant-drawer {
+  z-index: 1100 !important;
+}
+
+/* add expense modal css */
+.ant-radio-button-wrapper-checked.radio_a {
+  background-color: #e5e6fc !important;
+  border: 0.9px solid #e5e6fc !important;
+  color: #05072c !important;
+  font-weight: 700 !important;
+  border-radius: 16px;
+  box-shadow: 0 0 0 2px #e5e6fc !important;
+  outline: #e5e6fc auto 1px;
+}
+.ant-radio-button-wrapper-checked.radio_b {
+  background-color: #e0fcee !important;
+  border: 0.9px solid #e0fcee !important;
+  color: #05072c !important;
+  font-weight: 700 !important;
+  border-radius: 16px;
+  border-color: #e0fcee !important;
+  box-shadow: 0 0 0 2px #e0fcee !important;
+  outline: #e0fcee auto 1px;
+}
+
+.ant-radio-button-wrapper-checked.radio_c {
+  background-color: #fbe2fa !important;
+  border: 0.9px solid #fbe2fa !important;
+  color: #290527 !important;
+  font-weight: 700 !important;
+  border-radius: 16px;
+  box-shadow: 0 0 0 2px #fbe2fa !important;
+  outline: #fbe2fa auto 1px;
+}
+
+.ant-radio-button-wrapper-checked.radio_d {
+  background-color: #fce6e0 !important;
+  border: 0.9px solid #fce6e0 !important;
+  color: #280c04 !important;
+  font-weight: 700 !important;
+  border-radius: 16px;
+  box-shadow: 0 0 0 2px #fce6e0 !important;
+  outline: #fce6e0 auto 1px;
+}
+.ant-radio-button-wrapper-checked.radio_e {
+  background-color: #e3fafe !important;
+  border: 0.9px solid #e3fafe !important;
+  color: #012931 !important;
+  font-weight: 700 !important;
+  border-radius: 16px;
+  box-shadow: 0 0 0 2px #e3fafe !important;
+  outline: #e3fafe auto 1px;
+}
+.ant-radio-button-wrapper-checked.radio_f {
+  background-color: #f2ffcf !important;
+  color: #323231 !important;
+  font-weight: 700 !important;
+  border-radius: 16px;
+  border: 0.9px solid #f2ffcf !important;
+  box-shadow: 0 0 0 2px #f2ffcf !important;
+  outline: #f2ffcf auto 1px;
+}
+
+.payout_modal_container .ql-container {
+  height: 75% !important;
+}
+
+.add_email_template .ql-container {
+  height: 15% !important;
+}
+.ql-toolbar.ql-snow {
+  border-radius: 6px 6px 0px 0px;
+  padding: 4px !important;
+}
+.ql-container.ql-snow {
+  border-radius: 0px 0px 6px 6px;
+}
+
+.ant-pagination {
+  display: flex;
+  justify-content: end;
+}
+
+/* //view expense modal */
+
+.deilvery_modal_wrapper button {
+  position: absolute;
+  right: 0px;
+  bottom: -40px;
+}
+.deilvery_modal_wrapper .ant-modal-content {
+  padding: 20px 24px 50px 24px;
+}
+
+.deilvery_modal_wrapper .ant-modal-title {
+  font-size:20px;
+  margin:0px 0px 20px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 400px) {
   #features {
     padding: 20px;
     width: 100%;
   }
+
   #about,
   #services,
   #testimonials,

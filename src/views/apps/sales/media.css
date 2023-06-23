@@ -1,0 +1,575 @@
+
+@media screen and (max-width: 1280px) {
+  .row-additional {
+    overflow-x: auto; 
+  }
+  .row-additional .col-md-8.additional-table-content {
+	width: 100%;
+ }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .additional-table-content {
+    width: 100%;
+}
+ }
+
+
+
+
+ @media screen and (max-width: 991px) {
+  .order-check-span-2 {
+    margin-right: 250px;
+}
+
+.document-prefixes .first-prefix-row {
+  padding: 5px 0;
+  display: block !important;
+}
+.tds-percent-select {
+  width: 100%;
+}
+.tds-switch-sub-div {
+  display: block;
+}
+.selling-price-col-1 {
+  display: contents !important;
+}
+ }
+
+ @media screen and (max-width: 899px) {
+  .order-check-span-2 {
+    margin-right: 145px !important;
+}
+}
+@media screen and (max-width: 825px) { 
+  .table-responsive .table {
+    width: 885px;
+  }
+  .total-main {
+    overflow-x: scroll; 
+    width: 100%; 
+  }
+  .total-down {
+      width: 885px; 
+  }
+  .select-product-main-div .table-responsive .table-main.table {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tds-percent-select {
+    width: 100% !important;
+  }
+  .tds-switch-sub-div {
+    display: block !important;
+  }
+  .mobile-input {
+    width: 50px !important;
+  }
+  .order-check-span-2 {
+    margin-right: 45px;
+}
+}
+
+@media screen and (max-width: 767px) { 
+  .additional-table-content{
+    width: 100% !important;
+  }
+  .search-date .ant-picker.ant-picker-range.css-dev-only-do-not-override-yp8pcc.ant-picker-1 {
+    width: 100%; 
+  }
+  .purchase-header-button .ms-2.btn.btn-primary {
+    padding: 4px !important;
+    font-size: 11px !important;
+    margin-left: 0 !important;
+  }
+  .row-additional {
+    overflow-x: auto !important;
+}
+  .product-card-box form {
+    flex-wrap: wrap; 
+  } 
+  .product-card-box .row .col {
+    padding-top: 10px;
+  }
+  .product-card-box form .bill-button.btn.btn-primary {
+	margin-left: -15px;
+  }
+  .additional-table-content .ant-table-thead tr th {
+    font-size: 11px; 
+  }
+  .show-checkbox {
+    flex-wrap: wrap; 
+  }
+  .show-checkbox-box {
+     flex-wrap: wrap; 
+     width: 100%;
+  }
+  .show-checkbox-box .show-checkbox-fild {
+	padding: 5px 0;
+	width: 100%;
+ }
+ .product-card-box .search-product .ant-select {
+	width: 100%;
+ }
+ .product-card-box .ant-select {
+	width: 100% !important;
+ }
+ .table-responsive .product-table-body td {
+	padding: 20px 10px;
+ }
+ .product-card-box .search-product {
+	width: 285px;
+	flex-wrap: wrap;
+}
+ .search-product .search-existing-products .ant-select-selector {
+	border-radius: 6px;
+	border-right: wheat;
+	width: 100%;
+}
+.product-card-box .search-product .select-category {
+	width: 100%;
+}
+.product-card-box .search-product .search-existing-products {
+	width: 100%;
+}
+.search-product .select-category .ant-select-selector {
+	border-radius: 6px;
+	margin-top: 2px;
+}
+.notes-row.row {
+	padding: 0;
+}
+.notes-row.row .ant-collapse-header {
+  height: auto;
+  flex-wrap: wrap;   
+}
+.notes-row.row .notes-select {
+   width: 285px;
+}
+.notes-row.row .notes-select .ant-select {
+  width: 100% !important;
+}
+.discount-section .discount-fild {
+  padding: 3px 0;
+}
+
+.discount-section .discount-fild {
+    padding: 3px 0;
+}
+.discount-section .discount-fild .mb-3 {
+  margin-bottom: 0 !important;
+}
+.discount-section .discount-fild .mb-3 textarea {
+  height: 70px;
+}
+.discount-section .discount-fild label {
+  font-size: 10px; 
+  margin-bottom: 0;
+}
+.add-item-heading-span{
+  margin-top: 10px;
+  font-size: 12px;
+}
+.save-update-button {
+  font-size: 10px;
+}
+.customer-phone select.react-select.form-select {
+  width: 30%;
+}
+.customer-phone .input-group.input-group-sm {
+  width: 70%;
+  margin: 0 0 10px !important;
+}
+.document-prefixes.mb-3.input-group.input-group-sm {
+  margin-bottom: 0 !important;
+}
+
+.mb-3.email-field{
+margin-bottom: 0 !important;
+}
+.first-prefix-row.mb-3.input-group.input-group-sm {
+  margin-bottom: 0 !important;
+}
+.tds-switch-sub-div {
+  display: initial !important;
+}
+.tds-percent-select {
+  width: 100%;
+}
+
+.tds-percent-select {
+  width: 100% !important;
+}
+
+.add-customer-heading-span {
+  margin-top: 9px !important;
+  font-size: 12px !important;
+  margin-left: 0 !important;
+}
+
+.add-bill-heading-span {
+  margin-top: 8px !important;
+  font-size: 11px !important;
+  margin-left: 0px !important;
+}
+
+.state-select {
+  width: 100% !important;
+}
+
+.add-ship-heading-span {
+  margin-top: 0px !important;
+  font-size: 10px !important;
+}
+
+.save-update-button{
+  font-size: 11px !important;
+  padding: 5px !important;
+}
+
+.save-update-btn{
+  padding: 5px !important;
+}
+
+.add-gst-num-btn {
+  margin-top: 10px !important;
+}
+.add-item-heading-span{
+  margin-top: 6px !important;
+  color: black;
+  font-size: 14px !important;
+  margin-left: 0px !important;
+}
+
+.select{
+  width: 100% !important;
+}
+
+.additional-information-main-div {
+  padding: 25px 20px 75px 20px !important;
+}
+
+.quantity-input {
+  margin-bottom: 18px !important;
+}
+
+.opening-stock-main-div {
+  margin-bottom: 30px !important;
+}
+
+.button-position {
+   margin: 0 0px;
+}
+
+.more-details-section {
+  margin-bottom: -30px !important;
+}
+
+.more-detail-font{
+  font-size: smaller;
+}
+
+.document-setting-text.export-invoice {
+  padding-bottom: 40px !important;
+}
+.product-check-sub-div {
+  display: grid;
+}
+
+
+.add-bill-btn {
+  margin-top: -16px;
+}
+
+.additional-btn-label{
+  margin-top: 17px;
+}
+.additional-btn{
+  font-size: 10px;
+}
+
+.attach-file-div {
+  margin-top: 15px;
+  display: grid;
+  margin-bottom: 15px;
+}
+
+.quantity-label{
+  margin-top: 10px;
+}
+
+.additional-table-content {
+  overflow-x: scroll;
+}
+
+.enter-amount-div {
+  display: block;
+}
+
+button.select-sign-play-btn {
+  margin-top: 18px;
+}
+.mobile-input {
+  width: 50px !important;
+}
+.settings {
+	display: flex;
+}
+.invoice-picker-text {
+  width: 50%; 
+  padding-right: 5px;;
+}
+.invoice-picker-text .ant-picker {
+	width: 100%;
+}
+.due-date-div {
+  width: 50%;
+  padding-left: 5px;
+}
+.due-date-div .ant-picker {
+	width: 100%;
+}
+.order-check-span-2 {
+	margin-right: 0 !important;
+}
+.product-check-sub-div span {
+	padding-top: 10px;
+}
+.enter-amount-div .ant-select-selector {
+	width: 100% !important;
+	margin: 5px 0;
+}
+.modal-slide-in .modal-dialog.sidebar-lg .form-switch {
+  padding-left: 50px !important; 
+}
+
+
+}
+
+
+@media screen and (max-width: 640px) {
+  .additional-table-content{
+    width: 100% !important;
+  }
+  .quotation-heading h3 {
+    font-size: 18px; 
+  }  
+
+  .form-switch {
+    padding-left: 0px !important;
+}
+  .quotation-top-bar {
+    flex-wrap: wrap; 
+  } 
+  .settings-create-btns button.document-btn {
+    padding-left: 0; 
+  }
+  .settings-create-btns button.document-btn .settings-icon {
+    padding-right: 0; 
+  }
+  .settings-create-btns button.document-btn {
+     font-size: 12px; 
+  }
+  .settings-create-btns button.create-btn {
+    font-size: 10px; 
+  }
+  .settings-create-btns button.create-btn .plus-icon svg {
+	width: 15px;
+ }
+ .quotation-tabs .nav-tabs .nav-link.active {
+   font-size: 12px;  
+ }
+ .quotation-tabs .nav-tabs .nav-link {
+    font-size: 12px;  
+ }
+ .create-purchase-header {
+   font-size: 13px;  
+ }
+ .row-additional {
+  overflow-x: auto !important;
+}
+
+.email-body-label {
+  margin-top: 120px;
+}
+.email-footer-label {
+  margin-top: 120px;
+}
+
+.email-attachments{
+  margin-top: 120px;
+}
+
+.ant-upload-hint{
+  margin-top: 5px !important;
+}
+
+.basic-details-card-body {
+	padding: 8px 12px 62px 12px !important;
+	background-color: #fff;
+	border-radius: 8px;
+}
+
+.upload-header {
+  height: 50% !important;
+}
+}
+
+@media screen and (max-width: 568px) { 
+  .form-switch {
+    padding-left: 0px !important;
+}
+
+  .additional-table-content{
+    width: 100% !important;
+  }
+.modal-slide-in .modal-dialog.sidebar-lg {
+  width: 90% !important;
+}
+.modal-header .modal-title h5.modal-title span.align-middle {
+   font-size: 14px;  
+}
+.document-setting-text form {
+  padding: 10px 0;   
+}
+.debit-amount .debit-amount-text {
+  position: relative;
+  right: auto;
+}
+.additional-form .fetch-details .fetch-btn {
+  font-size: 11px;   
+}
+.document-setting-text .additional-text {
+  margin-top: 10px;   
+}
+.add-product-form-main-div {
+  padding: 15px;   
+}
+.opening-quantity-div .hsn-btn {
+	font-size: 11.4px;
+	line-height: 19px;
+}
+.barcode-category-col-1 .barcode-btn {
+	font-size: 11.4px;
+    line-height: 19px;
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+	border-top: 0px;
+	height: 130px;
+}
+.purchase-price-label-span {
+	margin-left: 3px;
+	margin-bottom: 0 !important;
+}
+.row-additional {
+  overflow-x: auto !important;  
+}
+.purchase-button {
+  flex-wrap: wrap;   
+}
+.purchase-button .purchase-header {
+    width: 100%;
+}
+.purchase-button .purchase-header-button {
+    width: 100%;
+    padding-top: 5px;
+}
+.purchase-button .purchase-header-button .document-button {
+    padding-left: 0;
+}
+.head-div {
+  flex-wrap: wrap; 
+}
+.heading-sales {
+	font-weight: bold;
+  
+}
+.head-div .purchase-header-button {
+	width: 100%;
+  display: flex;
+}
+.purchase-header-button .settings {
+	padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+.purchase-header-button .ms-2.btn.btn-primary {
+	margin: 10px 0 0 !important;
+	padding: 8px 15px;
+} 
+.search-date {
+  flex-wrap: wrap; 
+}
+.input-group-merge {
+	width: 100% !important;
+	padding-bottom: 5px;
+}
+.inv-icn-inp {
+  flex-wrap: wrap; 
+}
+.inv-icn-inp .inv-text {
+	width: 100%;
+}
+.invoice-card-box .ant-select-selector {
+	width: 100% !important;
+}
+
+}
+
+@media screen and (max-width: 414px)  {
+
+
+  .bill-btn-col {
+    display: contents;
+}
+.row-additional {
+  overflow-x: auto !important;
+}
+.bill-button.btn {
+  margin-left: 15px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.additional-btn-label {
+  margin-top: 0px;
+}
+
+button.select-sign-play-btn {
+  margin-top: -1px;
+}
+.bill-button.btn {
+  margin-top: 50px !important;
+  margin-right: 15px;
+  margin-top: 25px;
+}
+}
+
+
+@media screen and (max-width: 392px)  {
+  .additional-table-content{
+    width: 100% !important;
+  }
+  .bill-button.btn {
+    margin-top: 30 !important;
+  }
+}
+
+
+@media screen and (max-width: 375px)  {
+  .additional-table-content{
+    width: 100% !important;
+  }
+  .form-switch {
+    padding-left: 0px;
+}
+.bill-button.btn {
+  margin-top: 30 !important;
+}
+.row-additional {
+  overflow-x: auto !important;
+}
+}

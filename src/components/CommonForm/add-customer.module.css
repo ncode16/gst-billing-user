@@ -1,0 +1,920 @@
+.add_item_heading_main_span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add_item_heading_span {
+  margin-top: 3px;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+
+.save_update_button {
+  border: none;
+  font-weight: 700 !important;
+  font-size: 13px;
+  height: 32px;
+  padding: 4.5px 15px;
+  border-radius: 6px;
+}
+
+.document_setting_text .additional_text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.document_setting_text form {
+  padding: 10px 20px;
+  margin-bottom: 0;
+}
+
+.document_setting_text .export_invoice {
+  padding-bottom: 30px;
+}
+
+.add_custom_text_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add_custom_fields a {
+  font-size: 13px;
+  color: #000;
+  font-weight: 400;
+}
+
+.add_custom_fields a {
+  display: flex;
+  align-items: center;
+}
+
+.add_custom_fields .plus_icon {
+  background: #86868b;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.add_custom_fields .plus_icon svg {
+  color: #fff;
+  width: 15px;
+  position: relative;
+  top: -4px;
+}
+
+.card_box {
+  background: white;
+  border-radius: 6px;
+  padding: 1.5rem 1.4rem 1.5rem !important;
+}
+
+.document_prefixes .first_prefix_row {
+  padding: 5px 0;
+}
+
+.first_prefix_row {
+  margin-top: 0 !important;
+}
+
+.document_prefixes .first_prefix_row {
+  font-size: 12px;
+  display: block;
+  padding-top: 2px;
+}
+
+.document_prefixes .first_prefix_row input {
+  font-size: 12px;
+}
+
+.additional_form .fetch_details .fetch-btn {
+  border: none;
+  background: #7367f0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 0 6px 6px 0;
+  width: 125px;
+  height: 32px;
+}
+
+.additional_form .fetch_details {
+  display: flex;
+  align-items: center;
+}
+
+.additional_form .fetch_details .form-control {
+  border-radius: 6px 0 0 6px;
+}
+
+.customer_phone {
+  display: flex;
+  align-items: center;
+}
+
+.customer_phone .ant-select.react-select {
+  width: 100px;
+  margin-right: 12px;
+}
+
+.form-select-sm {
+  height: 32px !important;
+}
+
+.phone_col {
+  display: grid;
+}
+
+.field_input {
+  height: 32px;
+}
+
+.name_input {
+  height: 32px;
+}
+
+/* .react-select{
+    height: 32px !important;
+} */
+.customer_phone .ant-select.react-select .ant-select-selector {
+  height: 32px;
+}
+
+.customer_phone .ant-select.react-select .ant-select-selector .ant-select-selection-item {
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.additional_form .form_label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+}
+
+.additional_form .extra-information {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 10px;
+}
+
+.billing_address_section {
+  padding: 20px 0;
+}
+
+.billing_address_section .billing_address {
+  padding: 10px 0 10px;
+}
+
+.billing_address_section .billing_address label {
+  display: block;
+  padding-bottom: 7px;
+  font-size: 14px;
+  color: #6e6e73;
+  font-weight: 500;
+}
+
+.billing_address_section .billing_address .billing_btn {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: none;
+  box-shadow: none;
+  padding: 10px 15px;
+  color: #7367f0;
+  border-radius: 6px;
+}
+
+.billing_address_section .billing_address .billing_btn .plus_icon {
+  background: #7367f0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-right: 8px;
+}
+
+.billing_address_section .billing_address .billing_btn .plus_icon svg {
+  color: #fff;
+  width: 16px;
+}
+
+.billing_address_section .billing_address .billing_btn.shipping {
+  color: #fc3654;
+}
+
+.billing_address_section .billing_address .billing_btn.shipping .plus_icon {
+  background-color: #fc3654;
+}
+
+.error_message_name {
+  color: #fc3654;
+  position: absolute;
+}
+
+.error_message {
+  color: #fc3654;
+}
+
+.customer_debit_radio {
+  padding-left: 40px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.ant-message {
+  z-index: 999999;
+}
+
+.opening_radio .debit-text {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 15px;
+}
+
+.opening_radio .debit-text .debit-radio {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.opening_radio .debit-text .debit-radio .form-check-input {
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+}
+
+.opening_radio .debit_amount {
+  position: relative;
+}
+
+.customer_debit_number {
+  width: 100%;
+}
+
+.radio_div {
+  margin-top: 20px;
+}
+
+.debit_amount .debit-amount-text {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: red;
+}
+
+.debit_amount .debit-amount-text .svg-inline--fa {
+  color: red !important;
+  position: relative;
+  top: 2px;
+}
+
+.more_details_section {
+  background: #fdf0e6;
+  border-radius: 6px;
+  width: 96%;
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+  z-index: 9999999;
+  position: sticky !important;
+  bottom: 60px !important;
+}
+
+.more_details_section .ant-collapse.ant-collapse-icon-position-start {
+  border: none;
+  border-radius: 0;
+}
+
+.more_details_section .ant-collapse-content.ant-collapse-content-active {
+  background: transparent;
+}
+
+.more_details_section .ant-collapse-item {
+  border-bottom: none !important;
+}
+
+.more_details_section .ant-collapse-content.ant-collapse-content-active {
+  border-top: none;
+}
+
+.more_details_section .ant-collapse-content.ant-collapse-content-active .ant-collapse-content-box {
+  padding-top: 0;
+}
+
+.more_details_section .ant-collapse-header-text {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.more_details_section .tags_text p {
+  font-size: 11px;
+  margin: 0;
+}
+
+.more_details_section .ant-collapse-header {
+  height: auto;
+}
+
+.discount_section .discount_fild label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  padding-bottom: 5px;
+}
+
+.new_text {
+  background: #2754ff;
+  font-size: 10px;
+  color: #fff;
+  padding: 1px 5px;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+
+.update_close_btns {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  padding: 20px 0px 20px 15px;
+}
+
+.update_close_btns button span {
+  margin-left: 0 !important;
+}
+
+.update_close_btns .arrow_right svg {
+  width: 20px;
+  margin-left: 5px;
+}
+
+.debit_span {
+  font-size: 13px !important;
+  line-height: 1.6153846153846154 !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #e8e8ed !important;
+  border-radius: 6px !important;
+  position: relative !important;
+  display: inline-flex !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 32px !important;
+  padding: 0 5px 0px 0px !important;
+  color: #e11900 !important;
+  font-weight: 600 !important;
+}
+
+.debit_amount {
+  height: 30px !important;
+  font-size: inherit !important;
+  border: none !important;
+  border-radius: 0 !important;
+  color: #1d1d1f !important;
+  padding: 3.6px 10.8px !important;
+  border-inline-end-width: 1px !important;
+}
+
+.balance_input {
+  height: 32px;
+  width: 103%;
+}
+
+.debit_div {
+  margin-inline-start: 4px;
+  display: flex;
+  flex: none;
+  align-items: center;
+}
+
+.add_customer_form .gstin_input {
+  height: 32px;
+  background-color: #7367f0;
+}
+
+.vendor_debit_label {
+  color: red !important;
+  font-size: 13px;
+  margin-top: 8px;
+  font-weight: 500 !important;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.vendor_credit_label {
+  color: green !important;
+  font-size: 13px;
+  margin-top: 8px;
+  font-weight: 500 !important;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.customer_pay_amount {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.save_customer_btn {
+  padding: 8px 10px !important;
+  background-color: #7367f0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+.tds-row {
+  margin-top: 20px !important;
+}
+
+.form_switch {
+  padding-left: 0px;
+}
+
+.title-span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addressline_1_div {
+  margin-top: 5px;
+  display: grid;
+}
+
+.billing_input_field {
+  margin-top: 10px;
+  display: grid;
+}
+
+.pincode_div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+}
+
+.address_line_1_input {
+  height: 32px;
+  border: 1px solid #e8e8ed;
+  border-radius: 6px;
+}
+
+.city_input {
+  height: 32px;
+  border: 1px solid #e8e8ed;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.tds_percentage,
+.tds_percentage option {
+  width: 100% !important;
+}
+
+.tds_percentage:focus {
+  outline: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.footer button {
+  margin: 10px;
+}
+
+.notes_div {
+  display: grid;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.billing_form_container .state_select {
+  height: 32px;
+  border: 1px solid #e8e8ed;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.billing_form_container .state_select:focus {
+  outline-color: rgb(94, 123, 219) !important;
+  outline-style: double !important;
+}
+
+.billing_form_container .state_select option {
+  width: 80% !important;
+}
+
+.address_small {
+  margin-top: 5px;
+}
+
+.ant-drawer-body {
+  margin-bottom: 60px;
+}
+
+.ant_drawer_body_div {
+  margin-bottom: 60px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 8px 22px 12px;
+}
+
+.shipping_note_textarea {
+  border-radius: 6px;
+  border: 1px solid #e8e8ed;
+}
+
+.add-customer-heading {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.heading-main-span {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.add-customer-heading-span {
+  margin-top: 3px;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.save-update-btn-under {
+  padding: 5px 10px;
+}
+
+.add-bill-heading-span {
+  margin-top: 3px;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.add-ship-heading-span {
+  margin-top: 3px;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.modal-title {
+  order: 2;
+  width: 100%;
+}
+
+.modal-header {
+  display: flex;
+  margin: 0px !important;
+}
+
+.billing_listing_div {
+  background-color: #fff;
+  width: 260px;
+  border-radius: 12px;
+}
+
+.billing_list_data {
+  color: black;
+  padding: 0.6rem 1.06rem !important;
+}
+
+.billing_data_p {
+  margin: 0;
+}
+
+.billing_button_container {
+  display: flex;
+}
+
+.billing_listing_heading {
+  font-weight: bold;
+  padding: 0px 0px 10px 0px;
+}
+
+.shipping_listing_heading {
+  font-weight: bold;
+  padding: 10px 0px 10px 0px;
+}
+
+.payout_btn2_payout {
+  background: #fed7d2 !important;
+  border: 2px solid #fed7d2 !important;
+  color: #1d1d1f !important;
+  text-shadow: none !important;
+  height: 30px;
+  border-radius: 8px;
+  margin: 4% 0% 0% 0%;
+}
+
+.payout_btn2_payout svg {
+  width: 11px;
+}
+
+.billing-address-delete-btn {
+  font-weight: bold;
+  background: none;
+  border: none;
+  padding: 0px;
+  color: red;
+  margin-left: 10px;
+  font-size: smaller;
+}
+
+.billing_address_edit_btn {
+  font-weight: bold;
+  margin: 5px 0px 0px 0px;
+  border: 1.08px solid #d9d9d7 !important;
+  color: #1d1d1f !important;
+  font-size: 0.8rem !important;
+  height: 24px !important;
+  padding: 0 7px;
+  border-radius: 6px;
+}
+
+.copy-btn {
+  margin-right: 10px;
+  color: rgb(6, 193, 103);
+  font-weight: bold;
+  background: none;
+  border: none;
+  font-size: smaller;
+}
+
+.react-tags__search-input {
+  width: auto !important;
+  border: 1px solid #d8d6de;
+  border-radius: 6px !important;
+  padding: 5px;
+  width: 390px !important;
+}
+
+.add_customer_form .card_box {
+  padding: 0.53rem 1.4rem 0.8rem !important;
+  background: white;
+  border-radius: 6px;
+}
+
+.align_middle {
+  width: 100% !important;
+}
+
+.add_customer_form em {
+  color: #e11900;
+}
+
+.billing_form_container label {
+  color: #1d1d1f !important;
+  margin: 0 0.24rem 0.3rem !important;
+  font-weight: 500 !important;
+}
+
+.billing_form_container input,
+.billing_form_container select {
+  color: #1d1d1f !important;
+  height: 32px !important;
+  padding: 3.6px 10.8px !important;
+  width: 100%;
+}
+
+.pop_over {
+  display: flex;
+  justify-content: end;
+  margin-top: 5%;
+  gap: 2px;
+}
+
+.popover .popover-header {
+  color: #1d1d1f;
+  font-size: 13px;
+  background-color: #fff;
+  border: none;
+  padding: 0px;
+}
+
+.popover .popover-body {
+  border: none;
+  padding: 0px;
+}
+
+.popover {
+  padding: 12px;
+}
+
+.bs-popover-bottom>.popover-arrow::before,
+.bs-popover-auto[data-popper-placement^="bottom"]>.popover-arrow::before {
+  border-bottom: none;
+}
+
+.ant_btn_primary {
+  background: #2754ff !important;
+  border: none;
+  color: #fff !important;
+  font-weight: 700 !important;
+}
+
+.edit_shipping {
+  border: none !important;
+  background: none !important;
+  color: #5b61ff !important;
+  padding: 0px !important;
+  margin: 0px 10px 0px 0px !important;
+  font-size: 12px !important;
+}
+
+.delete_shipping {
+  border: none !important;
+  background: none !important;
+  color: #e11900 !important;
+  padding: 0px !important;
+  margin: 0px 10px 0px 0px !important;
+  font-size: 12px !important;
+}
+
+.copy_shipping {
+  border: none !important;
+  background: none !important;
+  color: #06c167 !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  font-size: 12px !important;
+}
+
+.shipping_btn {
+  color: #fc3654 !important;
+  font-weight: 600 !important;
+}
+
+.shipping_btn .plus_icon {
+  background: #fc3654 !important;
+}
+
+.pincode_div input:focus {
+  outline-color: rgb(94, 123, 219);
+  outline-style: double;
+}
+
+.add_item_heading_span {
+  margin-top: 3px;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+
+.billing_form_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add_customer_form_wrapper label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  margin: 0 0 5px;
+}
+
+.phone_container {
+  display: flex;
+}
+
+.phone_container select {
+  height: 32px !important;
+}
+
+.mobile_fields {
+  margin: 0px 20px;
+}
+
+.phone_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone_input_fields {
+  display: flex;
+}
+
+.tds-switch-sub-div {
+  display: grid;
+}
+
+.billing_form_container .state_select {
+  height: 32px;
+  border: 1px solid #e8e8ed;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.billing_form_container .state_select:focus {
+  outline-color: rgb(94, 123, 219) !important;
+  outline-style: double !important;
+}
+
+.billing_form_container .state_select option {
+  width: 80% !important;
+}
+
+.tdsPercentage,
+.tdsPercentage option {
+  width: 100% !important;
+}
+
+.tdsPercentage:focus {
+  outline: none;
+}
+
+.ant-collapse-header {
+  height: auto !important;
+}
+
+.tags_text {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.add_customer_form_wrapper {
+  margin-bottom: 72px !important;
+}
+
+.customer_loader {
+  color: #fff;
+}
+
+.shipping_container {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .add-item-heading-span,
+  .billing_form_wrapper .add-item-heading-span {
+    font-size: 15px !important;
+  }
+
+  .save-update-button,
+  .billing_form_wrapper .save-update-button {
+    font-size: 10px !important;
+    padding: 10px !important;
+  }
+
+  .billing_form_wrapper .save-update-button {
+    width: 100px;
+  }
+
+  .gstin-input {
+    font-size: 13px !important;
+    padding: 10px !important;
+  }
+
+  .billing_form_wrapper .add-item-heading-span {
+    font-size: 15px;
+  }
+
+  .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+
+  .ant_drawer_body_div {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .customer_phone {
+    flex-direction: column;
+  }
+}

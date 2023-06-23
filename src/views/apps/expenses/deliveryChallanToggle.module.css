@@ -1,0 +1,27 @@
+.basic_details_delivery_challan {
+  display: flex;
+  width: 100%;
+}
+.all_details_checkbox {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.send_email_details {
+  border: none;
+  background-color: #7367f0;
+  color: white;
+  border-radius: 7px;
+}
+.whatsapp_delivery_challan {
+  background-color: #25d366;
+  color: white;
+  border-radius: 5px;
+  margin-left: 4px;
+  padding: 2px;
+}
+
+.delivery_modal iframe {
+  width: 100%;
+  height: 100%;
+}

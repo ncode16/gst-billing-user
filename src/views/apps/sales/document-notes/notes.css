@@ -1,0 +1,13 @@
+.ant-drawer {
+    z-index: 1080 !important;
+}
+.ant-drawer-body{
+    background-color:  #f8f8f8;
+}
+.scrollbar-container{
+    background-color:  #f8f8f8;
+}
+
+.modal-header {
+    background-color: #fff !important;
+}

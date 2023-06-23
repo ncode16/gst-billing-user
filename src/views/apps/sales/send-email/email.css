@@ -1,0 +1,279 @@
+
+.scrollbar-container{
+    background-color:  #f8f8f8;
+}
+
+.modal-title {
+    order: 2;
+    width: 100%;
+}
+
+.modal-header {
+    background-color: #fff !important;
+    display: flex;
+    margin: 0px !important;
+}
+
+.add-item-heading-main-span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-item-heading-span {
+    margin-top: 3px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.main-form{
+    margin-top: 30px;
+}
+
+.basic-details-card {
+    border-radius: 10px;
+    margin-bottom: 24px;
+    border: 1px solid #f0f0f0;
+   
+}
+
+.basic-details-card-body {
+    padding: 8px 22px 12px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.to-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cc-email {
+    color: #6e6e73;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.cc-email:hover {
+    text-decoration: underline;
+}
+
+.bcc-email {
+    color: #6e6e73;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.bcc-email:hover {
+    text-decoration: underline;
+}
+
+.basic-details-label {
+    color: #1d1d1f;
+    margin: 0 3px 4px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.send-email-field {
+    margin-top: 50px;
+}
+
+.vendor-name {
+    color: #1d1d1f;
+    height: 32px;
+    padding: 3.6px 10.8px!important;
+}
+
+.basic-details-header {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.basic-details {
+    margin-bottom: 0px;
+    font-weight: 500;
+    color: #1d1d1f;
+}
+
+.basic-details-text {
+    color: #6e6e73;
+    font-weight: 600;
+    padding-left: 8px;
+    margin-right: 8px;
+}
+
+.customer-link {
+    font-weight: 500!important;
+    padding-right: 8px;
+    text-decoration: none;
+    color: #86868b;
+}
+
+.customer-link svg {
+    margin-right: 8px;
+}
+
+.email-template-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview-template {
+    color: #4a27ff !important;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.purchase-title {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.pdf-attach {
+    color: #6e6e73;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.total-amount {
+    color: #6e6e73;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.button-position {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.save-update-button {
+    border: none;
+    font-weight: 700!important;
+    font-size: 13px;
+    height: 32px;
+    padding: 4.5px 15px;
+    border-radius: 6px;
+}
+
+
+
+
+.note-heading {
+    border-block-end: 1px solid rgba(5, 5, 5, 0.06);
+    background: transparent;
+    padding-block: 12px;
+}
+
+.note-text {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 227, 172);
+    padding: 4px;
+}
+
+.empty-text {
+    padding: 16px;
+    color: #AEAEB2;
+    font-size: 13px;
+    text-align: center;
+}
+
+.empty-normal {
+    outline: none;
+    margin-block: 32px;
+    color: #AEAEB2;
+    margin-inline: 8px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.no-data {
+    height: 40px;
+    margin-bottom: 8px;
+    opacity: 1;
+}
+
+.footer {
+    background: transparent;
+    padding-block: 12px;
+}
+
+.footer-button {
+    border-color: #7367f0;
+    width: 100%;
+    color: #6e6e73;
+    background-color: #ffffff;
+    border-style: dashed;
+    font-size: 13px;
+    height: 32px;
+    padding: 4.5px 15px;
+    border-radius: 6px;
+    border: 1px dashed #7367f0;
+}
+
+.plus {
+    color: #7367f0;
+    font-weight: 600 !important;
+}
+
+.button-name {
+    color: #7367f0;
+    margin-inline-start: 8px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.button-close {
+    background: #fed7d2 !important;
+    color: #1d1d1f !important;
+    text-shadow: none !important;
+    font-size: 13px;
+    height: 32px;
+    padding: 4.5px 15px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.button-position.save-btn {
+    left: auto;
+    right: 0;
+    margin: 0;
+    max-width: 546px;
+}
+
+.document-notes-card {
+    padding-bottom: 60px;
+}
+
+.ql-toolbar {
+    border-radius: 6px 6px 0px 0px;
+}
+
+.ql-container {
+    border-radius: 0px 0px 6px 6px;
+}
+
+.subject{
+    margin-top: 10px;
+}
+
+.upload-header {
+    height: 50%;
+}

@@ -52,9 +52,6 @@ const ContactForm = () => {
     } if (values.phone.length < 10) {
       errors.phone = "Please enter 10 digit number";
     }
-    if (values.email.length === 0) {
-      errors.email = "Email is required!";
-    }
     if (!values.message) {
       errors.message = "Message is required!";
     }
@@ -72,7 +69,7 @@ const ContactForm = () => {
   }
 
     if (values.username && values.phone && values.phone.length == 10 && values.email.length && values.message) {
-      axios.post('https://gst-billing-backend.onrender.com/api/user/add-contact', {
+      axios.post('http://10.16.16.11:8000/api/user/add-contact', {
         "contactName": formValues.username,
         "contactPhone": formValues.phone,
         "contactMessage": formValues.message,
@@ -169,7 +166,7 @@ const ContactForm = () => {
             </div>
             <div className="field down-colom">
               <div className="email-colom">
-                <span>*Email</span>
+                <span>Email</span>
                 <input
                   type="text"
                   name="email"
@@ -178,8 +175,6 @@ const ContactForm = () => {
                   onChange={handleChange}
 
                 />
-                <p className="error-para">{formErrors.email}</p>
-
               </div>
               <div className=" field text-colom">
                 <span>*Message</span>

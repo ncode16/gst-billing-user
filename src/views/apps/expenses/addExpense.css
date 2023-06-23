@@ -1,0 +1,132 @@
+.row {
+  --bs-gutter-x: 1rem !important;
+  --bs-gutter-y: 0;
+  display: flex;
+  width: 100% !important;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.modal .modal-header {
+  background-color: white;
+  width: 100%;
+}
+
+:where(.css-dev-only-do-not-override-ed5zg0).ant-input-number
+  .ant-input-number-input:placeholder-shown {
+  text-overflow: ellipsis;
+  font-weight: 800 !important;
+}
+
+:where(.css-dev-only-do-not-override-yp8pcc).ant-input-number {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 13px;
+  list-style: none;
+  min-width: 0;
+  background-color: #ffffff;
+  background-image: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-radius: 6px;
+  transition: all 0.2s;
+  border: 1px solid #d9d9d9;
+}
+
+:where(.css-dev-only-do-not-override-ed5zg0).ant-select .ant-select-arrow {
+  top: 64% !important;
+}
+
+.amount-class::-webkit-calendar-picker-indicator {
+  margin-right: -100%;
+  padding: 0;
+  cursor: pointer;
+}
+
+:where(.css-dev-only-do-not-override-ed5zg0).ant-radio-button-wrapper:not(
+    :first-child
+  )::before {
+  visibility: hidden !important;
+}
+:where(
+    .css-dev-only-do-not-override-ed5zg0
+  ).ant-radio-button-wrapper:first-child {
+  border-inline-start: 1px solid #d9d9d9;
+  border-start-start-radius: 16px !important;
+  border-end-start-radius: 16px !important;
+  border: 0.9px solid #e5e6fc !important;
+}
+:where(
+    .css-dev-only-do-not-override-ed5zg0
+  ).ant-radio-button-wrapper:first-child:hover {
+  border: 0.9px solid #e5e6fc !important;
+}
+:where(
+    .css-dev-only-do-not-override-ed5zg0
+  ).ant-radio-button-wrapper:last-child {
+  border-start-end-radius: 16px !important;
+  border-end-end-radius: 16px !important;
+}
+.react-select:hover {
+  text-decoration: none;
+  border-color: #2754ff;
+}
+
+.form-switch {
+  padding-left: 0 !important;
+}
+:where(.css-dev-only-do-not-override-ed5zg0).ant-switch.ant-switch-checked {
+  background-color: #7367f0 !important;
+}
+.select_bank_expene :hover {
+  border-color: #7367f0 !important;
+}
+.Cascader {
+  padding: 1.5% 0% 0% 0%;
+  display: flex;
+  width: 100%;
+}
+.Cascader.cas {
+  width: 100%;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-cascader {
+  width: 100%;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-cascader:hover {
+  text-decoration: none;
+  border-color: #2754ff;
+}
+
+:where(.css-dev-only-do-not-override-ed5zg0).ant-picker:hover,
+:where(.css-dev-only-do-not-override-ed5zg0).ant-picker-focused {
+  border-color: #7367f0 !important;
+  border-inline-end-width: 1px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-slide-in.show .modal-dialog {
+    width: 85% !important;
+  }
+
+  /* .text-secondary {
+    width: auto;
+  }
+  .enter-ammout input {
+    font-size: 12px;
+  }
+  .expesne-date input {
+    font-size: 12px;
+  }
+  .category-label select {
+    font-size: 12px;
+  }
+  .descr-textarea textarea {
+    font-size: 12px;
+  } */
+}

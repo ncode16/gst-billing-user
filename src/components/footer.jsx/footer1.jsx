@@ -1,5 +1,6 @@
 import React from "react";
 import './footer1.css';
+import { Link } from "react-router-dom";
 
 const Footerup = () => {
   return (
@@ -65,7 +66,7 @@ const Footerup = () => {
             <div className="secondrow1">
               <h3 className="text-h3">COMPANY</h3>
               <ui className="text-ui">
-                <a href="/contactus">    <li>Contact</li></a>
+                <li><Link to="/contactus" target="_blank" style={{color: 'black'}}>Contact</Link> </li>
                 <a href="#">  <li>Blog</li></a>
                 <a href="#"><li>Jobs</li></a>
                 <a href="#"> <li>Press</li></a>

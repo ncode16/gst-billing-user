@@ -1,0 +1,186 @@
+.create-exp-head-Arrow {
+    display: flex;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    z-index: 99999;
+  }
+  .addExpenseWidth-Arrow-Down {
+    width: 50% !important;
+  }
+  .create-exp-head-Arrow button {
+    margin: 16px 16px 19px 0px;
+    background-color: #7367f0 !important;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    width: max-content;
+    font-weight: 700 !important;
+  }
+  .head-button-main-Arrow .head-button h5.modal-title {
+    order: 2;
+  }
+  .head-button-main-Arrow h3 {
+    padding: 13px 1px 0px 14px;
+    font-size: 18px;
+    width: max-content;
+    font-weight: 700 !important;
+  }
+  .head-button-one {
+    padding: 0.7%;
+  }
+  .payout-view-section label {
+    display: flex;
+    margin-top: 15px;
+    color: #1d1d1f;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .payout-view-section input {
+    font-size: 13px;
+    height: 32px;
+    padding: 4.5px 15px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e8e8ed;
+    cursor: pointer;
+  }
+  .lable-amount-down::before {
+    display: inline-block;
+    margin-inline-end: 1px;
+    color: #e11900;
+    font-size: 13px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: "*";
+  }
+  .Arrow-label1::before {
+    display: inline-block;
+    margin-inline-end: 1px;
+    color: #e11900;
+    font-size: 13px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: "*";
+  }
+  .view-input-paying::before {
+    display: inline-block;
+    margin-inline-end: 1px;
+    color: #e11900;
+    font-size: 13px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: "*";
+  }
+  .lable-amount-down {
+    margin-top: 1.5%;
+  }
+  :where(.css-dev-only-do-not-override-yp8pcc).ant-input-number {
+    margin-top: 1% !important;
+  }
+  .Arrow-label {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+  .Arrow-label1 {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+  .Arrow-Label-btn {
+    height: 27.1px;
+    font-size: 10px;
+    background-color: #fafafb !important;
+    border: none !important;
+    color: #1d1d1f !important;
+    width: 21%;
+    border-radius: 6px;
+  }
+  .arrow-label-date {
+    width: 40%;
+  }
+  .Description-Arrow {
+    margin-top: 1.5%;
+  }
+  .create-exp-head-Arrow svg {
+    width: 13%;
+    margin-left: 3px;
+  }
+  .payout-view-section p {
+    font-size: 0.8rem;
+    color: #e11900 !important;
+  }
+  .payout-view-section p::before {
+    display: inline-block;
+    margin-inline-end: 1px;
+    color: #e11900;
+    font-size: 13px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: "*";
+  }
+  .cursor_pointer_Arrow {
+    cursor: pointer !important;
+    margin-top: 5px;
+    order: 1;
+    font-size: 18px;
+    color: #3a3a3c !important;
+    font-weight: 900 !important;
+  }
+  .date-picker-arrowDown {
+    width: 50% !important;
+  }
+  .date-picker-arrowDown span {
+    margin-top: 3px !important;
+  }
+  /* .arrow_down_disabled {
+    outline: none !important;
+  }
+  .arrow_down_disabled:hover {
+    outline: none !important;
+    border: none !important;
+    border-color: none !important;
+  } */
+  .lable-amount-view-paying::before {
+    display: inline-block;
+    margin-inline-end: 1px;
+    color: #e11900;
+    font-size: 13px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: "*";
+  }
+  .create-exp-footer svg {
+    width: 13%;
+    margin-left: 3px;
+  }
+  @media screen and (max-width: 767px) {
+    .head-button-one {
+      padding: 3px 4px 3px 7px;
+    }
+    .create-exp-head-Arrow {
+      display: flex;
+      width: 100%;
+    }
+    .head-button-main-Arrow h3 {
+      font-size: 16px;
+      width: max-content;
+    }
+    .arrow-label-date {
+      width: 60%;
+    }
+    .Arrow-Label-btn {
+      width: fit-content;
+    }
+    .add-ifsc1 button {
+      width: -webkit-fill-available;
+      font-size: 12px;
+    }
+    .create-exp-head-Arrow svg {
+      width: 14px;
+    }
+  }
+  

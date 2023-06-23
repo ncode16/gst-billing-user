@@ -1,0 +1,25 @@
+{
+  vendorList &&
+    vendorList.map((item) => {
+      return <option value={item?.vendor_id}>{item?.vendor_name}</option>;
+    });
+}
+
+{
+  vendorList &&
+    vendorList.map((item) => {
+      return (
+        <span className="vendor-span-name">
+          {getVendorId.includes(item?.vendor_id) && (
+            <Tag closable onClick={() => getVendorInfoHandler(item?.vendor_id)}>
+              {item?.vendor_name}
+            </Tag>
+          )}
+        </span>
+        // <span className='vendor-tag'>
+        //     <span className='vendor-for-user'>{item?.vendor_name}</span>
+        //     <span className='vendor-close'><FontAwesomeIcon icon={faXmark} size={20} /></span>
+        // </span>
+      );
+    });
+}

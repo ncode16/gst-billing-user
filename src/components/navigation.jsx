@@ -85,7 +85,7 @@ export const Navigation = (props) => {
             <Link to="/contactus" target="_blank">Contact Us</Link>
             </li>
             <li>
-              <Link to="/login" target="_blank">Login</Link>
+              <Link to="/auth/login" target="_blank">Login</Link>
             </li>
   
    <Stack spacing={2} direction="row">

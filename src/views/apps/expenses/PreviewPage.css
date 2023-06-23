@@ -1,0 +1,42 @@
+.basic-details-card {
+    border-radius: 10px;
+    margin-bottom: 24px;
+    border: 1px solid #f0f0f0;
+    background-color: #fff;
+}
+
+.basic-details-card-body {
+    padding: 8px 22px 12px;
+}
+
+.purchase-title {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.pdf-attach {
+    color: #6e6e73;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.total-amount {
+    color: #6e6e73;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+.view-document-button button{
+    background-color: #7367f0 !important;
+    color: white;
+    font-weight: 700 !important;
+    border-radius: 7px;
+    border: none;
+    height: 32px;
+   
+}

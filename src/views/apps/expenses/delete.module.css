@@ -1,0 +1,42 @@
+.delete_modal_container .delete_modal {
+  background-color: #e11900 !important;
+  border: 1.08px solid #e11900 !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  padding: 5px 15px !important;
+}
+
+.delete_modal_container .close_modal_btn {
+  padding: 5px 15px !important;
+}
+
+.delete_modal_container .ant-modal-title {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+.delete_modal_container
+  .table:not(.table-dark):not(.table-light)
+  thead:not(.table-dark)
+  th,
+.table:not(.table-dark):not(.table-light) tfoot:not(.table-dark) th {
+  background-color: unset !important;
+}
+
+.delete_modal_container th {
+  border-bottom: 1px solid #d9d9d7;
+  outline: none !important;
+  color: #1d1d1f;
+  border-top: 1px solid #dee2e6;
+}
+
+.delete_modal_container .ant-modal-content {
+  position: relative;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  pointer-events: auto;
+  padding: 20px 24px;
+}

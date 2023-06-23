@@ -1,0 +1,78 @@
+.create-exp-head-templete{
+    display: flex;
+    text-align: center;
+    padding: 0%;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.head-button-main-tempelte{
+    /* width: 45%; */
+    display: flex;
+}
+.create-exp-head-templete button{
+    margin: 2.7%;
+    background-color: #7367f0 !important;
+    /* color: white; */
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    height: 30px;
+    width: 12%;
+    font-weight: 700 !important;
+}
+.head-button-main-tempelte .head-button h5.modal-title{
+    order: 2;
+}
+.head-button-main-tempelte h3{
+    padding: 7% 1% 0% 0%;
+    font-size: 18px;
+    width: 116%;
+}
+.head-button-one svg{
+    width: 14px;
+}
+.templete-text-area{
+display: flex;
+width: 100%;
+height: 100px;
+}
+.descr-textarea-add-edit{
+    width: 100%;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E8E8ED;
+}
+.add-edit-text-area{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E8E8ED;
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+    .head-button-main-tempelte h3 {
+        padding: 4% 1% 0% 9%;
+        font-size: 12px;
+        width: auto;
+        text-align: justify;
+    }
+    .head-button-main-tempelte svg{
+     width: 40px;
+    }
+    .create-exp-head-templete button {
+        margin: 4% 3% 0% 24%;
+        background-color: #7367f0 !important;
+        border: none;
+        border-radius: 7px;
+        color: #fff;
+        height: -moz-fit-content;
+        height: fit-content;
+        width: inherit;
+        font-weight: 700 !important;
+    }
+   
+}

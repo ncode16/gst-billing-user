@@ -1,0 +1,666 @@
+.document-setting-text .additional-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.document-setting-text form {
+    padding: 10px 20px;
+    margin-bottom: 0;
+}
+
+.document-setting-text.export-invoice {
+    padding-bottom: 150px;
+}
+
+.add-custom-text-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-custom-fields a {
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+}
+
+.add-custom-fields a {
+    display: flex;
+    align-items: center;
+}
+
+.add-custom-fields .plus-icon {
+    background: #86868b;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.add-custom-fields .plus-icon svg {
+    color: #fff;
+    width: 15px;
+    position: relative;
+    top: -4px;
+}
+
+.card-box {
+    padding: 10px;
+    margin: 0;
+}
+
+.document-prefixes .first-prefix-row {
+    padding: 5px 0;
+}
+
+.first-prefix-row {
+    margin-top: 0 !important;
+}
+
+.document-prefixes .first-prefix-row .form-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    margin: 0 0 5px;
+}
+
+.document-prefixes .first-prefix-row .example-prefix {
+    font-size: 12px;
+    display: block;
+    padding-top: 2px;
+}
+
+.document-prefixes .first-prefix-row input {
+    font-size: 12px;
+}
+
+.additional-form .fetch-details .fetch-btn {
+    border: none;
+    background: #7367f0;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 0 6px 6px 0;
+    width: 125px;
+    height: 32px;
+}
+
+.additional-form .fetch-details {
+    display: flex;
+    align-items: center;
+}
+
+.additional-form .fetch-details .form-control {
+    border-radius: 6px 0 0 6px;
+}
+
+.customer-phone {
+    display: flex;
+    align-items: center;
+}
+
+.customer-phone .ant-select.react-select {
+    width: 100px;
+    margin-right: 12px;
+}
+
+.form-select-sm {
+    height: 32px !important;
+    width: 60px;
+}
+
+.phone-col {
+    display: grid;
+}
+
+.name-input {
+    height: 32px;
+}
+
+/* .react-select{
+    height: 32px !important;
+} */
+.customer-phone .ant-select.react-select .ant-select-selector {
+    height: 32px;
+}
+
+.customer-phone {
+    display: -webkit-inline-box;
+}
+
+.customer-phone .ant-select.react-select .ant-select-selector .ant-select-selection-item {
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.additional-form label.form-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+}
+
+.additional-form .extra-information {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-top: 10px;
+}
+
+.billing-address-section {
+    padding: 20px 0;
+}
+
+.billing-address-section .billing-address {
+    padding: 20px 0 0;
+}
+
+.billing-address-section .billing-address label {
+    display: block;
+    padding-bottom: 7px;
+    font-size: 14px;
+    color: #6e6e73;
+    font-weight: 500;
+}
+
+.billing-address-section .billing-address .billing-btn {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: none;
+    box-shadow: none;
+    padding: 10px 35px;
+    color: #7367f0;
+    border-radius: 6px;
+}
+
+.billing-address-section .billing-address .billing-btn .plus-icon {
+    background: #7367f0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.billing-address-section .billing-address .billing-btn .plus-icon svg {
+    color: #fff;
+    width: 16px;
+}
+
+.billing-address-section .billing-address .billing-btn.shipping {
+    color: #fc3654;
+}
+
+.billing-address-section .billing-address .billing-btn.shipping .plus-icon {
+    background-color: #fc3654;
+}
+
+.opening-radio .debit-text {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 15px;
+}
+
+.opening-radio .debit-text .debit-radio {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.opening-radio .debit-text .debit-radio .form-check-input {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
+
+.opening-radio .debit-amount {
+    position: relative;
+}
+
+.radio-div {
+    margin-top: 20px;
+}
+
+.debit-amount .debit-amount-text {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: red;
+}
+
+.debit-amount .debit-amount-text .svg-inline--fa {
+    color: red !important;
+    position: relative;
+    top: 2px;
+}
+
+
+.more-details-section {
+    background: #fdf0e6;
+    border-radius: 6px;
+    position: fixed;
+    bottom: 100px;
+    width: 96%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.more-details-section .ant-collapse.ant-collapse-icon-position-start {
+    border: none;
+    border-radius: 0;
+}
+
+.more-details-section .ant-collapse-content.ant-collapse-content-active {
+    background: transparent;
+}
+
+.more-details-section .ant-collapse-item {
+    border-bottom: none !important;
+}
+
+.more-details-section .ant-collapse-content.ant-collapse-content-active {
+    border-top: none;
+}
+
+.more-details-section .ant-collapse-content.ant-collapse-content-active .ant-collapse-content-box {
+    padding-top: 0;
+}
+
+.more-details-section .ant-collapse-header-text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.more-details-section .tags-text p {
+    font-size: 11px;
+    margin: 0;
+}
+
+.more-details-section .ant-collapse-header {
+    height: auto;
+}
+
+.discount-section .discount-fild {
+    padding: 8px 0;
+}
+
+.discount-section .discount-fild label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+.update-close-btns {
+    background: #f8f8f8;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+    padding: 20px 0;
+    margin-left: 15px;
+}
+
+.update-close-btns button span {
+    margin-left: 0 !important;
+}
+
+.update-close-btns .arrow-right svg {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.debit-span {
+    font-size: 13px !important;
+    line-height: 1.6153846153846154 !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #E8E8ED !important;
+    border-radius: 6px !important;
+    position: relative !important;
+    display: inline-flex !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 32px !important;
+    padding: 0 11px !important;
+    color: #e11900 !important;
+    font-weight: 600 !important;
+}
+
+.debit-amount {
+    height: 30px !important;
+    font-size: inherit !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: #1d1d1f !important;
+    padding: 3.6px 10.8px !important;
+    border-inline-end-width: 1px !important;
+}
+
+.balance-input {
+    height: 32px;
+    width: 103%;
+}
+
+.debit-div {
+    margin-inline-start: 4px;
+    display: flex;
+    flex: none;
+    align-items: center;
+}
+
+.company-name-input {
+    height: 32px;
+}
+
+.gstin-input {
+    height: 32px;
+}
+
+.email {
+    height: 32px;
+}
+
+.mobile-input {
+    height: 32px;
+}
+
+.vendor-debit-label {
+    color: red !important;
+    font-size: 13px;
+    margin-top: 8px;
+    font-weight: 500 !important;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.vendor-credit-label {
+    color: green !important;
+    font-size: 13px;
+    margin-top: 8px;
+    font-weight: 500 !important;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.save-customer-btn {
+    padding: 8px 10px !important;
+    background-color: #7367f0;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+}
+
+.tds-row {
+    margin-top: 20px !important;
+}
+
+.form-switch {
+    padding-left: 0px;
+}
+
+.tds-switch-sub-div {
+    display: grid;
+}
+
+.tds-percent-select {
+    width: 620px;
+}
+
+.title-span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.export-check {
+    text-align: end;
+}
+
+.addressline-1-div {
+    margin-top: 5px;
+    display: grid;
+}
+
+.addressline-2-div {
+    margin-top: 10px;
+    display: grid;
+}
+
+.city-div {
+    margin-top: 10px;
+    display: grid;
+}
+
+.state-div {
+    margin-top: 10px;
+    display: grid;
+}
+
+.pincode-div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+}
+
+.address-line-1-input {
+    height: 32px;
+    border: 1px solid #E8E8ED;
+    border-radius: 6px;
+}
+
+.address-line-2-input {
+    height: 32px;
+    border: 1px solid #E8E8ED;
+    border-radius: 6px;
+}
+
+.city-input {
+    height: 32px;
+    border: 1px solid #E8E8ED;
+    border-radius: 6px;
+}
+
+.state-input {
+    height: 32px;
+    border: 1px solid #E8E8ED;
+    border-radius: 6px;
+}
+
+.pincode-input {
+    height: 32px;
+    border: 1px solid #E8E8ED;
+    border-radius: 6px;
+}
+
+.footer {
+    border-top: none;
+    background-color: #fff;
+    bottom: 0 !important;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    right: 0;
+    max-width: 320px;
+}
+
+.ant-drawer-content-wrapper {
+    width: 85% !important;
+}
+
+.notes-div {
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* .state-select{
+    border:1px solid #d8d6de;
+    border-radius: 6px;
+    height: 32px !important;
+} */
+.address-small {
+    margin-top: 5px;
+}
+
+
+
+.ant-drawer-body {
+    margin-bottom: 60px;
+}
+
+.ant-drawer-body-div {
+    margin-bottom: 20px;
+}
+
+.shipping-note-textarea {
+    border-radius: 6px;
+}
+
+.add-customer-heading {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.heading-main-span {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.add-item-heading-main-span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-item-heading-span {
+    margin-top: 3px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.add-customer-heading-span {
+    margin-top: 3px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.save-update-btn-under{
+    padding: 5px 10px;
+}
+
+.add-bill-heading-span {
+    margin-top: 3px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.add-ship-heading-span {
+    margin-top: 3px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+
+.modal-title {
+    order: 2;
+    width: 100%;
+}
+
+.modal-header {
+    display: flex;
+    margin: 0px !important;
+}
+
+.save-update-button {
+    border: none;
+    font-weight: 700 !important;
+    font-size: 13px;
+    height: 32px;
+    padding: 4.5px 15px;
+    border-radius: 6px;
+}
+
+.billing-listing-div {
+    background-color: #fff;
+    width: 260px;
+    border-radius: 12px;
+
+}
+
+.billing-list-data {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+}
+
+.billing-data-p {
+    margin: 0;
+}
+
+.billing-listing-heading {
+    font-weight: bold;
+}
+
+.billing-address-delete-btn {
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0px;
+    color: red;
+    margin-left: 10px;
+    font-size: smaller;
+}
+
+.billing-address-edit-btn {
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0px;
+    color: rgb(91, 97, 255);
+    font-size: smaller;
+    margin-left: 5px;
+}
+
+.copy-btn {
+    margin-right: 10px;
+    color: rgb(6, 193, 103);
+    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: smaller;
+}
+
+.react-tags__search-input {
+    width: auto !important;
+    border: 1px solid #d8d6de;
+    border-radius: 6px !important;
+    padding: 5px;
+    width: 390px !important;
+}
+

@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Ex5 = () => {
     const [state, setState] = useState([])
-    const url = 'https://gst-billing-backend.onrender.com/api/list/cms/5'
+    const url = 'http://10.16.16.11:8000/api/list/cms/16'
     useEffect(() => {
         axios.get(`${url}`)
             .then((res) => {
@@ -47,7 +47,7 @@ const Ex5 = () => {
                             </Stack>
                         </div>
                         <div className="secondrow">
-                            <img className="imgborder" src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/cms/image-1680162824251.webp" width={'500px'} alt="img2" />
+                            <img className="imgborder" src={state.cms_image} width={'500px'} alt="img2" />
                         </div>
                     </div>
             )}

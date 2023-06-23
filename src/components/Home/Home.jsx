@@ -54,6 +54,7 @@ const Home = () => {
       <AnalitycalReport/>
       <Features data={landingPageData.Features} />
      <Component10/>
+     <Component12/>
       <Faqs data={landingPageData.Testimonials} />
       <Footerup/>
       <Footer />

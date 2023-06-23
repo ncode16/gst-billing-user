@@ -1,0 +1,101 @@
+.modal-slide-in .modal-dialog.sidebar-lg {
+    width: 50% !important;
+}
+
+.heart {
+    margin-right: 5px;
+}
+
+.invoice-template-button {
+    border: 1px solid blue;
+    font-size: 14px;
+    height: 40px;
+    padding: 7.692307692307692px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.additional-text {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    /* color: black; */
+    font-weight: bold;
+}
+
+.first-prefix-row {
+    margin-top: 20px;
+}
+
+.label-text{
+    color: black;
+}
+
+.small-text{
+font-size: 10px;
+}
+.invoice_prefix {
+    height: 32px;
+}
+
+
+.purchase_order_prefix {
+    height: 32px;
+}
+
+
+.purchase_invoice_prefix {
+    height: 32px;
+}
+
+
+.quotation_prefix {
+    height: 32px;
+}
+
+
+.sales_return_prefix {
+    height: 32px;
+}
+
+
+.purchase_return_prefix {
+    height: 32px;
+}
+
+
+.delivery_challan_prefix {
+    height: 32px;
+}
+
+
+.pro_forma_invoice_prefix {
+    height: 32px;
+}
+
+.subscription_prefix {
+    height: 32px;
+}
+
+.additional-text-second{
+    font-weight: bold;
+}
+
+
+
+.update-setting-btn{
+    padding: 10px 10px;
+    font-weight: bold;
+}
+
+.close-btn{
+    border: 2px solid #fed7d2 !important;
+    background-color: #fed7d2 !important;
+    padding: 10px 10px;
+    margin-left: 5px;
+    color: #86868b !important;
+}
+
+.close-btn:hover{
+    border: 2px solid #fdb0a7 !important;
+}

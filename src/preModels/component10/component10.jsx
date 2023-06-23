@@ -10,7 +10,7 @@ import axios from "axios";
 const Component10 = () => {
 
     const [state, setState] = useState([])
-    const url = 'https://gst-billing-backend.onrender.com/api/list/cms/10'
+    const url = 'http://10.16.16.11:8000/api/list/cms/23'
     useEffect(() => {
         axios.get(`${url}`)
             .then((res) => {

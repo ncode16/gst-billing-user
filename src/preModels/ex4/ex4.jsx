@@ -3,27 +3,21 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import './ex4.css'
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Ex4 = () => {
-
   const [state, setState] = useState([])
 
-
-  const url = 'https://gst-billing-backend.onrender.com/api/list/cms/4'
-
-
+  const url = 'http://10.16.16.11:8000/api/list/cms/15'
 
   useEffect(() => {
     axios.get(`${url}`)
       .then((res) => {
         setState(res?.data?.data)
       })
-
       .catch((e) => console.log("eee", e));
-
   }, [])
 
   const BootstrapButton = styled(Button)({
@@ -45,43 +39,23 @@ const Ex4 = () => {
   return (
     <div className="container">
       <div>
-      {state && (
-      
-        <div   className="tworow home-tworow home-tworow2">
-          <div className="secondrow">
-            <img className="imgborder" src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/cms/image-1680162802793.webp" width={'500px'} alt="img2" />
+        {state && (
+          <div className="tworow home-tworow home-tworow2">
+            <div className="secondrow">
+              <img className="imgborder" src={state.cms_image} width={'500px'} alt="img2" />
+            </div>
+            <div className="firstrow">
+              <h3 className="heading3">{state.cms_title}</h3>
+              <p className="paragraph1">{state.cms_description}</p>
+              <Stack spacing={2} direction="row">
+                <Link to="/sign-up" target="_blank"><BootstrapButton variant="contained" size="large"  >Get Started with Swipe</BootstrapButton></Link>
+              </Stack>
+            </div>
           </div>
-          <div className="firstrow">
-            <h3 className="heading3">{state.cms_title}</h3>
-            <p className="paragraph1">{state.cms_description}</p>
-            <Stack spacing={2} direction="row">
-            <Link to="/sign-up" target="_blank"><BootstrapButton variant="contained" size="large"  >Get Started with Swipe</BootstrapButton></Link>
-            </Stack>
-          </div>
-        </div>
-    )}
+        )}
       </div>
     </div>
   )
 }
 
 export default Ex4;
-
-
-// {state && state.length > 0 && state.slice(0, 1).map((d, i) => {
-//   return (
-//       <div className="tworow home-tworow">
-//           <div className="firstrow">
-//               <h3 className="heading3">{d.cms_title}</h3>
-//               <p className="paragraph1">{d.cms_description}</p>
-//               <Stack spacing={2} direction="row">
-//                   <BootstrapButton variant="contained" size="large"  >Create Invoices Free</BootstrapButton>
-//               </Stack>
-//           </div>
-//           <div className="secondrow">
-//               <img className="imgborder" src={d.cms_image} width={'500px'} alt="img2" />
-//           </div>
-//       </div>
-//   )
-// })
-// }

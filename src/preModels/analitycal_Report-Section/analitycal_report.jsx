@@ -8,9 +8,8 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const AnalitycalReport = () => {
-
     const [state, setState] = useState([])
-    const url = 'https://gst-billing-backend.onrender.com/api/list/cms/9'
+    const url = 'http://10.16.16.11:8000/api/list/cms/20'
     useEffect(() => {
         axios.get(`${url}`)
             .then((res) => {
@@ -38,21 +37,21 @@ const AnalitycalReport = () => {
     return (
         <div className="container">
             <div>
-            {state && (
-                <div   className="tworow home-tworow">
-                    <div className="firstrow">
-                        <h3 className="heading3">{state.cms_title}</h3>
-                        <p className="paragraph1">{state.cms_description}</p>
-                        <Stack spacing={2} direction="row">
-                        <Link to="/sign-up" target="_blank"><BootstrapButton variant="contained" size="large"  >Get Sales Report</BootstrapButton></Link>
-                        </Stack>
+                {state && (
+                    <div className="tworow home-tworow">
+                        <div className="firstrow">
+                            <h3 className="heading3">{state.cms_title}</h3>
+                            <p className="paragraph1">{state.cms_description}</p>
+                            <Stack spacing={2} direction="row">
+                                <Link to="/sign-up" target="_blank"><BootstrapButton variant="contained" size="large"  >Get Sales Report</BootstrapButton></Link>
+                            </Stack>
 
+                        </div>
+                        <div className="secondrow">
+                            <img className="imgborder" src={state.cms_image} width={'500px'} alt="img2" />
+                        </div>
                     </div>
-                    <div className="secondrow">
-                        <img className="imgborder" src="https://raw.githubusercontent.com/ncode16/gst-billing-backend/master/public/cms/image-1680162907690.webp" width={'500px'} alt="img2" />
-                    </div>
-                </div>
-        )}
+                )}
             </div>
         </div>
     )

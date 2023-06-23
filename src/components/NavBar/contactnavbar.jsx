@@ -81,7 +81,7 @@ const NavBar2 = (props) => {
                             <Link to="/contactus" >Contact Us</Link>
                         </li>
                         <li>
-                            <Link to="/login">Login</Link>
+                            <Link to="/auth/login">Login</Link>
                         </li>
 
                         <Stack spacing={2} direction="row">
